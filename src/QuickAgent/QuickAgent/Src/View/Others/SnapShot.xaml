@@ -1,0 +1,25 @@
+﻿<Window x:Class="QuickAgent.Src.View.Others.SnapShot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource snapshot_title}" Height="200" Width="300" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="{DynamicResource snapshot_device}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <ComboBox Name="Cb_Device"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="70,0,0,0" Width="100" />
+        <Button Content="{DynamicResource snapshot_qry}" Name="Btn_Qry" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="190,0,0,0" Click="Btn_Qry_Click" />
+        <Label Content="{DynamicResource snapshot_path}" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1"/>
+        <TextBox Name="tb_path" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Margin="70,0,0,0" Width="100"/>
+        <Button Content="{DynamicResource snapshot_select}"  Name="Btn_Select" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="190,0,0,0" Grid.Row="1" Click="Btn_Select_Click" />
+
+        <Button Content="{DynamicResource snapshot_ok}"  Name="Btn_Ok" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="60,0,0,0" Grid.Row="5" Click="Btn_Ok_Click" />
+        <Button Content="{DynamicResource snapshot_cancel}"  Name="Btn_Cancel" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="150,0,0,0" Grid.Row="5" Click="Btn_Cancel_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="QuickAgent.Src.View.SetCallDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+        Height="333" Width="380" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="WhiteSmoke"  ShowInTaskbar="False" Title="{DynamicResource setDataTitle}"
+        Topmost="True">
+    
+    <Grid>
+        <Grid Margin="10,0,10,0" Height="43" VerticalAlignment="Top">
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left"  Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+
+        <head:CallInfoCtrl x:Name="dgrdCallList" Height="160" VerticalAlignment="Top" Margin="10,48,10,0"/>      
+        <TextBlock Margin="10,0,136,65" Height="22" VerticalAlignment="Bottom" Name="txtBoxMsg" Text="{DynamicResource inputMsg}"></TextBlock>
+        <TextBox Height="26" Margin="8,0,10,38" VerticalAlignment="Bottom" Name="txtBoxData"></TextBox>
+        <Button Height="26" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="70" Margin="102,0,0,5" Name="btnSet" Click="btnSet_Click" IsDefault="True" Content="{DynamicResource set}"></Button>
+        <Button Height="26" HorizontalAlignment="Right" Margin="0,0,90,5" VerticalAlignment="Bottom" Width="70" Name="btnCancel"  Click="btnCancel_Click" IsCancel="True" Content="{DynamicResource cancel}"/>
+    </Grid>
+</Window>

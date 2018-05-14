@@ -1,0 +1,171 @@
+﻿<Window x:Class="QuickAgent.Src.View.CallTransferWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+    Title="{DynamicResource callTransTitle}" Height="380" Width="400" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="WhiteSmoke" WindowStyle="ToolWindow"
+        Topmost="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43"></RowDefinition>
+            <RowDefinition Height="270"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="10,0,10,0">
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left" Margin="0,0,0,0" Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+
+        <Grid Height="260" Margin="10,5,10,0" Grid.Row="1">
+            <TabControl  Name="tctlTransferType" SelectionChanged="tctlTransferType_SelectionChanged">
+                <TabItem Header="{DynamicResource transferToAgent}" IsSelected="True">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="46"/>
+                        </Grid.RowDefinitions>
+                        <GroupBox Header="{DynamicResource infoByBusinessAgent}" Grid.Row="0">
+
+                            <ListView Name="lstAgentStatusInfo" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,0,0,0" SelectionMode="Single" SelectionChanged="lstAgentStatusInfo_SelectionChanged">
+                                <ListView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel IsItemsHost="True" Orientation="Horizontal">
+                                        </WrapPanel>
+                                    </ItemsPanelTemplate>
+                                </ListView.ItemsPanel>
+
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Vertical">
+                                            <Image Source="{Binding Url}" Height="35" Width="70" HorizontalAlignment="Center">
+                                            </Image>
+                                            <TextBlock Text="{Binding Content}" HorizontalAlignment="Center" TextAlignment="Center" Width="70"></TextBlock>
+                                            <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" TextAlignment="Center" Width="70"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </GroupBox>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <GroupBox Grid.Column="0" Header="{DynamicResource transferToNumebrOfBusinessAgent}">
+                                <TextBox x:Name="txtAgentId" VerticalContentAlignment="Center" IsReadOnly="True"></TextBox>
+                            </GroupBox>
+                            <GroupBox Grid.Column="1" Header="{DynamicResource transferWay}" FlowDirection="LeftToRight" Width="Auto" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Top">
+                                <ComboBox Name="cboTransferWay" VerticalContentAlignment="Center" SelectedIndex="0" SelectionChanged="cboTransferWay_SelectionChanged">
+                                    <ComboBoxItem Content="{DynamicResource releaseTransfer}"></ComboBoxItem>
+                                    <ComboBoxItem Content="{DynamicResource successTransfer}"></ComboBoxItem>
+                                    <ComboBoxItem Content="{DynamicResource assignTransfer}"></ComboBoxItem>
+                                    <!--ComboBoxItem Content="{DynamicResource mergeTransfer}"></ComboBoxItem-->
+                                </ComboBox>
+                            </GroupBox>
+                        </Grid>
+                    </Grid>
+                </TabItem>
+
+
+                <TabItem Header="{DynamicResource transerToIVR}" IsSelected="True">
+                    <GroupBox Header="{DynamicResource allIVRDevice}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <ListBox x:Name="lstIVRDevice" Grid.Row="0" SelectedIndex="-1" SelectionChanged="lstIVRDevice_SelectionChanged" SelectionMode="Single">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Description}" HorizontalAlignment="Center" TextAlignment="Center" ></TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <GroupBox Grid.Column="0" Header="{DynamicResource transferToIVRAccessCode}">
+                                    <TextBox x:Name="txtIVRAccessCode" VerticalContentAlignment="Center" IsReadOnly="True"></TextBox>
+                                </GroupBox>
+                                <GroupBox Grid.Column="1" Header="{DynamicResource transferWay}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <RadioButton x:Name="rbtnHungUp_IVR" Grid.Column="0" VerticalContentAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="2" Content="{DynamicResource hungUp}"></RadioButton>
+                                        <RadioButton x:Name="rbtnRelease_IVR" Grid.Column="1" VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="2" Content="{DynamicResource release}"></RadioButton>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </Grid>
+                    </GroupBox>
+                </TabItem>
+
+
+                <TabItem Header="{DynamicResource transferToQueue}" IsSelected="True">
+                    <GroupBox Header="{DynamicResource configOfSkillsQueue}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <ListBox x:Name="lstSkillsQueue" Grid.Row="0" SelectedIndex="-1" SelectionChanged="lstSkillsQueue_SelectionChanged" SelectionMode="Single">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding name}" HorizontalAlignment="Center" TextAlignment="Center" ></TextBlock>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+
+                            <Grid Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <GroupBox Grid.Column="0" Header="{DynamicResource transQue}">
+                                    <TextBox x:Name="txtSkill" VerticalContentAlignment="Center" IsReadOnly="True"></TextBox>
+                                </GroupBox>
+                                <GroupBox Grid.Column="1" Header="{DynamicResource transferWay}">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <RadioButton x:Name="rbtnSuccess_Skill" Grid.Column="0" VerticalContentAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="3" Content="{DynamicResource success}"></RadioButton>
+                                        <RadioButton x:Name="rbtnRelease_Skill" Grid.Column="1" VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="3" Content="{DynamicResource release}"></RadioButton>
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </Grid>
+                    </GroupBox>
+                </TabItem>
+                <TabItem Header="{DynamicResource transferToAccessCode}" IsSelected="True">
+                    <Grid Height="215">
+                        <GroupBox Header="{DynamicResource transferWay}" Margin="5,0,50,140">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <RadioButton x:Name="rbtnSuccess_AccessCode" Grid.Column="0" VerticalContentAlignment="Center" VerticalAlignment="Center" IsChecked="True" GroupName="4" Content="{DynamicResource successTransfer}"></RadioButton>
+                                <RadioButton x:Name="rbtnRelease_AccessCode" Grid.Column="1" VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="4" Content="{DynamicResource releaseTransfer}"></RadioButton>
+                            </Grid>
+                        </GroupBox>
+                        <Label VerticalAlignment="Center" Margin="5,60,50,110" VerticalContentAlignment="Center" Padding="5" Content="{DynamicResource transferToSystemAccessCode}"></Label>
+                        <TextBox x:Name="txtAccessCode" Margin="5,80,50,80" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="1"></TextBox>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+        <Button Height="23" HorizontalAlignment="Left" Margin="78,0,0,0" Name="btnOK" VerticalAlignment="Center" Width="70" Content="{DynamicResource ok}" Click="btnOK_Click" Grid.Row="2" IsDefault="True"></Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,71,0" Name="btnCancel" VerticalAlignment="Center" Width="70" Content="{DynamicResource cancel}" Click="btnCancel_Click" Grid.Row="2" IsCancel="True"></Button>
+    </Grid>
+</Window>

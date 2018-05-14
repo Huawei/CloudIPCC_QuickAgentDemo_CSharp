@@ -1,0 +1,27 @@
+﻿<Window x:Class="QuickAgent.Src.View.ModifyPwdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Title="{DynamicResource modifypwd_title}" Height="200" Width="300" Topmost="True" ResizeMode="NoResize" ShowInTaskbar="False" Background="WhiteSmoke" WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="lblOldPwd" Content="{DynamicResource modifypwd_oldpwd}" VerticalAlignment="Center"/>
+        <Label Name="lblNewPwd" Content="新密码" VerticalAlignment="Center" Grid.Row="1"/>
+        <Label Name="lblPwdConfirm" Content="密码确认" VerticalAlignment="Center" Grid.Row="2"/>
+        <PasswordBox Name="pbOldPwd" Height="22" Grid.Column="1" Margin="0,0,20,0"/>
+        <PasswordBox Name="pbNewPwd" Height="22" Grid.Column="1" Grid.Row="1" Margin="0,0,20,0"/>
+        <PasswordBox Name="pbPwdConfirm" Height="22" Grid.Column="1" Grid.Row="2" Margin="0,0,20,0"/>
+        <Button Name="btnConfirm" Height="22" Width="70" Grid.Row="3" HorizontalAlignment="Right" IsDefault="True" Click="btnConfirm_Click" Content="{DynamicResource ok}"/>
+        <Button Name="btnCancel" Height="22" Width="70" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Margin="50,0,0,0" IsCancel="True" Click="btnCancel_Click" Content="{DynamicResource cancel}"/>
+    </Grid>
+</Window>

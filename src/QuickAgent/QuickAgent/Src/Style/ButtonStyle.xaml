@@ -1,0 +1,2745 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/QuickAgent;component/Src/Style/RedStyle.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--新内部呼叫-->
+    <ImageBrush x:Key="NewInnerCallBackground" ImageSource="/QuickAgent;component/Resource/Images/insideCall.gif"/>
+    <ImageBrush x:Key="NewInnerCallDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/insideCall_gray.gif"/>
+
+    <ImageBrush x:Key="MinSizeVideoBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMinSize.png"/>
+    <ImageBrush x:Key="MinSizeVideoMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMinSizeMouseOver.png"/>
+    <ImageBrush x:Key="MinSizeVideoPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMinSizePress.png"/>
+
+    <ImageBrush x:Key="MaxSizeVideoBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMaxSize.png"/>
+    <ImageBrush x:Key="MaxSizeVideoMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMaxSizeMouseOver.png"/>
+    <ImageBrush x:Key="MaxSizeVideoPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMaxSizePress.png"/>
+
+    <ImageBrush x:Key="DefaultSizeVideoBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultSize.png"/>
+    <ImageBrush x:Key="DefaultSizeVideoMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultSizeMouseOver.png"/>
+    <ImageBrush x:Key="DefaultSizeVideoPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultSizePress.png"/>
+
+    <ImageBrush x:Key="MiniModelBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMiniModel.png"/>
+    <ImageBrush x:Key="MiniModelMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMiniModelMouseOver.png"/>
+    <ImageBrush x:Key="MiniModelPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMiniModelPress.png"/>
+
+    <ImageBrush x:Key="DefaultModelBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultModel.png"/>
+    <ImageBrush x:Key="DefaultModelMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultModelMouseOver.png"/>
+    <ImageBrush x:Key="DefaultModelPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnDefaultModelPress.png"/>
+
+    <ImageBrush x:Key="CloseBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnClose.png"/>
+    <ImageBrush x:Key="CloseBg" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnCloseBg.png"/>
+    <ImageBrush x:Key="CloseMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnCloseMouseOver.png"/>
+    <ImageBrush x:Key="ClosePressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnClosePress.png"/>
+
+    <ImageBrush x:Key="ImgClose" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgClose.png"/>
+    <ImageBrush x:Key="ImgCloseMouseOver" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgCloseMouseOver.png"/>
+    <ImageBrush x:Key="ImgClosePree" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgClosePree.png"/>
+
+    <!--系统设置中按钮样式-->
+    <ImageBrush x:Key="SystemSetBtnBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/BtnBg.png"/>
+    <ImageBrush x:Key="SystemSetBtnMouseover" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/BtnMouseover.png"/>
+    <ImageBrush x:Key="SystemSetBtnPressed" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/BtnPressed.png"/>
+
+    <ImageBrush x:Key="SystemSetTbCombox" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/TextboxBg.png"/>
+
+    <!--硬件信息按钮样式-->
+    <ImageBrush x:Key="HardwareInfoSetBtnBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/BtnInformation.png"/>
+
+    <!--文档共享页面按钮样式-->
+    <ImageBrush x:Key="NextPage" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnNextPage.png"/>
+    <ImageBrush x:Key="NextPageDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnNextPageDis.png"/>
+    <ImageBrush x:Key="NextPageMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnNextPageMouseOver.png"/>
+    <ImageBrush x:Key="NextPagePress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnNextPagePress.png"/>
+
+    <ImageBrush x:Key="UpPage" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnUpPage.png"/>
+    <ImageBrush x:Key="UpPageDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnUpPageDis.png"/>
+    <ImageBrush x:Key="UpPageMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnUpPageMouseOver.png"/>
+    <ImageBrush x:Key="UpPagePress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnUpPagePress.png"/>
+
+    <ImageBrush x:Key="Font" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFont.png"/>
+    <ImageBrush x:Key="FontDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontDis.png"/>
+    <ImageBrush x:Key="FontMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontMouseOver.png"/>
+    <ImageBrush x:Key="FontPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontPress.png"/>
+
+    <ImageBrush x:Key="RatioAdd" Stretch="Uniform" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioAdd.png"/>
+    <ImageBrush x:Key="RatioAddDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioAddDis.png"/>
+    <ImageBrush x:Key="RatioAddMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioAddMouseOver.png"/>
+    <ImageBrush x:Key="RatioAddPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioAddPress.png"/>
+
+    <ImageBrush x:Key="RatioDec" Stretch="Uniform" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioDec.png"/>
+    <ImageBrush x:Key="RatioDecDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioDecDis.png"/>
+    <ImageBrush x:Key="RatioDecMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioDecMouseOver.png"/>
+    <ImageBrush x:Key="RatioDecPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnRatioDecPress.png"/>
+
+    <ImageBrush x:Key="FontColor" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontColor.png"/>
+    <ImageBrush x:Key="FontColorMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontColorMouseOver.png"/>
+    <ImageBrush x:Key="FontColorPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontColorPre.png"/>
+    <ImageBrush x:Key="FontColorDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnFontColorDis.png"/>
+
+    <ImageBrush x:Key="Hand" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnHand.png"/>
+    <ImageBrush x:Key="HandMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnHandMouseOver.png"/>
+    <ImageBrush x:Key="HandPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnHandPre.png"/>
+    <ImageBrush x:Key="HandDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnHandDis.png"/>
+
+    <ImageBrush x:Key="Label" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabel.png"/>
+    <ImageBrush x:Key="LabelMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelMouseOver.png"/>
+    <ImageBrush x:Key="LabelPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelPress.png"/>
+    <ImageBrush x:Key="LabelDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelDis.png"/>
+
+    <ImageBrush x:Key="LabelColor" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelColor.png"/>
+    <ImageBrush x:Key="LabelColorMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelColorMouseOver.png"/>
+    <ImageBrush x:Key="LabelColorPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelColorPre.png"/>
+    <ImageBrush x:Key="LabelColorDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLabelColorDis.png"/>
+
+    <ImageBrush x:Key="Save" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnSave.png"/>
+    <ImageBrush x:Key="SaveMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnSaveMouseOver.png"/>
+    <ImageBrush x:Key="SavePress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnSavePress.png"/>
+    <ImageBrush x:Key="SaveDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnSaveDis.png"/>
+
+    <ImageBrush x:Key="Copy" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnCopy.png" />
+    <ImageBrush x:Key="CopyPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnCopyPre.png"/>
+    <ImageBrush x:Key="CopyMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnCopyMouseOver.png"/>
+    <ImageBrush x:Key="CopyDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnCopyDis.png"/>
+
+    <ImageBrush x:Key="BorderBrush" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BorderBrush.png"/>
+    <ImageBrush x:Key="BorderBrushMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BorderBrushMouseOver.png"/>
+
+    <ImageBrush x:Key="LabelLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnLine.png"/>
+    <ImageBrush x:Key="LineMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnLineMouseOver.png"/>
+    <ImageBrush x:Key="LinePress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnLinePress.png"/>
+
+    <!--标注-->
+    <ImageBrush x:Key="ArrowLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnArrowLine.png"/>
+    <ImageBrush x:Key="ArrowLinePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnArrowLinePre.png"/>
+
+    <ImageBrush x:Key="DoubleALinePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnDoubleALinePre.png"/>
+    <ImageBrush x:Key="DoubleArrowLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnDoubleArrowLine.png"/>
+
+    <ImageBrush x:Key="HollowEllipse" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnHollowEllipse.png"/>
+    <ImageBrush x:Key="HollowEllipsePr" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnHollowEllipsePr.png"/>
+
+    <ImageBrush x:Key="HollowRect" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnHollowRect.png"/>
+    <ImageBrush x:Key="HollowRectPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnHollowRectPre.png"/>
+
+    <ImageBrush x:Key="NoArrowLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnNoArrowLine.png"/>
+    <ImageBrush x:Key="NoArrowLinePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnNoArrowLinePre.png"/>
+
+    <ImageBrush x:Key="RoundedHr" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnRoundedHr.png"/>
+    <ImageBrush x:Key="RoundedHrPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnRoundedHrPre.png"/>
+
+    <ImageBrush x:Key="BtFontAn" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnFontAn.png"/>
+    <ImageBrush x:Key="FontAnPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnFontAnPre.png"/>
+
+    <ImageBrush x:Key="Pointer" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnPointer.png"/>
+    <ImageBrush x:Key="PointerPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnPointerPress.png"/>
+
+    <ImageBrush x:Key="RsRect" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnRsRect.png"/>
+    <ImageBrush x:Key="RsRectPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnRsRectPre.png"/>
+
+    <ImageBrush x:Key="SolidEllipse" Stretch="Uniform" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnSolidEllipse.png"/>
+    <ImageBrush x:Key="SolidEllipsePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnSolidEllipsePre.png"/>
+
+    <ImageBrush x:Key="SolidRect" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnSolidRect.png"/>
+    <ImageBrush x:Key="SolidRectPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnSolidRectPre.png"/>
+
+    <ImageBrush x:Key="FreePen" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnFreePen.png"/>
+    <ImageBrush x:Key="FreePenPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/BtnFreePenPre.png"/>
+
+    <ImageBrush x:Key="BtLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLine.png"/>
+    <ImageBrush x:Key="LineDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLineDis.png"/>
+    <ImageBrush x:Key="LineMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLineMo.png"/>
+    <ImageBrush x:Key="LinePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLinePre.png"/>
+
+
+    <ImageBrush x:Key="StopAnno" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnno.png"/>
+    <ImageBrush x:Key="StopAnnoDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnoDis.png"/>
+    <ImageBrush x:Key="StopAnnoMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnoMo.png"/>
+    <ImageBrush x:Key="StopAnnoPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnoPre.png"/>
+
+    <ImageBrush x:Key="BtnLoad" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLoad.png" />
+    <ImageBrush x:Key="LoadDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLoadDis.png"/>
+    <ImageBrush x:Key="LoadMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLoadMo.png"/>
+    <ImageBrush x:Key="LoadPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnLoadPre.png"/>
+
+    <ImageBrush x:Key="ClearAnno" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnClearAnno.png"/>
+    <ImageBrush x:Key="ClearAnnoDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnClearAnnoDis.png"/>
+    <ImageBrush x:Key="ClearAnnoMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnClearAnnoMo.png"/>
+    <ImageBrush x:Key="ClearAnnoPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnClearAnnoPre.png"/>
+
+
+    <ImageBrush x:Key="StopCreate" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopCreate.png"/>
+    <ImageBrush x:Key="StopCreateDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopCreateDis.png"/>
+    <ImageBrush x:Key="StopCreateMv" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopCreateMv.png"/>
+    <ImageBrush x:Key="StopCreatePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopCreatePre.png"/>
+
+    <ImageBrush x:Key="Scale" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnScale.png"/>
+    <ImageBrush x:Key="ScaleDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnScaleDis.png"/>
+    <ImageBrush x:Key="ScaleOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnScaleOver.png"/>
+    <ImageBrush x:Key="ScalePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnScalePre.png"/>
+
+    <ImageBrush x:Key="StopDsMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopDsMs.png"/>
+    <ImageBrush x:Key="StopDsPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopDsPre.png"/>
+    <ImageBrush x:Key="StopDsDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopDsDis.png"/>
+    <ImageBrush x:Key="StopDs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtStopDs.png"/>
+
+    <ImageBrush x:Key="FileTitleBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/FileTitleBg.png"/>
+    <ImageBrush x:Key="FileTitlePress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/FileTitlePress.png"/>
+    <ImageBrush x:Key="FileTitleSelected" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/FileTitleSelected.png"/>
+    <ImageBrush x:Key="TileTitleMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/TileTitleMs.png"/>
+
+    <ImageBrush x:Key="LoadIcon" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIcon.png"/>
+    <ImageBrush x:Key="LoadIconDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconDis.png"/>
+    <ImageBrush x:Key="LoadIconMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconMs.png"/>
+    <ImageBrush x:Key="LoadIconPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconPre.png"/>
+
+    <ImageBrush x:Key="CreateIcon" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIcon.png"/>
+    <ImageBrush x:Key="CreateIconDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconDis.png"/>
+    <ImageBrush x:Key="CreateIconMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconMs.png"/>
+    <ImageBrush x:Key="CreateIconPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconPre.png"/>
+
+    <ImageBrush x:Key="NewPageIconPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconPre.png"/>
+    <ImageBrush x:Key="NewPageIconMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconMs.png"/>
+    <ImageBrush x:Key="NewPageIconDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconDis.png"/>
+    <ImageBrush x:Key="NewPageIcon" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIcon.png"/>
+
+    <ImageBrush x:Key="DelPage" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPage.png"/>
+    <ImageBrush x:Key="DelPageDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPageDis.png"/>
+    <ImageBrush x:Key="DelPageMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPageMs.png"/>
+    <ImageBrush x:Key="DelPagePre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPagePre.png"/>
+    <ImageBrush x:Key="TbMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgAnnotation/TbMouseOver.png"/>
+    <Image x:Key="ImgLoadIcon" Source="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIcon.png"></Image>
+
+    <ImageBrush x:Key="InternalCall" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/InternalCall.png"/>
+    <ImageBrush x:Key="InternalCallDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/InternalCallDis.png"/>
+    <ImageBrush x:Key="InternalCallMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/InternalCallMo.png"/>
+    <ImageBrush x:Key="InternalCallPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/InternalCallPre.png"/>
+
+    <ImageBrush x:Key="TransferCall" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/TransferCall.png"/>
+    <ImageBrush x:Key="TransferCallDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/TransferCallDis.png"/>
+    <ImageBrush x:Key="TransferCallMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/TransferCallMo.png"/>
+    <ImageBrush x:Key="TransferCallPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/TransferCallPre.png"/>
+
+    <ImageBrush x:Key="ApplicationSharing" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/ApplicationSharing.png"/>
+    <ImageBrush x:Key="ApplicationNotShare" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/ApplicationNotShare.png"/>
+
+    <ImageBrush x:Key="BtnStopAnotationDs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnotationDs.png"/>
+    <ImageBrush x:Key="BtnStopAnnotationPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnotationPre.png"/>
+    <ImageBrush x:Key="BtnStopAnnotationMo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnotationMo.png"/>
+    <ImageBrush x:Key="BtnStopAnnotation" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopAnnotation.png"/>
+
+    <ImageBrush x:Key="NotTop" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/NotTop.png"/>
+    <ImageBrush x:Key="NotTopMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/NotTopMouseOver.png"/>
+    <ImageBrush x:Key="NotTopPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/NotTopPre.png"/>
+    <ImageBrush x:Key="SetTop" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/SetTop.png"/>
+    <ImageBrush x:Key="SetTopMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/SetTopMouseOver.png"/>
+    <ImageBrush x:Key="SetTopPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/SetTopPre.png"/>
+
+    <ImageBrush x:Key="BtnShareApp" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnClear.png"/>
+    <ImageBrush x:Key="BtnShareAppMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnClearMouseOver.png"/>
+    <ImageBrush x:Key="BtnShareAppPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnClearPre.png"/>
+    <ImageBrush x:Key="BtnAppEnabled" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/AppBtnEnabled.png"/>
+
+    <!--桌面共享、远程控制按钮-->
+    <ImageBrush x:Key="DesktopRes" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnDesktopRes.png"/>
+    <ImageBrush x:Key="DesktopResDisable" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnDesktopResDisable.png"/>
+    <ImageBrush x:Key="DesktopResMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnDesktopResMouseOver.png"/>
+    <ImageBrush x:Key="DesktopResPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnDesktopResPress.png"/>
+
+    <ImageBrush x:Key="StopDesktop" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopDesktop.png"/>
+    <ImageBrush x:Key="StopDesktopDisable" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopDesktopDisable.png"/>
+    <ImageBrush x:Key="StopDesktopMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopDesktopMouseOver.png"/>
+    <ImageBrush x:Key="StopDesktopPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnStopDesktopPress.png"/>
+
+    <ImageBrush x:Key="RemoteCtrl" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnReCtrllMini.png"/>
+    <ImageBrush x:Key="RemoteCtrlDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnReCtrllMiniDis.png"/>
+    <ImageBrush x:Key="RemoteCtrlMouseover" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnReCtrllMiniMouseover.png"/>
+    <ImageBrush x:Key="RemoteCtrlPressed" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/BtnReCtrllMiniPressed.png"/>
+
+    <ImageBrush x:Key="StopRemoteCtrl" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/StopRemoteCtrl.png"/>
+    <ImageBrush x:Key="StopRemoteCtrlDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/StopRemoteCtrlDis.png"/>
+    <ImageBrush x:Key="StopRemoteCtrlMsOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/StopRemoteCtrlMouseOver.png"/>
+    <ImageBrush x:Key="StopRemoteCtrlPree" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/StopRemoteCtrlPree.png"/>
+
+    <ImageBrush x:Key="MediaMinimized" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMediaMinimized.png"></ImageBrush>
+    <ImageBrush x:Key="MediaMinimizedMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMediaMinimizedMs.png"></ImageBrush>
+    <ImageBrush x:Key="BtnMediaMinimizedPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/BtnMediaMinimizedPress.png"></ImageBrush>
+    <ImageBrush x:Key="ImgBtnLine" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/Images/icon_Space.png"></ImageBrush>
+
+    <ImageBrush x:Key="Btnrefurbish" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/Btnrefurbish.png"></ImageBrush>
+    <ImageBrush x:Key="BtnrefurbishDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnrefurbishDis.png"></ImageBrush>
+    <ImageBrush x:Key="BtnrefurbishMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnrefurbishMouseOver.png"></ImageBrush>
+    <ImageBrush x:Key="BtnrefurbishPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnrefurbishPress.png"></ImageBrush>
+
+    <ImageBrush x:Key="BtnStopApp" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnStopApp.png"></ImageBrush>
+    <ImageBrush x:Key="BtnStopAppDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnStopAppDis.png"></ImageBrush>
+    <ImageBrush x:Key="BtnStopAppMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnStopAppMouseOver.png"></ImageBrush>
+    <ImageBrush x:Key="BtnStopAppPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/UcImg/BtnStopAppPress.png"></ImageBrush>
+
+    <ImageBrush x:Key="BorViewBg" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Imgset/borView.png"></ImageBrush>
+    <ImageBrush x:Key="TileVideo" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/TileVideo.png"></ImageBrush>
+    <ImageBrush x:Key="TileVideoMs" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/TileVideoMs.png"></ImageBrush>
+    <ImageBrush x:Key="TileVideoPress" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/TileVideoPress.png"></ImageBrush>
+    <ImageBrush x:Key="OneVideo" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/OneVideo.png"></ImageBrush>
+    <ImageBrush x:Key="OneVideoMs" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/OneVideoMs.png"></ImageBrush>
+    <ImageBrush x:Key="OneVideoPress" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/OneVideoPress.png"></ImageBrush>
+
+    <ImageBrush x:Key="DefaultVideo" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/ImgNone.png"></ImageBrush>
+
+    <ImageBrush x:Key="BtnVideoDefault" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoDefault.png"></ImageBrush>
+    <ImageBrush x:Key="BtnVideoOver" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoOver.png"></ImageBrush>
+    <ImageBrush x:Key="BtnVideoPress" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoPress.png"></ImageBrush>
+
+    <ImageBrush x:Key="BtnVideoClose" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoClose.png"></ImageBrush>
+    <ImageBrush x:Key="BtnVideoCloseOver" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoCloseOver.png"></ImageBrush>
+    <ImageBrush x:Key="BtnVideoClosePress" Stretch="None" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/Video/BtnVideoClosePress.png"></ImageBrush>
+
+    <!--扩展屏默认按钮-->
+    <Style x:Key="NoneVideoButton" TargetType="Button">
+        <Setter Property="Height" Value="90"></Setter>
+        <Setter Property="Width" Value="90"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource DefaultVideo}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--打开i扩展视频按钮-->
+    <Style x:Key="OpenVideoButton" TargetType="Button">
+        <Setter Property="Height" Value="24"></Setter>
+        <Setter Property="Width" Value="39"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource BtnVideoDefault}"/>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnVideoOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnVideoPress}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--关闭扩展视频按钮-->
+    <Style x:Key="CloseVideoButton" TargetType="Button">
+        <Setter Property="Height" Value="14"></Setter>
+        <Setter Property="Width" Value="15"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource BtnVideoClose}"/>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnVideoCloseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnVideoClosePress}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--平铺按钮-->
+    <Style x:Key="TileVideoButton" TargetType="Button">
+        <Setter Property="Height" Value="24"></Setter>
+        <Setter Property="Width" Value="25"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource TileVideo}"/>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource TileVideoMs}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource TileVideoPress}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--独立按钮-->
+    <Style x:Key="OneVideoButton" TargetType="Button">
+        <Setter Property="Height" Value="24"></Setter>
+        <Setter Property="Width" Value="25"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back"  Background="{StaticResource OneVideo}"/>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource OneVideoMs}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource OneVideoPress}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--停止应用共享功能-->
+    <Style x:Key="FurbishAppButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Btnrefurbish}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnrefurbishMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnrefurbishPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnrefurbishDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--停止应用共享功能-->
+    <Style x:Key="StopAppButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource BtnStopApp}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAppMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAppPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAppDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--开始应用共享按钮-->
+    <Style x:Key="AppStartButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="60"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource BtnShareApp}" TextAlignment="Center" Padding="0,3,0,0"  Text="{DynamicResource startShareApp}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnShareAppMs}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnShareAppPre}"/>
+                        </Trigger>
+
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnAppEnabled}"/>
+                            <Setter Property="Foreground" TargetName="back" Value="DarkGray"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--停止应用共享按钮-->
+    <Style x:Key="AppStopButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="60"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource BtnShareAppMs}" TextAlignment="Center" Padding="0,3,0,0" Text="{DynamicResource stopShareApp}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnShareAppMs}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnShareAppPre}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnAppEnabled}"/>
+                            <Setter Property="Foreground" TargetName="back" Value="DarkGray"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--置顶按钮-->
+    <Style x:Key="TopButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource SetTop}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SetTopMouseOver}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SetTopPre}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--取消置顶按钮-->
+    <Style x:Key="UnTopButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource NotTop}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource NotTopMouseOver}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource NotTopPre}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+
+    <!--停止标注按钮-->
+    <Style x:Key="StopAnnotationButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource BtnStopAnnotation}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAnnotationMo}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAnnotationPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnStopAnotationDs}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="FileTitleTb" TargetType="{x:Type TextBlock}">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="107"></Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource TileTitleMs}"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+
+    <!--文字标注-->
+    <Style x:Key="FontAnPreButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="fontAnPre" >
+                        <TextBlock Name="back" Background="{StaticResource BtFontAn}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--激光笔-->
+    <Style x:Key="PointerButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="pointer">
+                        <TextBlock Name="back" Background="{StaticResource Pointer}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--自由笔-->
+    <Style x:Key="FreePenButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="freePen">
+                        <TextBlock Name="back" Background="{StaticResource FreePen}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--空心矩形-->
+    <Style x:Key="SolidRectButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="solidRect">
+                        <TextBlock Name="back" Background="{StaticResource SolidRect}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--实心椭圆-->
+    <Style x:Key="SeButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="gridSe">
+                        <TextBlock Name="back" Background="{StaticResource SolidEllipse}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--实心圆角矩形-->
+    <Style x:Key="RsRectButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="rsRect">
+                        <TextBlock Name="back" Background="{StaticResource RsRect}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--空心圆角矩形-->
+    <Style x:Key="RoundedHrButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="roundedHr">
+                        <TextBlock Name="back" Background="{StaticResource RoundedHr}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--直线-->
+    <Style x:Key="NoArrowLineButton" TargetType="Button">
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="noArrowLine">
+                        <TextBlock Name="back" Background="{StaticResource NoArrowLine}"></TextBlock>
+                    </Grid>
+                    <!--触发器-->
+                    <!--<ControlTemplate.Triggers>
+                        
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="noArrowLine" Value="{StaticResource TbMouseOver}"/>
+                        </Trigger>
+                       
+
+                    </ControlTemplate.Triggers>-->
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--空心矩形-->
+    <Style x:Key="HollowRectButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="hollowRect">
+                        <TextBlock Name="back" Background="{StaticResource HollowRect}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--停止标注-->
+    <Style x:Key="StopCreateButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="stopCreate">
+                        <TextBlock Name="back" Background="{StaticResource StopCreate}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--空心椭圆-->
+    <Style x:Key="HollowEllButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="hollowEll">
+                        <TextBlock Name="back" Background="{StaticResource HollowEllipse}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--双箭头-->
+    <Style x:Key="DoubleALineButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="doubleArrowLine">
+                        <TextBlock Name="back" Background="{StaticResource DoubleArrowLine}"></TextBlock>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--单箭头-->
+    <Style x:Key="ArrowLineButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="22"></Setter>
+        <Setter Property="Margin" Value="3,0,5,0"></Setter>
+        <!--<Setter Property="Margin" Value="3"></Setter>-->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Grid Name="arrowLine">
+                        <TextBlock Name="back" Background="{StaticResource ArrowLine}"></TextBlock>
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--停止标注按钮-->
+    <Style x:Key="StopAnnoButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource StopAnno}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopAnnoMo}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopAnnoPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopAnnoDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--标注按钮-->
+    <Style x:Key="LabelLineButton" TargetType="Button">
+        <Setter Property="Height" Value="20"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource LabelLine}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LineMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LinePress}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--颜色按钮-->
+    <Style x:Key="ColorButton" TargetType="Button">
+        <Setter Property="Height" Value="18"></Setter>
+        <Setter Property="Width" Value="18"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource BorderBrush}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BorderBrushMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--电子白板加载按钮-->
+    <Style x:Key="LoadButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <!--<Border Name="back" Background="{StaticResource BtnLoad}" Width="80" Height="22" BorderThickness="0">-->
+                    <DockPanel Name="backs" Background="{StaticResource BtnLoad}" Width="80" Height="22">
+                        <Image Name="imgIcon" Height="10" Width="10" Margin="8,0,4,0" Source="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIcon.png"></Image>
+                        <TextBlock  Foreground="#004161"  Name="tbLoad" Padding="0,2.4,3,0" Margin="0" TextTrimming="CharacterEllipsis"  Text="{DynamicResource loadShareFile}"></TextBlock>
+                    </DockPanel>
+                    <!--</Border>-->
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadMo}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconMs.png"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadPre}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconPre.png"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadDis}"/>
+                            <Setter Property="Foreground" TargetName="tbLoad" Value="DarkGray"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/LoadIconDis.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--电子白板新建页按钮-->
+    <Style x:Key="WbCreatePageButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <DockPanel Name="back" Background="{StaticResource BtnLoad}" >
+                        <Image Name="imgIcon" Height="10" Width="10" Margin="8,0,4,0" Source="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIcon.png"></Image>
+                        <TextBlock  Foreground="#004161"  Name="tbFont" Padding="0,2.4,3,0" Margin="0" TextTrimming="CharacterEllipsis"  Text="{DynamicResource newPage}"></TextBlock>
+                    </DockPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadMo}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconMs.png"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadPre}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconPre.png"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadDis}"/>
+                            <Setter Property="Foreground" TargetName="tbFont" Value="DarkGray"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/NewPageIconDis.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--电子白板删除页按钮-->
+    <Style x:Key="WbDeletePageButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <DockPanel Name="back" Background="{StaticResource BtnLoad}" >
+                        <Image Name="imgIcon" Height="10" Width="10" Margin="8,0,4,0" Source="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPage.png"></Image>
+                        <TextBlock  Foreground="#004161"  Name="tbFont" Padding="0,2.4,3,0" Margin="0" TextTrimming="CharacterEllipsis"  Text="{DynamicResource deletePage}"></TextBlock>
+                    </DockPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadMo}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPageMs.png"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadPre}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPagePre.png"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LoadDis}"/>
+                            <Setter Property="Foreground" TargetName="tbFont" Value="DarkGray"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/DelPageDis.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--新建按钮-->
+    <Style x:Key="CreateButton" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="80"></Setter>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <DockPanel Name="backs" Background="{StaticResource BtnLoad}" >
+                        <Image Name="imgIcon" Height="10" Width="10" Margin="8,0,4,0" Source="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIcon.png"></Image>
+                        <TextBlock Foreground="#004161"   Name="tbFont" Padding="0,2.4,3,0" Margin="0" TextTrimming="CharacterEllipsis"  Text="{DynamicResource createWhiteBoard}"></TextBlock>
+                    </DockPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadMo}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconMs.png"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadPre}"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconPre.png"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource LoadDis}"/>
+                            <Setter Property="Foreground" TargetName="tbFont" Value="DarkGray"/>
+                            <Setter Property="Source" TargetName="imgIcon" Value="/QuickAgent;component/Resource/QuickTellerImage/Images/Default/ImgShareFile/CreateIconDis.png"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--标注按钮-->
+    <Style x:Key="LineButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource BtLine}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LineMo}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LinePre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LineDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--等比例缩放按钮-->
+    <Style x:Key="ScaleButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Scale}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ScaleOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ScalePre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ScaleDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--桌面共享停止开启标注按钮-->
+    <Style x:Key="StopDsButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource StopDs}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDsMs}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDsPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDsDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--桌面共享请求按钮-->
+    <Style x:Key="DesktopRstButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource DesktopRes}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DesktopResMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DesktopResPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DesktopResDisable}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--停止桌面共享请求按钮-->
+    <Style x:Key="StopDesktopRstButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource StopDesktop}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDesktopMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDesktopPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopDesktopDisable}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--远程控制请求按钮-->
+    <Style x:Key="RemoteCtrlRstButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource RemoteCtrl}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RemoteCtrlMouseover}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RemoteCtrlPressed}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RemoteCtrlDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--停止远程控制请求按钮-->
+    <Style x:Key="StopRemoteCtrlRstButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Height="29" Width="29"  Background="{StaticResource StopRemoteCtrl}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopRemoteCtrlMsOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopRemoteCtrlPree}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource StopRemoteCtrlDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--清空标注按钮-->
+    <Style x:Key="ClearAnnoButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource ClearAnno}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ClearAnnoMo}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ClearAnnoPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ClearAnnoDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--复制按钮-->
+    <Style x:Key="CopyButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Copy}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource CopyMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource CopyPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource CopyDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--保存按钮-->
+    <Style x:Key="SaveButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Save}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SaveMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SavePress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SaveDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--标注颜色按钮-->
+    <Style x:Key="LabelsButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource LabelColor}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelColorMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelColorPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelColorDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--标注按钮-->
+    <Style x:Key="MediaCooperateBtn" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Label}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource LabelDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--抓手按钮-->
+    <Style x:Key="HandButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource Hand}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource HandMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource HandPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource HandDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--字体颜色按钮-->
+    <Style x:Key="FontColorButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource FontColor}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontColorMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontColorPre}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontColorDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--减少缩放按钮-->
+    <Style x:Key="RationDecButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource RatioDec}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioDecMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioDecPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioDecDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--增加缩放按钮-->
+    <Style x:Key="RationAddButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource RatioAdd}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioAddMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioAddPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource RatioAddDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--下一页按钮-->
+    <Style x:Key="NextPageButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource NextPage}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource NextPageMouseOver}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource NextPagePress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource NextPageDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--上一页按钮-->
+    <Style x:Key="UpPageButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource UpPage}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource UpPageMouseOver}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource UpPagePress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource UpPageDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--文字按钮-->
+    <Style x:Key="FontButton" TargetType="Button">
+        <Setter Property="Height" Value="29"></Setter>
+        <Setter Property="Width" Value="29"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource Font}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontMouseOver}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontPress}"/>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource FontDis}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--设置按钮的样式-->
+    <Style x:Key="BigMeidaButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{DynamicResource BigMedia}"></Border>
+
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BigMediaMs}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BigMediaPre}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BigMediaDis}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AnswerButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource AnswerBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource AnswerMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource AnswerPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource AnswerDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BusyButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource BusyBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>    
+
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <!--<Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BusyMouseOverBackground}"/>
+                        </Trigger>-->
+
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Focusable" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BusyMouseOverBackground}"/>
+                        </MultiTrigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BusyDisableBackground}"/>
+                        </Trigger>
+                        <!--<MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Focusable" Value="False"/>
+                                <Condition Property="IsEnabled" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BusyDisableBackground}"/>
+                        </MultiTrigger>-->
+                        
+                        <!--示忙成功-->
+                        <Trigger Property="Focusable" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource BusySuccessBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ReleaseButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <!--<TextBlock Width="2" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>-->
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource ReleaseBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource ReleaseMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource ReleaseDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SetWorkButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="2" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource SetWorkBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SetWorkMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SetWorkDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CancelWorkButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource CancelWorkBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource CancelWorkMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource CancelWorkDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="RestButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource RestBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <!--<Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource RestMouseOverBackground}"/>
+                        </Trigger>-->
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="Focusable" Value="False"/>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                            </MultiTrigger.Conditions>
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource RestMouseOverBackground}"/>
+                        </MultiTrigger>
+                        
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource RestDisableBackground}"/>
+                        </Trigger>
+
+                        <!--休息成功-->
+                        <Trigger Property="Focusable" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource RestSuccessBackground}"/>
+                        </Trigger>                   
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SetDataButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource SetDataBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SetDataMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SetDataDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="GetDataButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource GetDataBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource GetDataMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource GetDataDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TransferOutButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource TransferOutBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TransferOutMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TransferOutDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="HoldButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource HoldBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource HoldMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource HoldPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource HoldDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="UnholdButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource UnholdBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="CallOutButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource CallOutBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource CallOutMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource CallOutDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="InnerConsultButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource InnerConsultBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource InnerConsultMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource InnerConsultDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="AnnouncementButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource AnnouncementBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource AnnouncementMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource AnnouncementDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SendNoteButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource SendNoteBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SendNoteMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource UnholdPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SendNoteDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SoundButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <!--<TextBlock Width="2" Height="29" Background="{StaticResource ImgBtnLine}"></TextBlock>-->
+                        <Border Name="back"  Height="38" Width="35"  Background="{DynamicResource SoundBackground}"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SoundMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SoundPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SoundDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="NoSoundButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource NoSoundBackground}" MinWidth="30" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource NoSoundMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource NoSoundPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource NoSoundDisableBackground}"/>
+                        </Trigger>
+
+                        <!--成功-->
+                        <Trigger Property="Focusable" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource NoSoundMouseOverBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--三方通话按钮-->
+    <Style x:Key="TripartiteCallButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource TripartiteCallBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TripartiteCallMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TripartiteCallPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TripartiteCallDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--连接保持按钮-->
+    <Style x:Key="ConnectHoldButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource ConnectHoldBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource ConnectHoldMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TripartiteCallPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource ConnectHoldDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--开始按钮-->
+    <Style x:Key="StartButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <StackPanel Orientation="Horizontal">
+                        <Border Name="back" Height="{Binding ComponentHeight}" Width="36" Background="{DynamicResource StartBackground}" VerticalAlignment="Top" Margin="1,1,1,0"></Border>
+                    </StackPanel>
+
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource StartMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource TripartiteCallPressBackground}"/>
+                        </Trigger>-->
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource StartDisableBackground}"/>
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--最小化按钮-->
+    <Style x:Key="MinSizeButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource MinSizeVideoBackground}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MinSizeVideoMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MinSizeVideoPressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--最大化按钮-->
+    <Style x:Key="MaxSizeButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource MaxSizeVideoBackground}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MaxSizeVideoMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MaxSizeVideoPressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--最小化按钮-->
+    <Style x:Key="MinimizedButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource MediaMinimized}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MediaMinimizedMs}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource BtnMediaMinimizedPress}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--还原按钮-->
+    <Style x:Key="DefaultSizeButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource DefaultSizeVideoBackground}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DefaultSizeVideoMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DefaultSizeVideoPressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--迷你模式按钮-->
+    <Style x:Key="MiniModelButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{StaticResource MiniModelBackground}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MiniModelMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource MiniModelPressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--标准模式按钮-->
+    <Style x:Key="DefaultModelButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back"  Background="{StaticResource DefaultModelBackground}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DefaultModelMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource DefaultModelPressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--关闭按钮-->
+    <Style x:Key="CloseButton" TargetType="Button">
+        <Setter Property="Height" Value="17"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <TextBlock Name="back" Background="{StaticResource CloseBackground}"></TextBlock>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource CloseMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ClosePressBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--关闭按钮2-->
+    <Style x:Key="CloseBtn" TargetType="Button">
+        <Setter Property="Width" Value="20"/>
+        <Setter Property="Height" Value="17"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border BorderThickness="0" Name="back" Background="{StaticResource ImgClose}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ImgCloseMouseOver}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource ImgClosePree}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--设置按钮-->
+    <Style x:Key="SystemConfigButton" TargetType="Button">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" Background="{DynamicResource SystemConfigBackground}"></Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SystemConfigMouseOverBackground}"/>
+                        </Trigger>
+
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SystemConfigPressBackground}"/>
+                        </Trigger>
+
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SystemConfigDisableBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <!--系统设置中按钮样式-->
+    <Style x:Key="SystemSetBtnStyle" TargetType="Button">
+        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Width" Value="60"></Setter>
+        <Setter Property="Margin" Value="5,0"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" BorderThickness="0" Background="{StaticResource SystemSetBtnBg}">
+                        <TextBlock Text="{TemplateBinding Button.Content}" TextAlignment="Center" Padding="0,3"></TextBlock>
+                    </Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SystemSetBtnMouseover}"></Setter>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{StaticResource SystemSetBtnPressed}"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--获取柜员列表按钮样式-->
+    <Style x:Key="DialKeyBtnStyle" TargetType="Button">
+        <Setter Property="Height" Value="38"></Setter>
+        <Setter Property="Width" Value="35"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" BorderThickness="0" Background="{DynamicResource DialKeyBtnBg}">
+                        <TextBlock Text="{TemplateBinding Button.Content}" TextAlignment="Center" Padding="0,4"></TextBlock>
+                    </Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource DialKeyBtnMouseOver}"></Setter>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource DialKeyBtnPress}"></Setter>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource DialKeyBtnDisable}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--拨号键按钮样式-->
+    <Style x:Key="SkillBtnStyle" TargetType="Button">
+        <Setter Property="Height" Value="38"></Setter>
+        <Setter Property="Width" Value="35"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <Border Name="back" BorderThickness="0" Background="{DynamicResource SkillBtnBg}">
+                        <TextBlock Text="{TemplateBinding Button.Content}" TextAlignment="Center" Padding="0,4"></TextBlock>
+                    </Border>
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SkillBtnMouseover}"></Setter>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SkillBtnPressed}"></Setter>
+                        </Trigger>
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="back" Value="{DynamicResource SkillBtnDisableBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="ComboBoxStytle" TargetType="{x:Type ComboBox}">
+        <Style.Setters>
+            <Setter Property="Background" Value="{StaticResource SystemSetTbCombox}"></Setter>
+            <Setter Property="IsEditable" Value="True"></Setter>
+            <Setter Property="IsReadOnly" Value="True"></Setter>
+            <Setter Property="BorderBrush" Value="#7092BE"></Setter>
+            <Setter Property="Height" Value="22"></Setter>
+        </Style.Setters>
+    </Style>
+
+
+    <!--内部呼叫按钮-->
+    <Style x:Key="InternalCallButton" TargetType="Button">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <!--<Border Name="back" Background="{StaticResource BtnLoad}" Width="80" Height="22" BorderThickness="0">-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="backs" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource InternalCallBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--</Border>-->
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource InternalCallMouseOverBackground}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource InternalCallPre}"/>
+                        </Trigger>-->
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource InternalCallDisableBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--呼叫转移-->
+    <Style x:Key="TransferButton" TargetType="Button">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <!--<Border Name="back" Background="{StaticResource BtnLoad}" Width="80" Height="22" BorderThickness="0">-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="backs" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource TransferCallBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--</Border>-->
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource TransferCallMouseOverBackground}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource TransferCallPre}"/>
+                        </Trigger>-->
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource TransferCallDisableBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--录音按钮-->
+    <Style x:Key="RecordButton" TargetType="Button">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <!--初始背景-->
+                    <!--<Border Name="back" Background="{StaticResource BtnLoad}" Width="80" Height="22" BorderThickness="0">-->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Width="5" Height="{Binding ComponentHeight}" Background="{StaticResource ImgBtnLine}"></TextBlock>
+                        <Border Name="backs" Height="{Binding ComponentHeight}" Width="{Binding ComponentWidth}" Background="{DynamicResource RecordBackground}" VerticalAlignment="Top" Margin="0,1,0,0"></Border>
+                    </StackPanel>
+                    <!--</Border>-->
+                    <!--触发器-->
+                    <ControlTemplate.Triggers>
+                        <!--鼠标移入移出-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource RecordMouseOverBackground}"/>
+                        </Trigger>
+                        <!--按钮按下弹起-->
+                        <!--<Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource TransferCallPre}"/>
+                        </Trigger>-->
+                        <!--按钮失效-->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="backs" Value="{StaticResource RecordDisableBackground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

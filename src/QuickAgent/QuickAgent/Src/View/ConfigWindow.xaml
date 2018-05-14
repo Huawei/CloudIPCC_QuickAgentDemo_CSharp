@@ -1,0 +1,152 @@
+﻿<Window x:Class="QuickAgent.View.ConfigWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+    Title="{DynamicResource config_Title}"  Height="452" Width="500" WindowStyle="ToolWindow" ResizeMode="NoResize" Background="WhiteSmoke" WindowStartupLocation="CenterScreen"
+        ShowInTaskbar="False" Topmost="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <TabControl Margin="5,5,5,0" Grid.Row="1">
+            <TabItem Header="{DynamicResource config_Basic}" Name="tabItemBase">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition ></RowDefinition>
+                        <RowDefinition Height="49"></RowDefinition>
+                        <RowDefinition Height="49"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox Header="{DynamicResource config_Server}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="29"></RowDefinition>
+                                <RowDefinition Height="29"></RowDefinition>
+                                <RowDefinition Height="29"></RowDefinition>
+                                <RowDefinition ></RowDefinition>
+                                <RowDefinition Height="29"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="{DynamicResource config_serverType}" Height="18" Width="70" HorizontalAlignment="Left"></TextBlock>
+                            <TextBlock Text="{DynamicResource address}" Height="18" Width="100" HorizontalAlignment="Left" Grid.Row="1" Grid.ColumnSpan="2"></TextBlock>
+                            <TextBox Height="22" HorizontalAlignment="Left" Width="150" Margin="120,0,0,0" Grid.Row="1" Grid.ColumnSpan="2" Name="txtUrl"></TextBox>
+                            <TextBlock Text="{DynamicResource backupAddress}" Height="18" Width="100" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2"></TextBlock>
+                            <TextBox Height="22" HorizontalAlignment="Left" Width="150" Margin="120,0,10,0" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Name="txtBoxBackUpAddress"/>
+                            <TextBlock Text="ProgID" Grid.Row="4" Width="70" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <head:InputTextBoxCtrl x:Name="tbProgID" Grid.Row="4" HorizontalAlignment="Right" Width="70" Margin="0,0,40,0" Height="22"/>
+
+                            <StackPanel Orientation="Horizontal" Margin="120,0,10,0" Grid.ColumnSpan="2">
+                                <RadioButton Height="16" Name="chkOCX" Width="Auto" IsEnabled="True" Content="MCP" VerticalContentAlignment="Center"  IsChecked="True" Checked="chkOCX_Checked"></RadioButton>
+                                <TextBlock Text="     "></TextBlock>
+                                <RadioButton Height="16" Name="chkAgw" Width="Auto" IsEnabled="True" Content="Agent Server(https only)" VerticalContentAlignment="Center" Checked="chkAgw_Checked">
+                                </RadioButton>
+                            </StackPanel>
+
+                            <TextBlock Text="{DynamicResource config_port}" Grid.Row="1" Grid.Column="1" Margin="61,7.5,102,3.5"/>
+                            <TextBox HorizontalAlignment="Right" Margin="0,0,30,0" Width="70" Height="22" Name="tbSerPort" Grid.Column="1" Grid.Row="1" />
+                            <TextBlock Margin="61,5,102,7.5" Text="{DynamicResource config_port}" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center"/>
+                            <TextBox HorizontalAlignment="Right" Margin="0,3.5,30,3.5" Name="tbSerPort1" Width="70" Grid.Column="1" Grid.Row="2" />
+                            <TextBlock Height="30" Name="lblUseSsl"  VerticalAlignment="Top" Text="{DynamicResource config_usessl}"  Width="100" Grid.Row="3" HorizontalAlignment="Left" Margin="0,5,0,0"/>
+                            <CheckBox Name="chkUseHttps"  Grid.Row="3" HorizontalAlignment="Right" Margin="0,7,97,0"/>
+                            <CheckBox Name="chk_certifile" Content="{DynamicResource main_set_checkCertii}" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                            <TextBlock Height="30" Name="lblAgentType"  VerticalAlignment="Top" Text="{DynamicResource set_agenttype}"  Width="100" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" Margin="0,10,0,0"/>
+                            <ComboBox Name="cbAgentType" Grid.Row="3" Grid.Column="2" Height="22" Width="130" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,5,10,0" ></ComboBox>
+                            <TextBlock Text="{DynamicResource set_longcall}" Name="tbLongCall"  Grid.Row="3" Margin="0,25,0,0" Width="70" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top"/>
+                            <CheckBox Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,27,97,0" Name="chkLongCall"/>
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="1" Header="{DynamicResource config_Automatic}" >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <CheckBox Content="{DynamicResource config_autoanswer}" Height="17" Name="chkAutoAnswer"></CheckBox>
+                            <CheckBox Content="{DynamicResource config_autowork}" Grid.Column="1" Height="17" Name="chkAutoEnterWork"></CheckBox>
+                        </Grid>
+                    </GroupBox>
+
+                    <GroupBox Grid.Row="2" Header="{DynamicResource config_Other}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="{DynamicResource config_Timeout}" Height="18" Width="180" HorizontalAlignment="Left"></TextBlock>
+                            <head:InputTextBoxCtrl Height="22" HorizontalAlignment="Right" Width="40" Margin="0,0,10,0"  x:Name="txtOverTime"/>
+                        </Grid>
+                    </GroupBox>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="{DynamicResource config_Advanced}" Name="tabItemAdvan">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="140"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <GroupBox>
+                        <GroupBox.Header>
+                            <CheckBox Name="chkOpenEye" Content="{DynamicResource config_userVoice}"></CheckBox>
+                        </GroupBox.Header>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Name="txtBlockSIPIP" Text="{DynamicResource config_sipIP}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="0"></TextBlock>
+                            <TextBlock Name="txtBlockSIPPORT" Text="{DynamicResource config_sipPort}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="1"></TextBlock>
+
+                            <TextBox Name="tbxSIPIP" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="0" Width="110"></TextBox>
+                            <TextBox Name="tbxSIPPort" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="1" Width="110"></TextBox>
+
+                            <TextBox Name="tbxSIPIP2" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="0" Width="110" Grid.Column="1"></TextBox>
+                            <TextBox Name="tbxSIPPort2" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="1" Width="110" Grid.Column="1"></TextBox>
+                            <TextBox Name="tbxName2" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="2" Width="110" Grid.Column="0"></TextBox>
+                            <PasswordBox Name="tbxPass2" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Center" Grid.Row="3" Width="110" Grid.Column="0"></PasswordBox>
+
+                            <TextBlock Name="txtBlockSIPIP2" Text="{DynamicResource config_sipIP1}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="0"  Grid.Column="1"></TextBlock>
+                            <TextBlock Name="txtBlockSIPPORT2" Text="{DynamicResource config_sipPort1}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="1"  Grid.Column="1"></TextBlock>
+                            <TextBox Name="tbDomain" Grid.Column="1" Grid.Row="2" Width="110" Height="22" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                            <TextBlock Name="txtDomain" Text="{DynamicResource config_voicedomain}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="2"  Grid.Column="1"></TextBlock>
+                            <TextBlock Name="txtBlockAccount2" Text="{DynamicResource config_account}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="2"  Grid.Column="0"></TextBlock>
+                            <TextBlock Name="txtBlockPassword2" Text="{DynamicResource config_password}" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Row="3"  Grid.Column="0"></TextBlock>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <Grid Margin="10,0,10,0" >
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left" Margin="5,0,0,0" Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button Height="26" VerticalAlignment="Center" Width="70" Margin="130,0,0,0" HorizontalAlignment="Left" Content="{DynamicResource ok}" Name="btnConfirm" Click="btnOK_Click" IsDefault="True"></Button>
+            <Button Height="26" VerticalAlignment="Center" Width="70" Margin="290,0,0,0" HorizontalAlignment="Left" Content="{DynamicResource cancel}" Name="btnCancel" Click="btnCancel_Click" IsCancel="True"></Button>
+        </Grid>
+    </Grid>
+</Window>

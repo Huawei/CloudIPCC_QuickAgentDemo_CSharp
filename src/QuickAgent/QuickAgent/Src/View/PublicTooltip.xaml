@@ -1,0 +1,10 @@
+﻿<Window x:Class="QuickAgent.Src.View.PublicTooltip"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="{DynamicResource publicTooltip}" Height="145" Width="302" ShowInTaskbar="False">
+    <Grid>
+        <Label x:Name="lbl_Message" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center" Margin="0,11,0,49" FontSize="15" Content=""></Label>
+        <Button x:Name="Btn_OK" Height="23" HorizontalAlignment="Left" Margin="36,0,0,10" VerticalAlignment="Bottom" Width="75" Content="{DynamicResource ok}" Click="OK_Click" IsDefault="True"></Button>
+        <Button x:Name="Btn_Cancel" Height="23" HorizontalAlignment="Right" Margin="0,0,36,10" VerticalAlignment="Bottom" Width="75" Content="{DynamicResource cancel}" Click="Cancel_Click"  IsCancel="True"></Button>
+    </Grid>
+</Window>

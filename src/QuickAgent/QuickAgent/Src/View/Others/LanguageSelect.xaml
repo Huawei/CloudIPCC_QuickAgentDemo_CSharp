@@ -1,0 +1,16 @@
+﻿<Window x:Class="QuickAgent.Src.View.Others.LanguageSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QuickAgent" Height="200" Width="320" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Topmost="True" Background="WhiteSmoke">
+    <Grid>
+        <Label Content="{DynamicResource languagesel_title}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="25,20,0,0"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,55,0,0">
+            <RadioButton Name="Rd_chiness" Content="{DynamicResource languagesel_chinesss}" IsChecked="True" Checked="Rd_chiness_Checked"/>
+            <RadioButton Name="Rd_english" Content="English" Checked="Rd_english_Checked"/>
+        </StackPanel>
+
+        <Button Name="Btn_Ok" Content="{DynamicResource ok}" Width="70" Height="22" Margin="63,92,159,20" Click="Btn_Ok_Click" VerticalAlignment="Bottom"/>
+        <Button Name="Btn_Cancel" Content="{DynamicResource btn_cancel}" Width="70" Height="22" Margin="159,92,63,20" Click="Btn_Cancel_Click" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
+

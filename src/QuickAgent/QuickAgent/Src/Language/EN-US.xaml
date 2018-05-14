@@ -1,0 +1,2467 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="windowBtnSet">
+        Config Menu
+    </sys:String>
+    <sys:String x:Key="requestHoldFailed">
+        Hold failed
+    </sys:String>
+    <sys:String x:Key="cancelMuteFailed">
+        Cancel mute failed
+    </sys:String>
+    <sys:String x:Key="releaseCallFailed">
+        Release call failed
+    </sys:String>
+    <sys:String x:Key="enterWorkFailed">
+        Enter work failed
+    </sys:String>
+    <sys:String x:Key="exitWorkFailed">
+        Exit work failed
+    </sys:String>
+    <sys:String x:Key="answerFailed">
+        Answer failed
+    </sys:String>
+    <sys:String x:Key="other_installCertification">
+        Install certification
+    </sys:String>
+    <sys:String x:Key="muteFailed">
+        Mute failed
+    </sys:String>
+    <sys:String x:Key="cancelHoldFailed">
+        Cancel hold failed
+    </sys:String>
+    <sys:String x:Key="calloutFailed">
+        Call out failed
+    </sys:String>
+    <sys:String x:Key="setIdleFailed">
+        Set idle failed
+    </sys:String>
+    <sys:String x:Key="setBusyFailed">
+        Set busy failed
+    </sys:String>
+    <sys:String x:Key="cancelRestFailed">
+        Cancel rest failed
+    </sys:String>
+    <sys:String x:Key="logoutFailed">
+        Logout failed
+    </sys:String>
+    <sys:String x:Key="alreadylogIn">
+        Already login
+    </sys:String>
+    <sys:String x:Key="resetSkillFailed">
+        Reset skill failed
+    </sys:String>
+    <sys:String x:Key="loginFailed">
+        Login failed
+    </sys:String>
+
+    <sys:String x:Key="backupAddress">
+        Standby server IP:
+    </sys:String>
+    <sys:String x:Key="logIn">
+        LogIn
+    </sys:String>
+    <sys:String x:Key="logOut">
+        LogOut
+    </sys:String>
+    <sys:String x:Key="config">
+        Config
+    </sys:String>
+
+    <sys:String x:Key="popInfo">
+        is calling you...
+    </sys:String>
+    <sys:String x:Key="jobNum">
+        Agent ID:
+    </sys:String>
+    <sys:String x:Key="passwd">
+        Password:
+    </sys:String>
+    <sys:String x:Key="status">
+        Status:
+    </sys:String>
+    <sys:String x:Key="free">
+        Idle
+    </sys:String>
+    <sys:String x:Key="busy">
+        Busy
+    </sys:String>
+    <sys:String x:Key="rest">
+        Rest
+    </sys:String>
+    <sys:String x:Key="clearUp">
+        Work
+    </sys:String>
+    <sys:String x:Key="leave">
+        Offline
+    </sys:String>
+    <sys:String x:Key="login">
+        Login
+    </sys:String>
+    <sys:String x:Key="answer">
+        Answer
+    </sys:String>
+    <sys:String x:Key="infoStat">
+        Status Information
+    </sys:String>
+    <sys:String x:Key="cardMacStat">
+        Card reader
+    </sys:String>
+    <sys:String x:Key="scanStat">
+        Scanner
+    </sys:String>
+    <sys:String x:Key="printStat">
+        Receipt printer
+    </sys:String>
+    <sys:String x:Key="recyStat">
+        Drop box
+    </sys:String>
+    <sys:String x:Key="seriesNum">
+        Serial Num
+    </sys:String>
+    <sys:String x:Key="cash">
+        Cash processor
+    </sys:String>
+    <sys:String x:Key="cpuPer">
+        CPU usage
+    </sys:String>
+    <sys:String x:Key="diskRest">
+        Available disk space
+    </sys:String>
+    <sys:String x:Key="rfidStat">
+        RFID card reader
+    </sys:String>
+    <sys:String x:Key="handMacStat">
+        Palm vein scanner
+    </sys:String>
+    <sys:String x:Key="signMacStat">
+        Electronic signature pad
+    </sys:String>
+    <sys:String x:Key="dvrStat">
+        DVR
+    </sys:String>
+    <sys:String x:Key="speakerStat">
+        Speaker
+    </sys:String>
+    <sys:String x:Key="checkStat">
+        Check module
+    </sys:String>
+    <sys:String x:Key="idCardStat">
+        ID card reader
+    </sys:String>
+    <sys:String x:Key="strPrintStat">
+        Journal printer
+    </sys:String>
+    <sys:String x:Key="a4PrintStat">
+        A4 printer
+    </sys:String>
+    <sys:String x:Key="vtmId">
+        Vtm Id
+    </sys:String>
+    <sys:String x:Key="timeStamp">
+        Time stamp
+    </sys:String>
+    <sys:String x:Key="respCode">
+        Response Code
+    </sys:String>
+    <sys:String x:Key="ramUsed">
+        Memory usage (in MB)
+    </sys:String>
+    <sys:String x:Key="icCardStat">
+        IC card reader
+    </sys:String>
+    <sys:String x:Key="fingerMacStat">
+        Fingerprint scanner
+    </sys:String>
+    <sys:String x:Key="pinPadStat">
+        Password keyboard
+    </sys:String>
+    <sys:String x:Key="cameraStat">
+        Video camera
+    </sys:String>
+    <sys:String x:Key="upsStat">
+        UPS
+    </sys:String>
+    <sys:String x:Key="microphoneStat">
+        Microphone
+    </sys:String>
+    <sys:String x:Key="skillList">
+        Service Type
+    </sys:String>
+    <sys:String x:Key="show">
+        Show
+    </sys:String>
+    <sys:String x:Key="set">
+        Set
+    </sys:String>
+    <sys:String x:Key="disSet">
+        Display Settings
+    </sys:String>
+    <sys:String x:Key="ansSet">
+        Answer Settings
+    </sys:String>
+    <sys:String x:Key="systemSet">
+        System Settings
+    </sys:String>
+    <sys:String x:Key="douScr">
+        Double
+    </sys:String>
+    <sys:String x:Key="singScr">
+        Single
+    </sys:String>
+    <sys:String x:Key="nonDouMsg">
+        Didn't find Screen Equipment.
+    </sys:String>
+    <sys:String x:Key="autoAns">
+        Auto
+    </sys:String>
+    <sys:String x:Key="manAns">
+        Manual
+    </sys:String>
+    <sys:String x:Key="ipSet">
+        Ip Settings
+    </sys:String>
+    <sys:String x:Key="ok">
+        OK
+    </sys:String>
+    <sys:String x:Key="confirm">
+        Confirm
+    </sys:String>
+    <sys:String x:Key="cancel">
+        Close
+    </sys:String>
+    <sys:String x:Key="apply">
+        Apply
+    </sys:String>
+    <sys:String x:Key="lanSet">
+        Language Settings
+    </sys:String>
+    <sys:String x:Key="Chinese">
+        Chinese
+    </sys:String>
+    <sys:String x:Key="English">
+        English
+    </sys:String>
+    <sys:String x:Key="YesLocalPIP">
+        Yes
+    </sys:String>
+    <sys:String x:Key="NoLocalPIP">
+        No
+    </sys:String>
+    <sys:String x:Key="exit">
+        Exit
+    </sys:String>
+    <!--<sys:String x:Key="noResponse">
+        Request no response
+    </sys:String>-->
+    <sys:String x:Key="vtmVideo">
+        Video
+    </sys:String>
+    <sys:String x:Key="desktopShare">
+        Desktop Sharing
+    </sys:String>
+    <sys:String x:Key="remoteCtrl">
+        Remote control
+    </sys:String>
+
+    <sys:String x:Key="close">
+        Close
+    </sys:String>
+    <sys:String x:Key="mize">
+        Minimize
+    </sys:String>
+    <sys:String x:Key="release">
+        Release
+    </sys:String>
+    <sys:String x:Key="hold">
+        Hold
+    </sys:String>
+    <sys:String x:Key="unhold">
+        Unhold
+    </sys:String>
+    <sys:String x:Key="mute">
+        Mute
+    </sys:String>
+    <sys:String x:Key="unmute">
+        Unmute
+    </sys:String>
+    <sys:String x:Key="threeCall">
+        Three-party Converse
+    </sys:String>
+    <sys:String x:Key="callForward">
+        Transfer
+    </sys:String>
+    <sys:String x:Key="internalCall">
+        Internal Call
+    </sys:String>
+    <sys:String x:Key="changeSkin">
+        Change Skin
+    </sys:String>
+    <!--<sys:String x:Key="networkError">
+        Network Error
+    </sys:String>-->
+    <sys:String x:Key="tellerIsNotEmpty">
+        The employee ID is mandatory.
+    </sys:String>
+    <sys:String x:Key="tellerNotRight">
+        Incorrect employee ID.
+    </sys:String>
+    <!--<sys:String x:Key="accountNotExist">
+        The account does not exist
+    </sys:String>-->
+    <!--<sys:String x:Key="licenseInsufficient">
+        Insufficient license
+    </sys:String>-->
+    <!--<sys:String x:Key="licenseExpired">
+        The license file has expired
+    </sys:String>-->
+    <!--<sys:String x:Key="verificationFailed">
+        Verification failed
+    </sys:String>-->
+    <!--<sys:String x:Key="logonFail">
+    </sys:String>
+    <sys:String x:Key="accountIsLocked">
+        Account is locked
+    </sys:String>
+    -->
+    <sys:String x:Key="logonFail">
+        Logon fail.
+    </sys:String>
+    <sys:String x:Key="messageLocalVedioFailure">
+        Video connection failure.
+    </sys:String>
+    <sys:String x:Key="messageLocalDesktopFailure">
+        Desktop sharing failure.
+    </sys:String>
+    <sys:String x:Key="messageTellerStateBusy">
+        The teller is busy.
+    </sys:String>
+    <sys:String x:Key="messageAutocallFailure">
+        Failed to transfer the call.
+    </sys:String>
+    <sys:String x:Key="messageAtalkingToTellerFailure">
+        Failed to initiate an internal call.
+    </sys:String>
+    <sys:String x:Key="messageTellerNoAnswer">
+        No response from the teller.
+    </sys:String>
+    <sys:String x:Key="messageNoTellerOnline">
+        No teller is available now.
+    </sys:String>
+    <sys:String x:Key="messageFailure">
+        Operation failure.
+    </sys:String>
+    <sys:String x:Key="messageSystemError">
+        System error.
+    </sys:String>
+    <sys:String x:Key="messageQuicktellerClosed">
+        Network error. The system will be closed.
+    </sys:String>
+    <sys:String x:Key="messageTalkingIsNotClosed">
+        Failed to exit the system. You are in a call.
+    </sys:String>
+    <sys:String x:Key="messageTalkingIsNotLogout">
+        Failed to logout the system. You are in a call.
+    </sys:String>
+    <sys:String x:Key="about">
+        About
+    </sys:String>
+    <sys:String x:Key="logout">
+        Logout
+    </sys:String>
+    <sys:String x:Key="upgrade">
+        Upgrade
+    </sys:String>
+    <sys:String x:Key="tip">
+        Information
+    </sys:String>
+    <sys:String x:Key="aboutEdition">
+        Version: v
+    </sys:String>
+    <sys:String x:Key="aboutCopyright">
+        Copyright: Copyright Huawei Technologies Co., Ltd. 2011-2014. All rights reserved.
+    </sys:String>
+    <sys:String x:Key="aboutWarning">
+        Warning: This program is protected by copyright laws and architecture laws. Unauthorized duplication is subject to civil or criminal liabilities.
+    </sys:String>
+    <sys:String x:Key="videoDeviceRecodeError">
+        No video device is detected.
+    </sys:String>
+    <sys:String x:Key="callingState">
+        Calling...
+    </sys:String>
+    <sys:String x:Key="forwardCalling">
+        Transferring...
+    </sys:String>
+    <sys:String x:Key="espaceLoginLater">
+        The system will be automatically re-logged in when the call ends.
+    </sys:String>
+    <sys:String x:Key="espaceLoginNow">
+        The system will be automatically re-logged in.
+    </sys:String>
+    <sys:String x:Key="espaceLoginOutLater">
+        The account has logged out. The system will be closed when the call ends.
+    </sys:String>
+    <sys:String x:Key="espaceLoginOutNow">
+        The account has logged out. The system will be closed.
+    </sys:String>
+    <sys:String x:Key="lanSetInvalid">
+        Invalid language setting.
+    </sys:String>
+    <sys:String x:Key="help">
+        Help
+    </sys:String>
+    <sys:String x:Key="toMini">
+        Mini mode
+    </sys:String>
+    <sys:String x:Key="toDefault">
+        Default mode
+    </sys:String>
+    <sys:String x:Key="reInfo">
+        The call is released.
+    </sys:String>
+    <sys:String x:Key="withCustomer">
+        The call with customer
+    </sys:String>
+    <sys:String x:Key="withTeller">
+        The call with teller
+    </sys:String>
+    <sys:String x:Key="callsOver">
+        is released.
+    </sys:String>
+    <sys:String x:Key="maxSize">
+        Maximize
+    </sys:String>
+    <sys:String x:Key="defaultSize">
+        Restore
+    </sys:String>
+    <sys:String x:Key="loading">
+        Loading...
+    </sys:String>
+    <sys:String x:Key="askLoading">
+        Program no response,close or wait for the end?
+    </sys:String>
+    <sys:String x:Key="loadingClose">
+        No,close
+    </sys:String>
+    <sys:String x:Key="desktop">
+        Desktop
+    </sys:String>
+    <sys:String x:Key="openCameraFailed">
+        Open camera failed.
+    </sys:String>
+    <sys:String x:Key="noConfigFile">
+        No config file.
+    </sys:String>
+    <sys:String x:Key="configParamError">
+        Config param error.
+    </sys:String>
+    <sys:String x:Key="NegotiateVideoFailed">
+        Video Negotiate Failed ,to change audio mode.
+    </sys:String>
+    <sys:String x:Key="changToAudioTalking">
+        The customer has released the call. An internal voice call is still ongoing.
+    </sys:String>
+    <!--C02-->
+    <sys:String x:Key="save">
+        Save
+    </sys:String>
+    <sys:String x:Key="copy">
+        Copy
+    </sys:String>
+    <sys:String x:Key="upPage">
+        Previous
+    </sys:String>
+    <sys:String x:Key="nextPage">
+        Next
+    </sys:String>
+    <sys:String x:Key="zoomIn">
+        Zoom in
+    </sys:String>
+    <sys:String x:Key="zoomOut">
+        Zoom out
+    </sys:String>
+    <sys:String x:Key="hand">
+        Hand tool
+    </sys:String>
+    <sys:String x:Key="fontColor">
+        Font color
+    </sys:String>
+    <sys:String x:Key="fontSet">
+        Font
+    </sys:String>
+    <sys:String x:Key="fontSize">
+        Font size
+    </sys:String>
+    <sys:String x:Key="labelFull">
+        Shading
+    </sys:String>
+    <sys:String x:Key="noArrowLine">
+        Line
+    </sys:String>
+    <sys:String x:Key="arrowLine">
+        Arrow
+    </sys:String>
+    <sys:String x:Key="doubleArrowLine">
+        Double arrow
+    </sys:String>
+    <sys:String x:Key="hollowEllipse">
+        Oval
+    </sys:String>
+    <sys:String x:Key="hollowRect">
+        Rectangle
+    </sys:String>
+    <sys:String x:Key="roundedHollowRect">
+        Rounded rectangle
+    </sys:String>
+    <sys:String x:Key="rsRect">
+        Filled rounded rectangle
+    </sys:String>
+    <sys:String x:Key="solidEllipse">
+        Filled oval
+    </sys:String>
+    <sys:String x:Key="solidRect">
+        Filled rectangle
+    </sys:String>
+    <sys:String x:Key="freePen">
+        Free hand
+    </sys:String>
+    <sys:String x:Key="fontAn">
+        Annotate
+    </sys:String>
+    <sys:String x:Key="laserPointer">
+        Laser pointer
+    </sys:String>
+    <!--标注文案修改-->
+    <sys:String x:Key="stopAnno">
+        Select
+    </sys:String>
+    <sys:String x:Key="fontAnno">
+        Input text
+    </sys:String>
+    <sys:String x:Key="clearLabel">
+        Clear marking
+    </sys:String>
+    <sys:String x:Key="labelShape">
+        Select a marking tool
+    </sys:String>
+    <sys:String x:Key="scal">
+        Equal ratio scale
+    </sys:String>
+    <sys:String x:Key="beginLabel">
+        Start marking
+    </sys:String>
+    <!--end-->
+    <sys:String x:Key="beginStopLabel">
+        Start/Stop
+    </sys:String>
+    <sys:String x:Key="pauseLabel">
+        Pause  marking
+    </sys:String>
+    <sys:String x:Key="lineSize">
+        Line width:
+    </sys:String>
+    <sys:String x:Key="fullWindow">
+        Full Screen
+    </sys:String>
+    <sys:String x:Key="revert">
+        Restore
+    </sys:String>
+    <sys:String x:Key="upPagefail">
+        Failed to go to the previous page!
+    </sys:String>
+    <sys:String x:Key="nextPagefail">
+        Failed to go to the next page!
+    </sys:String>
+    <sys:String x:Key="scalFail">
+        Failed to zoom in or out!
+    </sys:String>
+    <sys:String x:Key="saveShareFail">
+        Failed to share the document!
+    </sys:String>
+    <sys:String x:Key="jumpPageFail">
+        Failed to go to the page!
+    </sys:String>
+    <sys:String x:Key="setFail">
+        Failed to make the settings!
+    </sys:String>
+    <sys:String x:Key="saveWhiteBoardFail">
+        Failed to save the whiteboard!
+    </sys:String>
+    <sys:String x:Key="openLabelFail">
+        You cannot enable the annotation function duing remote control!
+    </sys:String>
+    <sys:String x:Key="toOtherService">
+        Call transferred successfully!
+    </sys:String>
+    <sys:String x:Key="setColorFail">
+        Failed to set the color!
+    </sys:String>
+    <sys:String x:Key="waitCustomer">
+        Queued
+    </sys:String>
+    <sys:String x:Key="unLock">
+        Unlock
+    </sys:String>
+    <sys:String x:Key="serveCount">
+        Service Times
+    </sys:String>
+    <sys:String x:Key="serveTime">
+        Service Duration
+    </sys:String>
+    <sys:String x:Key="languages">
+        Language:
+    </sys:String>
+    <sys:String x:Key="mediaCooperate">
+        Multimedia Collaboration
+    </sys:String>
+    <sys:String x:Key="shareFile">
+        Document Sharing
+    </sys:String>
+    <sys:String x:Key="loadShareFile">
+        Load
+    </sys:String>
+    <sys:String x:Key="whiteBoard">
+        Whiteboard
+    </sys:String>
+    <sys:String x:Key="createWhiteBoard">
+        New
+    </sys:String>
+    <sys:String x:Key="newPage">
+        Create Page
+    </sys:String>
+    <sys:String x:Key="deletePage">
+        Delete Page
+    </sys:String>
+    <sys:String x:Key="delWbFail">
+        Failed to delete the whiteboard!
+    </sys:String>
+    <sys:String x:Key="shareFileSwitchFail">
+        Failed to switch between shared documents!
+    </sys:String>
+    <sys:String x:Key="shareFileCloseFail">
+        Failed to close the shared document!
+    </sys:String>
+    <sys:String x:Key="wbSetDisplaySizeFail">
+        Faile to set the whiteboard size!
+    </sys:String>
+    <sys:String x:Key="whiteBoardNewFail">
+        Failed to create a whiteboard!
+    </sys:String>
+    <sys:String x:Key="wbNewPageFail">
+        Failed to create a page!
+    </sys:String>
+    <sys:String x:Key="wbDelPageFail">
+        Failed to delete the page!
+    </sys:String>
+    <sys:String x:Key="basicSet">
+        Basic Settings
+    </sys:String>
+    <sys:String x:Key="videoSet">
+        Video Settings
+    </sys:String>
+    <sys:String x:Key="stateSet">
+        Status Settings
+    </sys:String>
+    <sys:String x:Key="lockSet">
+        Screen Lock Settings
+    </sys:String>
+    <sys:String x:Key="callSet">
+        Call Settings
+    </sys:String>
+    <sys:String x:Key="upgradeService">
+        Automatic Upgrade
+    </sys:String>
+    <sys:String x:Key="isTwinScree">
+        Dual-screen display mode:
+    </sys:String>
+    <sys:String x:Key="isLocalPIP">
+        PIP display mode:
+    </sys:String>
+    <sys:String x:Key="answerMode">
+        Answer mode:
+    </sys:String>
+    <sys:String x:Key="frameSet">
+        Frame rate:
+    </sys:String>
+    <sys:String x:Key="frameUnit">
+        fps
+    </sys:String>
+    <sys:String x:Key="percentageSet">
+        Resolution:
+    </sys:String>
+    <sys:String x:Key="explain">
+        High definition
+    </sys:String>
+    <sys:String x:Key="loginState">
+        After-login status:
+    </sys:String>
+    <sys:String x:Key="reseleaseState">
+        After-release status:
+    </sys:String>
+    <sys:String x:Key="serviceIp">
+        Server IP address：
+    </sys:String>
+    <sys:String x:Key="serverPort">
+        Port number：
+    </sys:String>
+    <sys:String x:Key="serverIpErrorMsg">
+        Invalid IP address.
+    </sys:String>
+    <sys:String x:Key="serverPortErrorMsg">
+        Invalid port number.
+    </sys:String>
+    <sys:String x:Key="setLockTime">
+        Screen lock duration:
+    </sys:String>
+    <sys:String x:Key="screenlock">
+        Screen lock:
+    </sys:String>
+    <sys:String x:Key="lockTime">
+        minutes
+    </sys:String>
+    <sys:String x:Key="lockErrorMsg">
+        Invalid input value.
+    </sys:String>
+    <sys:String x:Key="internalCallSet">
+        Internal Call Settings:
+    </sys:String>
+    <sys:String x:Key="videoCall">
+        Video call
+    </sys:String>
+    <sys:String x:Key="pronunciationCall">
+        Voice call
+    </sys:String>
+    <sys:String x:Key="loadFileFail">
+        Failed to load the file!
+    </sys:String>
+    <sys:String x:Key="changing">
+        Please select…
+    </sys:String>
+    <sys:String x:Key="wbFile">
+        Whiteboard file
+    </sys:String>
+    <sys:String x:Key="loadWbFail">
+        Failed to load the page!
+    </sys:String>
+    <sys:String x:Key="delAnnotationFail">
+        Failed to delete the comment!
+    </sys:String>
+    <sys:String x:Key="updateAnnotationFail">
+        Failed to update the comment!
+    </sys:String>
+    <sys:String x:Key="selectAnnotationFail">
+        Failed to select the comment!
+    </sys:String>
+    <sys:String x:Key="createTextAnnotationFail">
+        Failed to create the text comment!
+    </sys:String>
+    <sys:String x:Key="updateInfoException">
+        Upgrade configuration error or server exception!
+    </sys:String>
+    <sys:String x:Key="notFindNew">
+        The current version is the latest version!
+    </sys:String>
+    <sys:String x:Key="errorCode">
+        Error code:
+    </sys:String>
+    <sys:String x:Key="otherLine">
+        Other：
+    </sys:String>
+    <!--服务器升级-->
+    <sys:String x:Key="qtUpdateServerClueOn">
+        QuickTeller Upgrade Remind
+    </sys:String>
+    <sys:String x:Key="notClueOn">
+        No remind any more
+    </sys:String>
+    <sys:String x:Key="findNewEdition">
+        New version detected
+    </sys:String>
+    <sys:String x:Key="isUpdateNow">
+        Are you sure you want to update now?
+    </sys:String>
+    <sys:String x:Key="severceUpdating">
+        Updating...
+    </sys:String>
+    <sys:String x:Key="downLoaded">
+        Downloaded!
+    </sys:String>
+    <sys:String x:Key="isUpdateWhenDownLaod">
+        The new version is downloaded. Are you sure you want to upgrade now?
+    </sys:String>
+    <sys:String x:Key="updateFile">
+        Updated contents:
+    </sys:String>
+    <sys:String x:Key="updateNow">
+        Update Now
+    </sys:String>
+    <sys:String x:Key="notUpdate">
+        Update Later
+    </sys:String>
+    <sys:String x:Key="updateServerClueOn">
+        Software Update Remind
+    </sys:String>
+    <sys:String x:Key="updateServerNew">
+        Upgrade Now
+    </sys:String>
+    <sys:String x:Key="notUpdateServer">
+        Upgrade Later
+    </sys:String>
+    <sys:String x:Key="isCancelUpdateServer">
+        Are you sure you want to cancel without completing the upgrade?
+    </sys:String>
+    <sys:String x:Key="agentOrPhoneComponentError">
+        Voice module exception.
+    </sys:String>
+    <sys:String x:Key="videoComponenError">
+        Video module exception.
+    </sys:String>
+    <sys:String x:Key="desktopComponenError">
+        Multimedia collaboration module exception.
+    </sys:String>
+    <sys:String x:Key="fileIoOrMsgIoComponenError">
+        File module or message module exception.
+    </sys:String>
+    <sys:String x:Key="colors">
+        Black,Red,Green,Dark grey,Yellow,Dark red,Rosy,Orange,Blue ,Dark blue,Purple,White,Light grey,Brown,Golden,Light yellow,Lime,Light blue ,Blue grey ,Light purple,Pink
+    </sys:String>
+    <sys:String x:Key="recordFail">
+        Screen recording failed.
+    </sys:String>
+    <sys:String x:Key="recordFailRemind">
+        Screen recording failed. The service process cannot continue. Click confirm to end the call.
+    </sys:String>
+
+    <!--错误码-->
+    <!--错误码-->
+    <sys:String x:Key="5">
+        The request is declined.
+    </sys:String>
+    <sys:String x:Key="21">
+        The file does not exist.
+    </sys:String>
+    <sys:String x:Key="27">
+        The file format is not supported.
+    </sys:String>
+    <sys:String x:Key="29">
+        The page you want to go is the current page.
+    </sys:String>
+    <sys:String x:Key="30">
+        The specified page does not exist.
+    </sys:String>
+    <sys:String x:Key="32">
+        The file fails to be opened.
+    </sys:String>
+    <sys:String x:Key="33">
+        The display size is not specified.
+    </sys:String>
+    <sys:String x:Key="34">
+        The page number you enter exceeds the maximum.
+    </sys:String>
+    <sys:String x:Key="35">
+        The file is empty.
+    </sys:String>
+    <sys:String x:Key="36">
+        The file has been opened.
+    </sys:String>
+    <sys:String x:Key="38">
+        The file is being printed.
+    </sys:String>
+    <sys:String x:Key="45">
+        No printer is available.
+    </sys:String>
+    <sys:String x:Key="48">
+        The motion distance exceeds the maximum.
+    </sys:String>
+    <sys:String x:Key="52">
+        The request times out.
+    </sys:String>
+    <sys:String x:Key="2999">
+        Unknown error.
+    </sys:String>
+    <sys:String x:Key="cannoTransferred">
+        A muted call cannot be transferred.
+    </sys:String>
+    <sys:String x:Key="3">
+        Request no response.
+    </sys:String>
+    <sys:String x:Key="8">
+        Already Login
+    </sys:String>
+    <sys:String x:Key="mintuateLaterUnlock">
+        It will unlock {0} minutes later.
+    </sys:String>
+    <sys:String x:Key="clear">
+        Clear
+    </sys:String>
+    <sys:String x:Key="tellerSearch">
+        Enter a ID or name to search
+    </sys:String>
+    <sys:String x:Key="notFindTeller">
+        No result found
+    </sys:String>
+    <sys:String x:Key="defult">
+        Initialize
+    </sys:String>
+    <sys:String x:Key="defultSet">
+        Initialization Settings
+    </sys:String>
+    <sys:String x:Key="defultInfo">
+        Reset basic settings.
+    </sys:String>
+    <sys:String x:Key="clearAnnotation">
+        Are you sure you want to delete all markings?
+    </sys:String>
+    <sys:String x:Key="deleteFile">
+        Are you sure you want to delete the document?
+    </sys:String>
+    <sys:String x:Key="isDefult">
+        Are you sure you want to initialize the settings?
+    </sys:String>
+    <sys:String x:Key="networkMonitor">
+        Network signal
+    </sys:String>
+    <sys:String x:Key="setAnno">
+        Marking attribute settings
+    </sys:String>
+    <sys:String x:Key="labelCheck">
+        Shape
+    </sys:String>
+    <sys:String x:Key="stopLabel">
+        Stop marking
+    </sys:String>
+    <sys:String x:Key="withCall">
+        Talking with {0}
+    </sys:String>
+    <sys:String x:Key="unLockFail">
+        Unlock failed.
+    </sys:String>
+    <sys:String x:Key="setTopmost">
+        Pin on top
+    </sys:String>
+    <sys:String x:Key="setUnTopmost">
+        Move from top
+    </sys:String>
+    <sys:String x:Key="downLoadUpgradeError">
+        An exception occurs when downloading the upgrade package.
+    </sys:String>
+    <sys:String x:Key="otherTellerVisible">
+        Metting mode
+    </sys:String>
+    <sys:String x:Key="otherTellerNotVisible">
+        Auditing mode
+    </sys:String>
+    <sys:String x:Key="requestDesktop">
+        Start desktop sharing
+    </sys:String>
+    <sys:String x:Key="requestRemoteControl">
+        Start remote control
+    </sys:String>
+    <sys:String x:Key="stopRequestDesktop">
+        Cancel desktop sharing
+    </sys:String>
+    <sys:String x:Key="stopRsRemoteControl">
+        Cancel remote control
+    </sys:String>
+    <sys:String x:Key="stopDesktop">
+        Stop desktop sharing
+    </sys:String>
+    <sys:String x:Key="stopRemoteControl">
+        Stop remote control
+    </sys:String>
+    <sys:String x:Key="54">
+        Operation failed. Another teller is controlling the desktop of the customer.
+    </sys:String>
+    <sys:String x:Key="55">
+        Operation failed. Another teller has sent a remote control request to the customer.
+    </sys:String>
+    <sys:String x:Key="getLogOnModeFail">
+        Failed to connect to the MCC server. Open QuickTeller again.
+    </sys:String>
+    <sys:String x:Key="dialKey">
+        Dial Plate
+    </sys:String>
+    <sys:String x:Key="callInCallOutSet">
+        Call Settings
+    </sys:String>
+    <sys:String x:Key="styleSet">
+        Theme Settings
+    </sys:String>
+    <sys:String x:Key="styleSelecte">
+        Select theme:
+    </sys:String>
+    <sys:String x:Key="blueStyle">
+        Blue
+    </sys:String>
+    <sys:String x:Key="redStyle">
+        Red
+    </sys:String>
+    <sys:String x:Key="greenStyle">
+        Green
+    </sys:String>
+    <sys:String x:Key="saffronYellowStyle">
+        Yellow
+    </sys:String>
+    <sys:String x:Key="messageCallOutFailure">
+        Failed to set up the call.
+    </sys:String>
+    <sys:String x:Key="OcxInitFail">
+        Failed to initialize QuickTeller. Check the configuration and re-log in to QuickTeller.
+    </sys:String>
+    <sys:String x:Key="OcxInitFailActive">
+        Failed to initialize QuickTeller. Select an MCC again.
+    </sys:String>
+    <sys:String x:Key="shareApplication">
+        Application Sharing
+    </sys:String>
+    <sys:String x:Key="startShareApp">
+        Start
+    </sys:String>
+    <sys:String x:Key="stopShareApp">
+        Stop
+    </sys:String>
+    <sys:String x:Key="stopAllShareApp">
+        Application sharing has been enabled now. Stop application sharing first.
+    </sys:String>
+    <sys:String x:Key="updateAppList">
+        Refresh
+    </sys:String>
+    <sys:String x:Key="stopAll">
+        Stop All Sharing
+    </sys:String>
+    <sys:String x:Key="58">
+        The application is not being shared.
+    </sys:String>
+    <sys:String x:Key="59">
+        The application is being shared.
+    </sys:String>
+    <sys:String x:Key="57">
+        The window does not exist.
+    </sys:String>
+    <sys:String x:Key="logoinCen">
+        Login MCC
+    </sys:String>
+    <sys:String x:Key="openExtendVideoFial">
+        Extend camera open failed.
+    </sys:String>
+    <sys:String x:Key="closeExtendVideoFial">
+        Extend camera close failed.
+    </sys:String>
+    <sys:String x:Key="openExtendVideo">
+        Extend camera open
+    </sys:String>
+    <sys:String x:Key="closeExtendVideo">
+        Extend camera close
+    </sys:String>
+    <sys:String x:Key="tileModel">
+        Tile mode
+    </sys:String>
+    <sys:String x:Key="aloneModel">
+        Independent mode
+    </sys:String>
+    <sys:String x:Key="Localcamera">
+        Local camera
+    </sys:String>
+    <sys:String x:Key="AnonymousUser">
+        Anonymous user
+    </sys:String>
+    <sys:String x:Key="none">
+        None
+    </sys:String>
+    <sys:String x:Key="67">
+        <!--另一柜员正在标注中，请求远程控制失败。-->
+        Remote control fail.
+    </sys:String>
+    <sys:String x:Key="publicTooltip">
+        Prompt
+    </sys:String>
+    <sys:String x:Key="holdCall">
+        Confirm to hold the incoming call
+    </sys:String>
+    <sys:String x:Key="callOut">
+        Outgoing Call
+    </sys:String>
+    <sys:String x:Key="callerNumber">
+        Caller Number
+    </sys:String>
+    <sys:String x:Key="calledNumber">
+        Called Number
+    </sys:String>
+    <sys:String x:Key="innerCall">
+        Connection Control Bar - Internal Call
+    </sys:String>
+    <sys:String x:Key="100">
+        UnKnown
+    </sys:String>
+    <sys:String x:Key="101">
+        Sign In
+    </sys:String>
+    <sys:String x:Key="102">
+        Sign Out
+    </sys:String>
+    <sys:String x:Key="107">
+        Calling
+    </sys:String>
+    <sys:String x:Key="notChooseAgent">
+        Is not choose agent
+    </sys:String>
+    <sys:String x:Key="isNotIdleAgent">
+        Is not call the agent with not idle
+    </sys:String>
+    <sys:String x:Key="transferToAgent">
+        To agent ID
+    </sys:String>
+    <sys:String x:Key="infoByBusinessAgent">
+        Agent information
+    </sys:String>
+    <sys:String x:Key="transferToNumebrOfBusinessAgent">
+        Transferred-to agent ID
+    </sys:String>
+    <sys:String x:Key="transferWay">
+        Transfer mode
+    </sys:String>
+    <sys:String x:Key="releaseTransfer">
+        Release transfer
+    </sys:String>
+    <sys:String x:Key="successTransfer">
+        Success transfer
+    </sys:String>
+    <sys:String x:Key="assignTransfer">
+        Specified transfer
+    </sys:String>
+    <sys:String x:Key="mergeTransfer">
+        Merge transfer
+    </sys:String>
+    <sys:String x:Key="transerToIVR">
+        To automatic flow
+    </sys:String>
+    <sys:String x:Key="allIVRDevice">
+        All IVR devices
+    </sys:String>
+    <sys:String x:Key="transferToIVRAccessCode">
+        Transferred-to IVR access code
+    </sys:String>
+    <sys:String x:Key="hungUp">
+        Suspend
+    </sys:String>
+    <sys:String x:Key="transferQueue">
+        Transfer queue
+    </sys:String>
+    <sys:String x:Key="configOfSkillsQueue">
+        Skill queue configuration
+    </sys:String>
+    <sys:String x:Key="transferToQueue">
+        To queue
+    </sys:String>
+    <sys:String x:Key="success">
+        Success
+    </sys:String>
+    <sys:String x:Key="transferToAccessCode">
+        To access code
+    </sys:String>
+    <sys:String x:Key="transferToSystemAccessCode">
+        Transferred-to system access code
+    </sys:String>
+    <sys:String x:Key="nullTransferObject">
+        Transfer object can not null
+    </sys:String>
+    <sys:String x:Key="normalVoiceCall">
+        Normal speech Call
+    </sys:String>
+    <sys:String x:Key="start">
+        Start
+    </sys:String>
+    <sys:String x:Key="innerConsult">
+        Connection Control Bar - Internal Help
+    </sys:String>
+    <sys:String x:Key="consultToQueue">
+        Seek help from skill queue
+    </sys:String>
+    <sys:String x:Key="inputBusinessAgentId">
+        Enter agent ID
+    </sys:String>
+    <sys:String x:Key="twoPartiesConsult">
+        Two-party help
+    </sys:String>
+    <sys:String x:Key="tripartiteConsult">
+        Three-party help
+    </sys:String>
+    <sys:String x:Key="choiceConsultWay">
+        Select help mode
+    </sys:String>
+    <sys:String x:Key="choiceSkillQueue">
+        Choice skill queue
+    </sys:String>
+    <sys:String x:Key="transferOut">
+        Transfer out
+    </sys:String>
+    <sys:String x:Key="transferOutCallerNumber">
+        Transferred calling number
+    </sys:String>
+    <sys:String x:Key="transferOutCalledNumber">
+        Please enter transferred-to tel number
+    </sys:String>
+    <sys:String x:Key="callTransferOutNumber">
+        Calling number to be transferred out
+    </sys:String>
+    <sys:String x:Key="transferOutWay">
+        Transfer out mode
+    </sys:String>
+    <sys:String x:Key="agentReleaseCallNoMatterTransferOutSucceedsOrNot">
+        Agent releases call no matter transfer out succeeds or not
+    </sys:String>
+    <sys:String x:Key="agentReleasesCallAfterSuccessfulTransferOut">
+        Agent releases call after successful transfer out
+    </sys:String>
+    <sys:String x:Key="discriptionOfSuccessTransfer">
+        Agent and called party converse after successful transfer out.Calling party and called party converse after agent releases
+    </sys:String>
+    <sys:String x:Key="discriptionOfTripartiteTransfer">
+        Three parties converse after successful transfer out.The other two parties converse after agent releases
+    </sys:String>
+    <sys:String x:Key="number">
+        Number
+    </sys:String>
+    <sys:String x:Key="mediaType">
+        Media Type
+    </sys:String>
+    <sys:String x:Key="connectHold">
+        Connect Held Call
+    </sys:String>
+    <sys:String x:Key="chooseonecalling">
+        Please choose a calling
+    </sys:String>
+    <sys:String x:Key="twoCall">
+        Two call
+    </sys:String>
+    <sys:String x:Key="currentState">
+        Current State
+    </sys:String>
+    <sys:String x:Key="agentId">
+        Agent ID
+    </sys:String>
+    <sys:String x:Key="agentRest">
+        Agent Rest
+    </sys:String>
+    <sys:String x:Key="restTimeOut">
+        Your rest time out {0} minutes,please cancel to rest
+    </sys:String>
+    <sys:String x:Key="agentStartRest">
+        Agent rest at {0}
+    </sys:String>
+    <sys:String x:Key="requestRest">
+        Request Rest
+    </sys:String>
+    <sys:String x:Key="inputRestTime">
+        Please input rest time（1~59）：
+    </sys:String>
+    <sys:String x:Key="minutes">
+        minutes
+    </sys:String>
+    <sys:String x:Key="contentUnLegal">
+        Input content not is legal
+    </sys:String>
+    <sys:String x:Key="calledNumberNotIsNull">
+        Called number not is null
+    </sys:String>
+    <sys:String x:Key="phoneNumber">
+        Tel number
+    </sys:String>
+    <sys:String x:Key="address">
+        Active server IP
+    </sys:String>
+    <sys:String x:Key="setWork">
+        Enter Working Status
+    </sys:String>
+    <sys:String x:Key="cancelWork">
+        Exit Working Status
+    </sys:String>
+    <sys:String x:Key="setData">
+        Set Data
+    </sys:String>
+    <sys:String x:Key="getData">
+        Query Data
+    </sys:String>
+    <sys:String x:Key="announcement">
+        Connection Control Bar - Release Bulletin
+    </sys:String>
+    <sys:String x:Key="sendNote">
+       Connection Control Bar - Send Note
+    </sys:String>
+    <sys:String x:Key="canNotGetHoldInfo">
+        Can not get hold info
+    </sys:String>
+    <sys:String x:Key="record">
+        Record
+    </sys:String>
+
+    <sys:String x:Key="ipView">
+        IP call
+    </sys:String>
+    <sys:String x:Key="stopTxtChat">
+        stop text chat
+    </sys:String>
+    <sys:String x:Key="txtChat">
+        text chat
+    </sys:String>
+    <sys:String x:Key="stopProView">
+        stop view
+    </sys:String>
+    <sys:String x:Key="pushWeb">
+        push web
+    </sys:String>
+    <sys:String x:Key="setProView">
+        set view
+    </sys:String>
+    <sys:String x:Key="proView">
+        start view
+    </sys:String>
+    <sys:String x:Key="broadcast">
+        broadcast
+    </sys:String>
+    <sys:String x:Key="transFront">
+        transFront
+    </sys:String>
+    <sys:String x:Key="transOut">
+        Transfer Out
+    </sys:String>
+
+    <sys:String x:Key="sendAnnouncementByWorkGroup">
+        Release bulletin by agent group
+    </sys:String>
+    <sys:String x:Key="sendAnnouncementBySkills">
+        Release bulletin by skill
+    </sys:String>
+    <sys:String x:Key="workGroup">
+        Agent group
+    </sys:String>
+    <sys:String x:Key="skills">
+        Skill
+    </sys:String>
+    <sys:String x:Key="announce">
+        Bulletin
+    </sys:String>
+    <sys:String x:Key="targetWorkNo">
+        Enter agent ID for receiving note:
+    </sys:String>
+    <sys:String x:Key="NotesContent">
+        Note content [1018 bytes at most]:
+    </sys:String>
+
+    <sys:String x:Key="registerSkill">
+        Reset Skills
+    </sys:String>
+    <sys:String x:Key="registerType">
+        Login mode
+    </sys:String>
+    <sys:String x:Key="autosign">
+        Automatic login
+    </sys:String>
+    <sys:String x:Key="manualsign">
+        Manual login
+    </sys:String>
+    <sys:String x:Key="selectSkills">
+        Select skills:
+    </sys:String>
+    <sys:String x:Key="inputMsg">
+        Please enter data
+    </sys:String>
+    <sys:String x:Key="indexNo">
+        Serial No
+    </sys:String>
+    <sys:String x:Key="qryResult">
+        Query result
+    </sys:String>
+    <sys:String x:Key="othersItem">
+        Others
+    </sys:String>
+    <sys:String x:Key="pleaseSelectSkills">
+        Please select skills
+    </sys:String>
+    <sys:String x:Key="internalHelp">
+        Internal Help
+    </sys:String>
+    <sys:String x:Key="setDataTitle">
+        Set call data
+    </sys:String>
+    <sys:String x:Key="callingNumber">
+        Calling number
+    </sys:String>
+    <sys:String x:Key="setDataSucc">
+        Setting data succeeded
+    </sys:String>
+    <sys:String x:Key="qryDataTitle">
+        Query call data
+    </sys:String>
+    <sys:String x:Key="callTransTitle">
+        Connection Control Bar - Call Transfer
+    </sys:String>
+    <sys:String x:Key="transQue">
+        Transferred-to queue
+    </sys:String>
+    <sys:String x:Key="transferOutTitle">
+        Connection Control Bar - Call Transfer Out
+    </sys:String>
+
+    <sys:String x:Key="agentIdle">
+        Agent idle
+    </sys:String>
+    <sys:String x:Key="agentBusy">
+        Agent busy
+    </sys:String>
+    <sys:String x:Key="agentForceBusy">
+        Agent force busy
+    </sys:String>
+    <sys:String x:Key="agentSignOut">
+        Waiting to login
+    </sys:String>
+    <sys:String x:Key="phoneAlerting">
+        Ringing
+    </sys:String>
+    <sys:String x:Key="agentRecord">
+        Recording
+    </sys:String>
+    <sys:String x:Key="agentWaitAnswer">
+        Waiting to answer
+    </sys:String>
+    <sys:String x:Key="agentConver">
+        Conversing
+    </sys:String>
+    <sys:String x:Key="agentWork">
+        Agent work
+    </sys:String>
+    <sys:String x:Key="agentWaitRest">
+        Waiting to rest
+    </sys:String>
+    <sys:String x:Key="agentCancelBusy">
+        Agent end busy
+    </sys:String>
+    <sys:String x:Key="agentEndRest">
+        Agent end rest
+    </sys:String>
+
+    <sys:String x:Key="callTransfer">
+        Transfer Call
+    </sys:String>
+    <sys:String x:Key="restMin">
+        Min
+    </sys:String>
+    <sys:String x:Key="restString">
+        Rest During (1~59)
+    </sys:String>
+
+    <sys:String x:Key="config_Title">
+        Connection Control Bar - Parameter Settings
+    </sys:String>
+    <sys:String x:Key="config_Basic">
+        Basic
+    </sys:String>
+    <sys:String x:Key="config_Advanced">
+        Advanced
+    </sys:String>
+    <sys:String x:Key="config_Automatic">
+        Automatic
+    </sys:String>
+    <sys:String x:Key="config_Server">
+        Server
+    </sys:String>
+    <sys:String x:Key="config_Other">
+        Other
+    </sys:String>
+    <sys:String x:Key="config_Timeout">
+        Time-out duration (5~60) s :
+    </sys:String>
+    <sys:String x:Key="config_autoanswer">
+        Answer automatically
+    </sys:String>
+    <sys:String x:Key="config_autowork">
+        Enter work automatically
+    </sys:String>
+    <sys:String x:Key="config_userVoice">
+        Use internal Voice
+    </sys:String>
+    <sys:String x:Key="config_sipIP">
+        SIP server IP
+    </sys:String>
+    <sys:String x:Key="config_sipPort">
+        SIP server port
+    </sys:String>
+    <sys:String x:Key="config_sipIP1">
+        SIP server2 IP
+    </sys:String>
+    <sys:String x:Key="config_sipPort1">
+        SIP server2 port
+    </sys:String>
+    <sys:String x:Key="config_account">
+        Account
+    </sys:String>
+    <sys:String x:Key="config_password">
+        Password
+    </sys:String>
+    <sys:String x:Key="config_head">
+        Set system parameters
+    </sys:String>
+    <sys:String x:Key="config_egIP">
+        e.g. IP
+    </sys:String>
+    <sys:String x:Key="login_head">
+        Select login mode and skills
+    </sys:String>
+    <sys:String x:Key="bulletin_head">
+        Release bulletin
+    </sys:String>
+    <sys:String x:Key="btn_cancel">
+        Cancel
+    </sys:String>
+    <sys:String x:Key="sendnote_head">
+        Enter agent ID and note content
+    </sys:String>
+    <sys:String x:Key="sendnote_fail">
+        Sending note failed.
+    </sys:String>
+    <sys:String x:Key="msgview_fail">
+        Sending failed.
+    </sys:String>
+    <sys:String x:Key="msgview_answer">
+        Answer
+    </sys:String>
+    <sys:String x:Key="msgview_del">
+        Delete
+    </sys:String>
+    <sys:String x:Key="msgview_time">
+        Time
+    </sys:String>
+    <sys:String x:Key="msgview_sender">
+        Sender
+    </sys:String>
+    <sys:String x:Key="msgview_type">
+        Type
+    </sys:String>
+    <sys:String x:Key="msgview_note">
+        Note
+    </sys:String>
+    <sys:String x:Key="msgview_bullet">
+        Bulletin
+    </sys:String>
+    <sys:String x:Key="msgview_title">
+        Connection Control Bar - Browse Notes
+    </sys:String>
+    <sys:String x:Key="msgview_head">
+        Browse notes
+    </sys:String>
+    <sys:String x:Key="internalcall_head">
+        Select target agent
+    </sys:String>
+    <sys:String x:Key="agentinfo_id">
+        ID :
+    </sys:String>
+    <sys:String x:Key="agentinfo_agentid">
+        Agent ID :
+    </sys:String>
+    <sys:String x:Key="agentinfo_name">
+        Name :
+    </sys:String>
+    <sys:String x:Key="agentinfo_account">
+        Account :
+    </sys:String>
+    <sys:String x:Key="agentinfo_group">
+        Group :
+    </sys:String>
+    <sys:String x:Key="agentinfo_action">
+        Current operation :
+    </sys:String>
+    <sys:String x:Key="agentinfo_nolog">
+        Not logged in
+    </sys:String>
+    <sys:String x:Key="agentinfo_nogroup">
+        Ungrouped agent
+    </sys:String>
+    <sys:String x:Key="setdata_head">
+        Set parameters
+    </sys:String>
+    <sys:String x:Key="transcall_head">
+        Set call transfer parameters
+    </sys:String>
+    <sys:String x:Key="transout_head">
+        Set call transfer out parameters
+    </sys:String>
+    <sys:String x:Key="outcall_title">
+        Connection Control Bar - Outgoing Call
+    </sys:String>
+    <sys:String x:Key="outcall_head">
+        Set call transfer out parameters
+    </sys:String>
+    <sys:String x:Key="outcall_skill">
+        Skill
+    </sys:String>
+    <sys:String x:Key="outcall_mediaabi">
+        Media ability
+    </sys:String>
+    <sys:String x:Key="outcall_mode">
+        Call out check mode
+    </sys:String>
+    <sys:String x:Key="outcall_nocheck">
+        Not check
+    </sys:String>
+    <sys:String x:Key="outcall_becheck">
+        Check before connected
+    </sys:String>
+    <sys:String x:Key="outcall_afcheck">
+        Check after connected
+    </sys:String>
+    <sys:String x:Key="outcall_default">
+        Default
+    </sys:String>
+    <sys:String x:Key="internalcall_fail">
+        internal call failed
+    </sys:String>
+    <sys:String x:Key="internalhelp_head">
+        Set internal help parameters
+    </sys:String>
+    <sys:String x:Key="internalhelp_fail">
+        Internal help fail
+    </sys:String>
+    <sys:String x:Key="internalhelp_succ">
+        Internal help succ
+    </sys:String>
+    <sys:String x:Key="sendnote_tooltip">
+        Send Note
+    </sys:String>
+    <sys:String x:Key="releaseBull_tooltip">
+        Release Bulletin
+    </sys:String>
+    <sys:String x:Key="config_serverType">
+        Server type
+    </sys:String>
+    <sys:String x:Key="innercall_choseselef">
+        You can not choose yourself.
+    </sys:String>
+    <sys:String x:Key="setdata_selecttalk">
+        Please select a talk.
+    </sys:String>
+    <sys:String x:Key="login_input">
+        Please input workno and phoneno.
+    </sys:String>
+    <sys:String x:Key="login_title">
+        Connection Control Bar - Login
+    </sys:String>
+    <sys:String x:Key="main_instruc">
+        Illustration
+    </sys:String>
+    <sys:String x:Key="notifybullet_nogroup">
+        No agents under current group!
+    </sys:String>
+    <sys:String x:Key="instruction_cti">
+        1, MCP needs ICD V300R006C60SPC006 at least
+    </sys:String>
+    <sys:String x:Key="mainwindow_voiceinifail">
+        Voice initial fail
+    </sys:String>
+    <sys:String x:Key="mainwindow_innercallsuc">
+        Innercall succ
+    </sys:String>
+    <sys:String x:Key="mainwindow_innercallfal">
+        Innercall fail
+    </sys:String>
+    <sys:String x:Key="mainwindow_noanswer">
+        No answer
+    </sys:String>
+    <sys:String x:Key="mainwindow_instruction">
+        Connection Control Bar - Illustration
+    </sys:String>
+    <sys:String x:Key="voice_setsipfail">
+        Set voice sip info failed!
+    </sys:String>
+    <sys:String x:Key="voice_setlocalfail">
+        Set voice local info failed!
+    </sys:String>
+    <sys:String x:Key="voice_registerfail">
+        Voice phone register failed!
+    </sys:String>
+    <sys:String x:Key="voice_initialsuc">
+        Voice register success!
+    </sys:String>
+
+    <sys:String x:Key="000-001">
+        The method for obtaining agent events is incorrect.
+    </sys:String>
+    <sys:String x:Key="000-002">
+        The parameters transmitted using the URL are incorrect, the IP address is incorrect, or the interface parameters are invalid and do not comply with relevant definitions
+    </sys:String>
+    <sys:String x:Key="000-003">
+        The agent has no right to invoke interfaces
+    </sys:String>
+    <sys:String x:Key="000-004">
+        The agent is switching to another server
+    </sys:String>
+    <sys:String x:Key="100-001">
+        The login parameters are null or set incorrectly
+    </sys:String>
+    <sys:String x:Key="100-002">
+        The agent has logged in
+    </sys:String>
+    <sys:String x:Key="100-003">
+        During agent login, the exception ResourceUnavailableException or ProviderUnavailableException is thrown
+    </sys:String>
+    <sys:String x:Key="100-004">
+        The agent enters an incorrect user name or password during login
+    </sys:String>
+    <sys:String x:Key="100-005">
+        The logout parameters are invalid
+    </sys:String>
+    <sys:String x:Key="100-006">
+        The agent has not logged in
+    </sys:String>
+    <sys:String x:Key="100-007">
+        An exception occurs when the agent performs an operation. The possible cause is that WAS resources are not accessible or an internal error occurs
+    </sys:String>
+    <sys:String x:Key="100-008">
+        The agent has logged out
+    </sys:String>
+    <sys:String x:Key="100-009">
+        The agent fails to configure the status
+    </sys:String>
+    <sys:String x:Key="100-010">
+        A logout state error occurs
+    </sys:String>
+    <sys:String x:Key="100-011">
+        The login parameters are invalid
+    </sys:String>
+    <sys:String x:Key="100-012">
+        The agent type used for login is invalid
+    </sys:String>
+    <sys:String x:Key="100-013">
+        The agent phone number to be bound is invalid
+    </sys:String>
+    <sys:String x:Key="100-014">
+        The agent phone number used for login is out of the configured range
+    </sys:String>
+    <sys:String x:Key="100-015">
+        The agent has logged in, and cannot be forcibly logged out
+    </sys:String>
+    <sys:String x:Key="100-016">
+        The IP address is invalid during login
+    </sys:String>
+    <sys:String x:Key="110-016">
+        The account is locked
+    </sys:String>
+    <sys:String x:Key="101-001">
+        The agent has no conferenece
+    </sys:String>
+    <sys:String x:Key="101-002">
+        The agent is not chairman of current conferenece
+    </sys:String>
+    <sys:String x:Key="200-001">
+        The number dialed by the agent is incorrect
+    </sys:String>
+    <sys:String x:Key="200-002">
+        No call exists for the agent to answer
+    </sys:String>
+    <sys:String x:Key="200-003">
+        No call exists for the agent to mute
+    </sys:String>
+    <sys:String x:Key="200-004">
+        The call state is incorrect when the agent mutes the call
+    </sys:String>
+    <sys:String x:Key="200-005">
+        No call exists for the agent to hold
+    </sys:String>
+    <sys:String x:Key="200-006">
+        No call is held during call holding
+    </sys:String>
+    <sys:String x:Key="200-007">
+        No call exists for the agent to unmute
+    </sys:String>
+    <sys:String x:Key="200-008">
+        A call state error occurs when the agent unmutes a call
+    </sys:String>
+    <sys:String x:Key="200-009">
+        No call exists for the agent to play an announcement
+    </sys:String>
+    <sys:String x:Key="200-010">
+        No call exists for the agent to perform three-party conversation
+    </sys:String>
+    <sys:String x:Key="200-011">
+        No call is held for the agent to perform three-party conversation
+    </sys:String>
+    <sys:String x:Key="200-012">
+        No call exists for the agent to transfer
+    </sys:String>
+    <sys:String x:Key="200-013">
+        No call exists for the agent to hold
+    </sys:String>
+    <sys:String x:Key="200-014">
+        A call state error occurs after the agent holds the call
+    </sys:String>
+    <sys:String x:Key="200-015">
+        No call exists for the agent to unhold
+    </sys:String>
+    <sys:String x:Key="200-016">
+        A call state error occurs when the agent unholds the call
+    </sys:String>
+    <sys:String x:Key="200-017">
+        No call exists for the agent to end
+    </sys:String>
+    <sys:String x:Key="200-018">
+        No call exists for the agent to ask for internal help
+    </sys:String>
+    <sys:String x:Key="200-019">
+        No call exists for the agent to still
+    </sys:String>
+    <sys:String x:Key="200-020">
+        A call state error occurs when the agent stills the image of a call
+    </sys:String>
+    <sys:String x:Key="200-021">
+        No call exists for the agent to unstill
+    </sys:String>
+    <sys:String x:Key="200-022">
+        A call state error occurs when the agent unstills the image of a call
+    </sys:String>
+    <sys:String x:Key="200-023">
+        No call exists when the agent releases the specified phone number
+    </sys:String>
+    <sys:String x:Key="200-024">
+        No phone number exists when the agent releases the phone number
+    </sys:String>
+    <sys:String x:Key="200-025">
+        No call exists when the agent releases the call
+    </sys:String>
+    <sys:String x:Key="200-026">
+        No call exists
+    </sys:String>
+    <sys:String x:Key="210-001">
+        No URL information is found
+    </sys:String>
+    <sys:String x:Key="300-001">
+        The agent has no right to query agent information
+    </sys:String>
+    <sys:String x:Key="300-002">
+        The agent does not exist when agents are queried
+    </sys:String>
+    <sys:String x:Key="300-003">
+        The agent does not exist when agent groups are queried
+    </sys:String>
+    <sys:String x:Key="300-004">
+        The agent group does not exist when agent groups are queried
+    </sys:String>
+    <sys:String x:Key="400-001">
+        No call information exists when the agent sets call-associated data
+    </sys:String>
+    <sys:String x:Key="400-003">
+        No call information exists when the agent queries held calls
+    </sys:String>
+    <sys:String x:Key="500-001">
+        A state error occurs when recording is rewound
+    </sys:String>
+    <sys:String x:Key="500-002">
+        A state error occurs when recording is fast forwarded
+    </sys:String>
+    <sys:String x:Key="500-003">
+        A state error occurs when recording playback pauses
+    </sys:String>
+    <sys:String x:Key="500-004">
+        A state error occurs when recording pauses
+    </sys:String>
+    <sys:String x:Key="500-005">
+        A state error occurs when recording playback resumes
+    </sys:String>
+    <sys:String x:Key="500-006">
+        A state error occurs when recording resumes
+    </sys:String>
+    <sys:String x:Key="500-007">
+        A state error occurs when recording playback starts
+    </sys:String>
+    <sys:String x:Key="500-008">
+        A state error occurs when recording starts
+    </sys:String>
+    <sys:String x:Key="500-009">
+        A state error occurs when recording playback stops
+    </sys:String>
+    <sys:String x:Key="500-010">
+        A state error occurs when recording stops
+    </sys:String>
+    <sys:String x:Key="600-001">
+        No information about the agent exists or no skill queue is configured for the agent when the agent queries information about the skill queues of the agent
+    </sys:String>
+    <sys:String x:Key="600-002">
+        No skill queue information exists when the agent queries the information about skill queues of a specified VDN
+    </sys:String>
+    <sys:String x:Key="600-003">
+        No configuration information exists when the agent queries the access code of the home VDN of the agent
+    </sys:String>
+    <sys:String x:Key="600-004">
+        No configuration information exists when the agent queries the IVR information of the home VDN of the agent
+    </sys:String>
+    <sys:String x:Key="600-005">
+        No skill queue information exists when the agent queries the information about skill queues of the home VDN of the agent
+    </sys:String>
+    <sys:String x:Key="700-001">
+        The parameter of conference memeber is empty
+    </sys:String>
+    <sys:String x:Key="700-002">
+        The result of querying conference status is null
+    </sys:String>
+    <sys:String x:Key="700-003">
+        Send message fail
+    </sys:String>
+    <sys:String x:Key="701-001">
+        The parameter of conference memeber is empty
+    </sys:String>
+    <sys:String x:Key="701-002">
+        The result of querying conference status is null
+    </sys:String>
+    <sys:String x:Key="701-003">
+        When apply for a conferenece, the applicant or Participant have joined in conference
+    </sys:String>
+    <sys:String x:Key="701-004">
+        When invite the participants, the current agent is not in the conferenece
+    </sys:String>
+    <sys:String x:Key="701-005">
+        When stop the conference, the conference is not existed or the current agent has not right to stop
+    </sys:String>
+    <sys:String x:Key="701-006">
+        When apply for a conferenece, the MS IP is not configurated in WAS
+    </sys:String>
+    <sys:String x:Key="800-001">
+        Proxy service is null
+    </sys:String>
+    <sys:String x:Key="800-002">
+            When query configuration information, the exception occurs
+        </sys:String>
+        <sys:String x:Key="800-003">
+            The default media gateway information is not existed
+        </sys:String>
+        <sys:String x:Key="900-001">
+            A NOPROVIDER exception occurs during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-002">
+            The necessary right is not granted for the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-003">
+            The ResourceUnavailable exception occurs during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-004">
+            No agent information exists during monitoring for quality control
+        </sys:String>
+        <sys:String x:Key="900-005">
+            A state error occurs during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-006">
+            The video recording time parameter is invalid during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-007">
+            No video recording license is loaded during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-008">
+            An unknown video recording platform exception occurs during the quality control operation
+        </sys:String>
+        <sys:String x:Key="900-009">
+            No quality control task is found when the task is deleted
+        </sys:String>
+        <sys:String x:Key="999-001">
+            The WAS URL in the configuration file of the server is incorrect
+        </sys:String>
+    <sys:String x:Key="config_voicedomain">
+        Domain
+    </sys:String>
+    <sys:String x:Key="config_port">
+        Port
+    </sys:String>
+    <sys:String x:Key="config_browse">
+        Browse
+    </sys:String>
+    <sys:String x:Key="config_usessl">
+        Use SSL
+    </sys:String>
+    <sys:String x:Key="config_sslpath">
+        Certificate path
+    </sys:String>
+    <sys:String x:Key="config_sslpwd">
+        Certificate password
+    </sys:String>
+    <sys:String x:Key="modifypwd_inputcheck">
+        Please input old password and new password.
+    </sys:String>
+    <sys:String x:Key="main_forcelogout">
+        Forced Logout.
+    </sys:String>
+    <sys:String x:Key="main_changepwd">
+        you must modify password in a minute for the first time
+    </sys:String>
+    <sys:String x:Key="main_cancelchangepwd">
+        cancel modify password
+    </sys:String>
+    <sys:String x:Key="main_cancelchangepwdfail">
+        modify password failed
+    </sys:String>
+    <sys:String x:Key="main_changepwdsucc">
+        modify password succeed,please login again
+    </sys:String>
+    <sys:String x:Key="main_textmessage">
+        Text message
+    </sys:String>
+    <sys:String x:Key="main_actiondisable">
+       Action disable
+    </sys:String>
+    <sys:String x:Key="set_agenttype">
+        Agent type
+    </sys:String>
+    <sys:String x:Key="set_longcall">
+        Long call
+    </sys:String>
+    <sys:String x:Key="set_pcphonevideo">
+        PC+PHONE VIDEO
+    </sys:String>
+    <sys:String x:Key="textmsg_calllist">
+        Call list
+    </sys:String>
+    <sys:String x:Key="textmsg_message">
+        Message
+    </sys:String>
+    <sys:String x:Key="textmsg_release">
+        Release
+    </sys:String>
+    <sys:String x:Key="textmsg_innercall">
+        Inner call
+    </sys:String>
+    <sys:String x:Key="textmsg_calltrans">
+        Call trans
+    </sys:String>
+    <sys:String x:Key="textmsg_send">
+        Send
+    </sys:String>
+    <sys:String x:Key="textmsg_clear">
+        Clear
+    </sys:String>
+    <sys:String x:Key="main_syserror">
+        Can not connect server,please check settings.
+    </sys:String>
+    <sys:String x:Key="main_cancelrest">
+        Cancel rest
+    </sys:String>
+    <sys:String x:Key="main_localvideowindow">
+        Local Video Window
+    </sys:String>
+    <sys:String x:Key="main_remotevideowindow">
+        Remote Video Window
+    </sys:String>
+    <sys:String x:Key="txtchat_upload">
+        Upload
+    </sys:String>
+    <sys:String x:Key="txtchat_download">
+        Download
+    </sys:String>
+    <sys:String x:Key="txtchat_transtype">
+        Trans type
+    </sys:String>
+    <sys:String x:Key="txtchat_filedownloadpath">
+        File download path
+    </sys:String>
+    <sys:String x:Key="txtchat_filesavepath">
+        File save path
+    </sys:String>
+    <sys:String x:Key="txtchat_select">
+        Select
+    </sys:String>
+    <sys:String x:Key="txtchat_answertype">
+        Answer Type
+    </sys:String>
+    <sys:String x:Key="txtchat_default">
+        Default
+    </sys:String>
+    <sys:String x:Key="txtchat_video">
+        Video
+    </sys:String>
+    <sys:String x:Key="txtchat_audio">
+        Audio
+    </sys:String>
+    <sys:String x:Key="innerhelp_succ">
+        inner help succeed
+    </sys:String>
+    <sys:String x:Key="innerhelp_failed">
+        inner help failed
+    </sys:String>
+    <sys:String x:Key="innerhelp_refused">
+        inner help refused
+    </sys:String>
+    <sys:String x:Key="innerhelp_arrive">
+        inner help arrived
+    </sys:String>
+    <sys:String x:Key="msgsend_succ">
+        send msg succeed
+    </sys:String>
+    <sys:String x:Key="msgsend_failed">
+        send msg failed
+    </sys:String>
+    <sys:String x:Key="modifypwd_title">
+        Modify Password
+    </sys:String>
+    <sys:String x:Key="modifypwd_oldpwd">
+        Old Password
+    </sys:String>
+    <sys:String x:Key="modifypwd_newpwd">
+        New Password
+    </sys:String>
+    <sys:String x:Key="modifypwd_confirmpwd">
+        Confirm Password
+    </sys:String>
+    <sys:String x:Key="modifypwd_pwdnotsame">
+        confirm password and new password are not same
+    </sys:String>
+    <sys:String x:Key="otherfunc_title">
+        Other Function
+    </sys:String>
+    <sys:String x:Key="otherfunc_clearlog">
+        Clear
+    </sys:String>
+    <sys:String x:Key="otherfunc_logtime">
+        Time
+    </sys:String>
+    <sys:String x:Key="otherfunc_logtype">
+        Type
+    </sys:String>
+    <sys:String x:Key="otherfunc_logcontent">
+        Content
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickuptitle">
+        Snatch Pickup
+    </sys:String>
+    <sys:String x:Key="otherfunc_refresh">
+        Refresh
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup">
+        Pickup
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_nosamegroup">
+        not in the same workgroup.
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_noright">
+        no snatch pickup right.
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_fail">
+        snatch pickup failed.
+    </sys:String>
+    <sys:String x:Key="otherset_title">
+        Other Setting
+    </sys:String>
+    <sys:String x:Key="otherset_phonelinkage">
+        phonelinkage
+    </sys:String>
+    <sys:String x:Key="otherset_resetskillsucc">
+        set succeed
+    </sys:String>
+    <sys:String x:Key="conf_title">
+        Conference
+    </sys:String>
+    <sys:String x:Key="conf_invite">
+        Invite
+    </sys:String>
+    <sys:String x:Key="conf_create">
+        Create
+    </sys:String>
+    <sys:String x:Key="conf_exit">
+        Exit
+    </sys:String>
+    <sys:String x:Key="conf_terminate">
+        Terminate
+    </sys:String>
+    <sys:String x:Key="conf_filepat">
+        Fiel path
+    </sys:String>
+    <sys:String x:Key="conf_filerecvname">
+        Receive name
+    </sys:String>
+    <sys:String x:Key="conf_filerecvpath">
+        Receive path
+    </sys:String>
+    <sys:String x:Key="conf_send">
+        Send
+    </sys:String>
+    <sys:String x:Key="conf_recv">
+        Receive
+    </sys:String>
+    <sys:String x:Key="conf_fileshare">
+        File share
+    </sys:String>
+    <sys:String x:Key="conf_filesave">
+        File save
+    </sys:String>
+    <sys:String x:Key="conf_fileclose">
+        File close
+    </sys:String>
+    <sys:String x:Key="conf_prepage">
+        Previous 
+    </sys:String>
+    <sys:String x:Key="conf_nextpage">
+        Next 
+    </sys:String>
+    <sys:String x:Key="conf_handmove">
+        Hand move
+    </sys:String>
+    <sys:String x:Key="conf_localapp">
+        Local apps
+    </sys:String>
+    <sys:String x:Key="conf_qry">
+        Query
+    </sys:String>
+    <sys:String x:Key="conf_sharetype">
+        Share type
+    </sys:String>
+    <sys:String x:Key="conf_sharetypescreen">
+        screen
+    </sys:String>
+    <sys:String x:Key="conf_sharetypeapp">
+        application
+    </sys:String>
+    <sys:String x:Key="conf_startshare">
+        Start share
+    </sys:String>
+    <sys:String x:Key="conf_stopshare">
+        Stop share
+    </sys:String>
+    <sys:String x:Key="conf_operationpri">
+        Privilege
+    </sys:String>
+    <sys:String x:Key="conf_operapriadd">
+        add
+    </sys:String>
+    <sys:String x:Key="conf_operapridel">
+        delete
+    </sys:String>
+    <sys:String x:Key="conf_operaprirej">
+        reject
+    </sys:String>
+    <sys:String x:Key="conf_reqpri">
+        Request privilege
+    </sys:String>
+    <sys:String x:Key="conf_setpri">
+        Set privilege
+    </sys:String>
+    <sys:String x:Key="conf_filesharewindow">
+        Screen share window
+    </sys:String>
+
+    <sys:String x:Key="main_previewcallout">
+        Preview call out ?
+    </sys:String>
+    <sys:String x:Key="textchat_qry">
+        query
+    </sys:String>
+    <sys:String x:Key="textchat_qrycallsession">
+        Qry call session
+    </sys:String>
+    <sys:String x:Key="textchat_qrycallcontent">
+        Qry call content
+    </sys:String>
+    <sys:String x:Key="textchat_pageno">
+        pageNo
+    </sys:String>
+    <sys:String x:Key="textchat_pagesize">
+        pageSize
+    </sys:String>
+    <sys:String x:Key="textchat_callID">
+        callID
+    </sys:String>
+    <sys:String x:Key="textchat_id">
+        ID
+    </sys:String>
+    <sys:String x:Key="textchat_subMediaType">
+        subMediaType
+    </sys:String>
+    <sys:String x:Key="textchat_sender">
+        sender
+    </sys:String>
+    <sys:String x:Key="textchat_receiver">
+        receiver
+    </sys:String>
+    <sys:String x:Key="textchat_contenttype">
+        contentType
+    </sys:String>
+    <sys:String x:Key="textchat_content">
+        content
+    </sys:String>
+    <sys:String x:Key="textchat_totalcount">
+        totalCount
+    </sys:String>
+    <sys:String x:Key="textchat_totalpage">
+        totalPageNo
+    </sys:String>
+    <sys:String x:Key="textchat_starttime">
+        startTime
+    </sys:String>
+    <sys:String x:Key="textchat_endtime">
+        endTime
+    </sys:String>
+    <sys:String x:Key="textchat_calltype">
+        callType
+    </sys:String>
+    <sys:String x:Key="textchat_caller">
+        caller
+    </sys:String>
+    <sys:String x:Key="textchat_called">
+        called
+    </sys:String>
+    <sys:String x:Key="textchat_isInnerCall">
+        innerCall
+    </sys:String>
+    <sys:String x:Key="textchat_realcaller">
+        realCaller
+    </sys:String>
+    <sys:String x:Key="textchat_callerName">
+        callerName
+    </sys:String>
+    <sys:String x:Key="textchat_releasecause">
+        rleaseCause
+    </sys:String>
+    <sys:String x:Key="textchat_qryfailed">
+        Query failed
+    </sys:String>
+    <sys:String x:Key="textchat_direction">
+        direction
+    </sys:String>
+
+    <sys:String x:Key="recordscreen_title">
+        Record Screen
+    </sys:String>
+    <sys:String x:Key="recordscreen_setting">
+        Settings
+    </sys:String>
+    <sys:String x:Key="recordscreen_type">
+        Type
+    </sys:String>
+    <sys:String x:Key="recordscreen_single">
+        Single-screen
+    </sys:String>
+    <sys:String x:Key="recordscreen_twoscreen">
+        Dual-screen
+    </sys:String>
+    <sys:String x:Key="recordscreen_screenno">
+        Screen No
+    </sys:String>
+    <sys:String x:Key="recordscreen_localip">
+        Local IP
+    </sys:String>
+    <sys:String x:Key="recordscreen_localport">
+        Local Port
+    </sys:String>
+    <sys:String x:Key="recordscreen_start">
+        Start
+    </sys:String>
+    <sys:String x:Key="recordscreen_stop">
+        Stop
+    </sys:String>
+    <sys:String x:Key="recordscreen_initial">
+        Initialize
+    </sys:String>
+    <sys:String x:Key="textchat_other_pickup">
+        Pick up
+    </sys:String>
+    <sys:String x:Key="setting_vrpip">
+        VRP IP
+    </sys:String>
+    <sys:String x:Key="setting_vrpport">
+        VRP Port
+    </sys:String>
+    <sys:String x:Key="main_usernumber">
+        User number
+    </sys:String>
+    <sys:String x:Key="sms_title">
+        Sms
+    </sys:String>
+    <sys:String x:Key="sms_skill">
+        Skill
+    </sys:String>
+    <sys:String x:Key="sms_id">
+        ID
+    </sys:String>
+    <sys:String x:Key="sms_receiver">
+        Receiver
+    </sys:String>
+    <sys:String x:Key="sms_content">
+        Content
+    </sys:String>
+    <sys:String x:Key="sms_jauip">
+        JAU IP
+    </sys:String>
+    <sys:String x:Key="sms_jauport">
+        JAU Port
+    </sys:String>
+    <sys:String x:Key="sms_send">
+        Send
+    </sys:String>
+    <sys:String x:Key="sms_cancel">
+        Cancel
+    </sys:String>
+    <sys:String x:Key="qc_stopwhisper">
+        Stop whisper
+    </sys:String>
+    <sys:String x:Key="qc_stopinsertlisten">
+        Stop insert/supervise
+    </sys:String>
+    <sys:String x:Key="qc_insert">
+        Insert
+    </sys:String>
+    <sys:String x:Key="qc_supervise">
+        Supervise
+    </sys:String>
+    <sys:String x:Key="qc_intercept">
+        Intercept
+    </sys:String>
+    <sys:String x:Key="qc_reqwhisper">
+        Request whisper
+    </sys:String>
+    <sys:String x:Key="qc_whisper">
+        Whisper
+    </sys:String>
+    <sys:String x:Key="qc_modechange">
+        Mode change
+    </sys:String>
+
+    <sys:String x:Key="snapshot_title">
+        SnapShot
+    </sys:String>
+    <sys:String x:Key="snapshot_device">
+        Device
+    </sys:String>
+    <sys:String x:Key="snapshot_qry">
+        Query
+    </sys:String>
+    <sys:String x:Key="snapshot_length">
+        Length
+    </sys:String>
+    <sys:String x:Key="snapshot_width">
+        Width
+    </sys:String>
+    <sys:String x:Key="snapshot_select">
+        Select
+    </sys:String>
+    <sys:String x:Key="snapshot_path">
+        Path
+    </sys:String>
+    <sys:String x:Key="snapshot_cancel">
+        Cancel
+    </sys:String>
+    <sys:String x:Key="snapshot_ok">
+        OK
+    </sys:String>
+    
+    <sys:String x:Key="main_abandoncall">
+        Receive abandon call event,agent will call out
+    </sys:String>
+    <sys:String x:Key="main_phoneoffhook">
+        phone offhook
+    </sys:String>
+    <sys:String x:Key="recordscreen_enrtylist">
+        Entry List
+    </sys:String>
+
+    <sys:String x:Key="languagesel_title">Please select language for client</sys:String>
+    <sys:String x:Key="languagesel_chinesss">Chiness</sys:String>
+
+    <sys:String x:Key="main_other_certificaterr">The https service's certificate is not secure, whether to continue?</sys:String>
+    <sys:String x:Key="main_set_checkCertii">Check certification</sys:String>
+    <sys:String x:Key="main_other_ip">IP</sys:String>
+</ResourceDictionary> 

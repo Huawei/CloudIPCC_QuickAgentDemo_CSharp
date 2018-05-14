@@ -1,0 +1,183 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--开始-->
+    <ImageBrush x:Key="StartBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_StartNormal.png"/>
+    <ImageBrush x:Key="StartMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_StartOver.png"/>
+    <ImageBrush x:Key="StartDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_StartDisable.png"/>
+    
+    <!--录音-->
+    <ImageBrush x:Key="RecordBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RecordNormal.png"/>
+    <ImageBrush x:Key="RecordMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RecordOver.png"/>
+    <ImageBrush x:Key="RecordDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RecordDisable.png"/>
+    
+    <!--呼叫转移-->
+    <ImageBrush x:Key="TransferCallBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallTransferNormal.png"/>
+    <ImageBrush x:Key="TransferCallMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallTransferOver.png"/>
+    <ImageBrush x:Key="TransferCallDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallTransferDisable.png"/>
+
+    <!--内部呼叫-->
+    <ImageBrush x:Key="InternalCallBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerCallNormal.png"/>
+    <ImageBrush x:Key="InternalCallMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerCallOver.png"/>
+    <ImageBrush x:Key="InternalCallDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerCallDisable.png"/>
+
+    <!--内部求助-->
+    <ImageBrush x:Key="InnerConsultBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerConsultNormal.png"/>
+    <ImageBrush x:Key="InnerConsultMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerConsultOver.png"/>
+    <ImageBrush x:Key="InnerConsultDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_InnerConsultDisable.png"/>
+
+    <!--呼出按钮-->
+    <ImageBrush x:Key="CallOutBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallOutNormal.png"/>
+    <ImageBrush x:Key="CallOutMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallOutOver.png"/>
+    <ImageBrush x:Key="CallOutDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CallOutDisable.png"/>
+
+    <!--示忙按钮-->
+    <ImageBrush x:Key="BusyBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetBusyNormal.png"/>
+    <ImageBrush x:Key="BusyMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetBusyOver.png"/>
+    <ImageBrush x:Key="BusyDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetBusyDisable.png"/>
+    <ImageBrush x:Key="BusySuccessBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelBusy.png"/>
+
+    <!--休息按钮-->
+    <ImageBrush x:Key="RestBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RestNormal.png"/>
+    <ImageBrush x:Key="RestMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RestOver.png"/>
+    <ImageBrush x:Key="RestDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_RestDisable.png"/>
+    <ImageBrush x:Key="RestSuccessBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelRest.png"/>
+
+    <!--应答按钮-->
+    <ImageBrush x:Key="AnswerBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnswerNormal.png"/>
+    <ImageBrush x:Key="AnswerMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnswerOver.png"/>
+    <ImageBrush x:Key="AnswerPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnAnswerPress.png"/>
+    <ImageBrush x:Key="AnswerDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnswerDisable.png"/>
+
+    <!--新应答按钮-->
+    <ImageBrush x:Key="NewAnswerBackground" ImageSource="/QuickAgent;component/Resource/Images/answer.gif"/>
+    <ImageBrush x:Key="NewAnswerDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/answer_gray.gif"/>
+
+    <!--释放按钮-->
+    <ImageBrush x:Key="ReleaseBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ReleaseNormal.png"/>
+    <ImageBrush x:Key="ReleaseMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ReleaseOver.png"/>
+    <ImageBrush x:Key="ReleasePressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnReleasePress.png"/>
+    <ImageBrush x:Key="ReleaseDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ReleaseDisable.png"/>
+
+    <!--退出工作态按钮-->
+    <ImageBrush x:Key="CancelWorkBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelWorkNormal.png"/>
+    <ImageBrush x:Key="CancelWorkMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelWorkOver.png"/>
+    <ImageBrush x:Key="CancelWorkDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelWorkDisable.png"/>
+
+    <!--进入工作态按钮-->
+    <ImageBrush x:Key="SetWorkBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_EnterWorkNormal.png"/>
+    <ImageBrush x:Key="SetWorkMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_EnterWorkOver.png"/>
+    <ImageBrush x:Key="SetWorkDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_EnterWorkDisable.png"/>
+
+    <!--设置数据按钮-->
+    <ImageBrush x:Key="SetDataBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetDataNormal.png"/>
+    <ImageBrush x:Key="SetDataMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetDataOver.png"/>
+    <ImageBrush x:Key="SetDataDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SetDataDisable.png"/>
+
+    <!--获取数据按钮-->
+    <ImageBrush x:Key="GetDataBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_GetDataNormal.png"/>
+    <ImageBrush x:Key="GetDataMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_GetDataOver.png"/>
+    <ImageBrush x:Key="GetDataDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_GetDataDisable.png"/>
+
+    <!--转出按钮按钮-->
+    <ImageBrush x:Key="TransferOutBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TransferOutNormal.png"/>
+    <ImageBrush x:Key="TransferOutMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TransferOutOver.png"/>
+    <ImageBrush x:Key="TransferOutDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TransferOutDisable.png"/>
+
+    <!--新释放按钮-->
+    <ImageBrush x:Key="NewReleaseBackground" ImageSource="/QuickAgent;component/Resource/Images/release.gif" Stretch="Fill" />
+    <ImageBrush x:Key="NewReleaseDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/release_gray.gif" Stretch="Fill" />
+
+    <!--保持按钮-->
+    <ImageBrush x:Key="HoldBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_HoldNormal.png"/>
+    <ImageBrush x:Key="HoldMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_HoldOver.png"/>
+    <ImageBrush x:Key="HoldPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnHoldPress.png"/>
+    <ImageBrush x:Key="HoldDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_HoldDisable.png"/>
+
+    <!--新保持按钮-->
+    <ImageBrush x:Key="NewHoldBackground" ImageSource="/QuickAgent;component/Resource/Images/hold.gif" Stretch="Fill" />
+    <ImageBrush x:Key="NewHoldDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/hold_gray.gif" Stretch="Fill" />
+
+    <!--取保持按钮-->
+    <ImageBrush x:Key="UnholdBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelHoldNormal.png"/>
+    <ImageBrush x:Key="UnholdMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelHoldOver.png"/>
+    <ImageBrush x:Key="UnholdPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnUnholdPress.png"/>
+    <ImageBrush x:Key="UnholdDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_CancelHoldDisable.png"/>
+
+    <!--新取保持按钮-->
+    <ImageBrush x:Key="NewUnholdBackground" ImageSource="/QuickAgent;component/Resource/Images/unhold.gif" Stretch="Fill" />
+    <ImageBrush x:Key="NewUnholdDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/unhold_gray.gif" Stretch="Fill" />
+
+    <!--取消静音按钮-->
+    <ImageBrush x:Key="SoundBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSound.png"/>
+    <ImageBrush x:Key="SoundMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSoundMouseOver.png"/>
+    <ImageBrush x:Key="SoundPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSoundPress.png"/>
+    <ImageBrush x:Key="SoundDisableBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSoundDisable.png"/>
+
+    <!--新静音按钮-->
+    <ImageBrush x:Key="NewNoSoundBackground" ImageSource="/QuickAgent;component/Resource/Images/silent.gif"/>
+    <ImageBrush x:Key="NewNoSoundDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/silent_gray.gif"/>
+
+    <!--静音-->
+    <ImageBrush x:Key="NoSoundBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_MuteNormal.png"/>
+    <ImageBrush x:Key="NoSoundMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_MuteOver.png"/>
+    <ImageBrush x:Key="NoSoundPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnNoSoundPress.png"/>
+    <ImageBrush x:Key="NoSoundDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_MuteDisable.png"/>
+
+    <!--三方通话按钮-->
+    <ImageBrush x:Key="TripartiteCallBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TripartiteCallNormal.png"/>
+    <ImageBrush x:Key="TripartiteCallMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TripartiteCallOver.png"/>
+    <ImageBrush x:Key="TripartiteCallPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnTripartiteCallPress.png"/>
+    <ImageBrush x:Key="TripartiteCallDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_TripartiteCallDisable.png"/>
+
+    <!--连接保持按钮-->
+    <ImageBrush x:Key="ConnectHoldBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ConnectHoldNormal.png"/>
+    <ImageBrush x:Key="ConnectHoldMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ConnectHoldOver.png"/>
+    <ImageBrush x:Key="ConnectHoldPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnTripartiteCallPress.png"/>
+    <ImageBrush x:Key="ConnectHoldDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_ConnectHoldDisable.png"/>
+
+    <!--发布公告按钮-->
+    <ImageBrush x:Key="AnnouncementBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnnouncementNormal.png"/>
+    <ImageBrush x:Key="AnnouncementMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnnouncementOver.png"/>
+    <ImageBrush x:Key="AnnouncementPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnTripartiteCallPress.png"/>
+    <ImageBrush x:Key="AnnouncementDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_AnnouncementDisable.png"/>
+
+    <!--发送便签按钮-->
+    <ImageBrush x:Key="SendNoteBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SendNoteNormal.png"/>
+    <ImageBrush x:Key="SendNoteMouseOverBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SendNoteOver.png"/>
+    <ImageBrush x:Key="SendNotePressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnTripartiteCallPress.png"/>
+    <ImageBrush x:Key="SendNoteDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/icon_SendNoteDisable.png"/>
+
+    <!--新三方通话按钮-->
+    <ImageBrush x:Key="NewTripartiteCallBackground" ImageSource="/QuickAgent;component/Resource/Images/threeparty.gif"/>
+    <ImageBrush x:Key="NewTripartiteCallDisableBackground" ImageSource="/QuickAgent;component/Resource/Images/threeparty_gray.gif"/>
+
+    <!--多媒体协作按钮-->
+    <ImageBrush x:Key="BigMedia" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnBigMedia.png"/>
+    <ImageBrush x:Key="BigMediaPre" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnBigMediaPre.png"/>
+    <ImageBrush x:Key="BigMediaMs" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnBigMediaMs.png"/>
+    <ImageBrush x:Key="BigMediaDis" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnBigMediaDis.png"/>
+
+    <!--设置按钮-->
+    <ImageBrush x:Key="SystemConfigBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSystemConfig.png"/>
+    <ImageBrush x:Key="SystemConfigMouseOverBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSystemConfigMouseOver.png"/>
+    <ImageBrush x:Key="SystemConfigPressBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSystemConfigPress.png"/>
+    <ImageBrush x:Key="SystemConfigDisableBackground" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSystemConfigDisable.png"/>
+
+    <!--获取技能列表按钮样式-->
+    <ImageBrush x:Key="SkillBtnBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSkill.png"/>
+    <ImageBrush x:Key="SkillBtnMouseover" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSkillMouseOver.png"/>
+    <ImageBrush x:Key="SkillBtnPressed" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSkillPress.png"/>
+    <ImageBrush x:Key="SkillBtnDisableBackground" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnSkillDisable.png"/>
+
+    <!--拨号键按钮-->
+    <ImageBrush x:Key="DialKeyBtnBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnDialKey.png"/>
+    <ImageBrush x:Key="DialKeyBtnDisable" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnDialKeyDisable.png"/>
+    <ImageBrush x:Key="DialKeyBtnMouseOver" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnDialKeyMouseOver.png"/>
+    <ImageBrush x:Key="DialKeyBtnPress" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/BtnDialKeyPress.png"/>
+
+    <!--QT头部图标-->
+    <ImageBrush x:Key="ImgMainHead" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/MainHeadBg.png"/>
+    <ImageBrush x:Key="MiniHeaderBg" Stretch="Fill" ImageSource="/QuickAgent;component/Resource/QuickTellerImage/Images/Red/ButtonImg/MiniHeaderBg.png"/>
+
+</ResourceDictionary>

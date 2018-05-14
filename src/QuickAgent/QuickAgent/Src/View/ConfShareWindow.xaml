@@ -1,0 +1,8 @@
+﻿<Window x:Class="QuickAgent.Src.View.ConfShareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Agent" Height="500" Width="500">
+    <Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,64 @@
+﻿<Window x:Class="QuickAgent.Src.View.TextChat.TC_CallContent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource textchat_qry}" Height="450" Width="750" WindowStyle="ToolWindow" Topmost="True"  Background="WhiteSmoke" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="{DynamicResource textchat_pageno}" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <TextBox Name="tb_pageNo" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="65,0,0,0" Grid.Column="0" Width="70"/>
+            <Label Content="{DynamicResource textchat_pagesize}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Width="70" Grid.Column="1"/>
+            <TextBox Name="tb_pageSize" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="75,0,0,0" Grid.Column="1" Width="70"/>
+            <Label Content="{DynamicResource textchat_callID}" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="2" />
+            <TextBox Name="tb_callID" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="2" Margin="60,0,0,0" Width="80"/>
+            <Button Name="btn_qry" Content="{DynamicResource textchat_qry}" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="5" Width="70" Click="btn_qry_Click" />
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            
+            <DataGrid x:Name="dgrd_callcontent" AutoGenerateColumns="False"  GridLinesVisibility="None" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="True"  RowHeaderWidth="0" SelectionMode="Single" 
+                   IsReadOnly="True" AreRowDetailsFrozen="False" SelectionChanged="DataGridSelectionChanged" HorizontalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=id}"  Width="60" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_id}"/>
+                    <DataGridTextColumn Binding="{Binding Path=callId}" Width="60" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_callID}"/>
+                    <DataGridTextColumn Binding="{Binding Path=subMediaType}" Width="60" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_subMediaType}"/>
+                    <DataGridTextColumn Binding="{Binding Path=sender}" Width="60"   CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_sender}"/>
+                    <DataGridTextColumn Binding="{Binding Path=reciver}"  Width="60" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_receiver}"/>
+                    <DataGridTextColumn Binding="{Binding Path=contentType}" Width="60" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_contenttype}"/>
+                    <DataGridTextColumn Binding="{Binding Path=content}" Width="60" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_content}"/>
+                    <DataGridTextColumn Binding="{Binding Path=direction}" Width="75"   CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="{DynamicResource textchat_direction}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <TextBox Name="tb_msgshow" Grid.Column="1"  HorizontalScrollBarVisibility="Disabled" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="{DynamicResource textchat_totalcount}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100"/>
+            <Label Name="lbl_totalCount" Content="" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="110,0,0,0"/>
+            <Label Content="{DynamicResource textchat_totalpage}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Width="100" Grid.Column="1"/>
+            <Label Name="lbl_totalPage" Content="" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="110,0,0,0" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>

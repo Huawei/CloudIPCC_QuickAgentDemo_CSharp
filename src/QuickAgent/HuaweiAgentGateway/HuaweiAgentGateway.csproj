@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6024FD11-A11C-47A1-BF01-0E18BB5B2275}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HuaweiAgentGateway</RootNamespace>
+    <AssemblyName>HuaweiAgentGateway</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.CccX">
+      <HintPath>..\..\..\platform\IPCC\QuickAgent\Interop.CccX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.VoiceLib">
+      <HintPath>..\..\..\platform\IPCC\QuickAgent\Interop.VoiceLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\OpenSource\dll\json.net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\AGWEntity\AGWAgentInfo.cs" />
+    <Compile Include="Entity\AGWEntity\AGWConference.cs" />
+    <Compile Include="Entity\AGWEntity\AGWPwd.cs" />
+    <Compile Include="Entity\AGWEntity\AGWTextChat.cs" />
+    <Compile Include="Entity\AGWEntity\AGWVDNInfo.cs" />
+    <Compile Include="Entity\AGWEntity\MultiMediaConfEntity.cs" />
+    <Compile Include="Entity\CommonEntity\AccessCode.cs" />
+    <Compile Include="Entity\AGWEntity\AgentEventResult.cs" />
+    <Compile Include="Business\AgentGatewayBusiness.cs" />
+    <Compile Include="Entity\AGWEntity\AgentGatewayResponse.cs" />
+    <Compile Include="Entity\CommonEntity\AgentStateInfo.cs" />
+    <Compile Include="Entity\AGWEntity\AGWAccessCode.cs" />
+    <Compile Include="Entity\AGWEntity\AGWAgentStatus.cs" />
+    <Compile Include="Entity\AGWEntity\AGWCallData.cs" />
+    <Compile Include="Entity\AGWEntity\AGWConfJoin.cs" />
+    <Compile Include="Entity\AGWEntity\AGWInnerHelp.cs" />
+    <Compile Include="Entity\AGWEntity\AGWIVRInfo.cs" />
+    <Compile Include="Entity\AGWEntity\AGWSkill.cs" />
+    <Compile Include="Entity\AGWEntity\AGWTransferData.cs" />
+    <Compile Include="Entity\AGWEntity\CallInfoBeforeAnswer.cs" />
+    <Compile Include="Entity\AGWEntity\CallInfoData.cs" />
+    <Compile Include="Entity\CommonEntity\CallInfo.cs" />
+    <Compile Include="Entity\CommonEntity\ConstData.cs" />
+    <Compile Include="Entity\VoiceEntity\SipInfo.cs" />
+    <Compile Include="Entity\VoiceEntity\VoiceOCXAlertData.cs" />
+    <Compile Include="Entity\VoiceEntity\VoiceOCXConnectData.cs" />
+    <Compile Include="Entity\CommonEntity\HoldListData.cs" />
+    <Compile Include="Entity\AGWEntity\LoginParam.cs" />
+    <Compile Include="Entity\AGWEntity\LoginResult.cs" />
+    <Compile Include="Entity\AGWEntity\OnlineAgentResult.cs" />
+    <Compile Include="Entity\AGWEntity\PhoneStatus.cs" />
+    <Compile Include="Entity\AGWEntity\ServiceResponseBase.cs" />
+    <Compile Include="Entity\AGWEntity\SignInParam.cs" />
+    <Compile Include="Entity\CommonEntity\IvrInfo.cs" />
+    <Compile Include="Entity\CommonEntity\MessageInfo.cs" />
+    <Compile Include="Business\OCXBusiness.cs" />
+    <Compile Include="Entity\CommonEntity\SkillInfo.cs" />
+    <Compile Include="Entity\AGWEntity\AgentGatewayHelper.cs" />
+    <Compile Include="Entity\AGWEntity\AgentGatewayUri.cs" />
+    <Compile Include="Entity\CommonEntity\AGWErrorCode.cs" />
+    <Compile Include="Business\BusinessAdapter.cs" />
+    <Compile Include="Business\IBusiness.cs" />
+    <Compile Include="Business\IBusinessEvents.cs" />
+    <Compile Include="Entity\VoiceEntity\VoiceResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entity\CommonEntity\TAgentTypeForOcx.cs" />
+    <Compile Include="Utils\DictUtil.cs" />
+    <Compile Include="Utils\JsonUtil.cs" />
+    <Compile Include="Business\VoiceOCXBusiness.cs" />
+    <Compile Include="Entity\CommonEntity\WorkGroupData.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

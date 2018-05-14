@@ -1,0 +1,47 @@
+﻿<Window x:Class="QuickAgent.Src.View.MsgViewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+    Title="{DynamicResource msgview_title}" Height="400" Width="500" WindowStyle="ToolWindow" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Background="WhiteSmoke" Topmost="True"
+        Name="MessageViewWindow">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="36"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*" />
+                <ColumnDefinition Width="5*" />
+            </Grid.ColumnDefinitions>
+
+            <DataGrid x:Name="dgrdMsgList" AutoGenerateColumns="False" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   Margin="10,10,10,10"
+                  GridLinesVisibility="None" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="True" VerticalContentAlignment="Bottom" RowHeaderWidth="0" SelectionMode="Extended" 
+                  CanUserAddRows="True" CanUserDeleteRows="True" IsReadOnly="True" AreRowDetailsFrozen="False" SelectionChanged="DataGridSelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=MsgTime}" Header="{DynamicResource msgview_time}" Width="3*" IsReadOnly="True" CanUserReorder="False" CanUserResize="False" CanUserSort="False" />
+                    <DataGridTextColumn Binding="{Binding Path=WorkNo}" Header="{DynamicResource msgview_time}" Width="*" CanUserReorder="False" CanUserResize="False" CanUserSort="False" />
+                    <DataGridTextColumn Binding="{Binding Path=MsgType}" Header="{DynamicResource msgview_time}" Width="*" CanUserReorder="False" CanUserResize="False" CanUserSort="False" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <TextBox Margin="0,10,10,10" Name="txtBoxMsg" IsReadOnly="True" VerticalScrollBarVisibility="Visible"
+                 HorizontalScrollBarVisibility="Disabled" Grid.Column="1"></TextBox>
+
+        </Grid>
+
+        <Button Height="26" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Margin="78,0,0,0" Name="btnReply" Content="{DynamicResource msgview_answer}" Click="btnReply_Click"
+                Grid.Row="2" IsDefault="True"></Button>
+        <Button Height="26" Width="70" Margin="6,0,0,1" VerticalAlignment="Top" Name="btnDel" Content="{DynamicResource msgview_del}" Click="btnDel_Click"  Grid.Row="2"/>
+        <Button Height="26" HorizontalAlignment="Right" Margin="0,0,78,0" VerticalAlignment="Top" Width="70" Name="btnClose" Content="{DynamicResource cancel}" Grid.Row="2" Click="btnCancel_Click" IsCancel="True"/>
+
+        <Grid Margin="10,0,10,0" >
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left" Margin="5,0,0,0" Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+    </Grid>
+</Window>
+

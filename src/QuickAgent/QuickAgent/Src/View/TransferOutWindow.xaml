@@ -1,0 +1,59 @@
+﻿<Window x:Class="QuickAgent.Src.View.TransferOutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+    Title="{DynamicResource transferOut}" Height="333" Width="399" SizeToContent="WidthAndHeight" ResizeMode="CanResize" ShowInTaskbar="False" Background="WhiteSmoke" 
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="36"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Height="24" Margin="10,0,0,0" Name="label1" VerticalAlignment="Center" VerticalContentAlignment="Center" Content="{DynamicResource transferOutCallerNumber}" HorizontalAlignment="Left" ></Label>
+            <head:InputTextBoxCtrl x:Name="txtCallerNumber" Height="22" Margin="0,0,10,0" VerticalAlignment="Center" HorizontalAlignment="Right"  Width="200"/>
+            <Label Height="24" Margin="10,0,0,0" Grid.Row="1" Name="label2" VerticalAlignment="Center" Content="{DynamicResource transferOutCalledNumber}" VerticalContentAlignment="Center" HorizontalAlignment="Left" ></Label>
+            <head:InputTextBoxCtrl x:Name="txtCalledNumber" Height="22" Margin="0,0,10,0" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Right" Width="200" />
+            <Label Height="24" Margin="10,0,0,0" Name="label3" Grid.Row="2" VerticalAlignment="Center" Content="{DynamicResource callTransferOutNumber}" HorizontalAlignment="Left" Width="Auto" VerticalContentAlignment="Center"></Label>
+            <head:InputTextBoxCtrl Height="24" Grid.Row="2" x:Name="txtCallNumber" Margin="0,0,10,0" VerticalAlignment="Center" Width="200" HorizontalAlignment="Right"/>
+
+            <GroupBox Header="{DynamicResource transferOutWay}" Margin="10,0,10,0" Grid.Row="3" Name="groupBox1" VerticalContentAlignment="Center" HorizontalContentAlignment="Stretch">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <RadioButton x:Name="rbtnReleaseTransfer" Grid.Row="0" VerticalContentAlignment="Center" VerticalAlignment="Center" Content="{DynamicResource agentReleaseCallNoMatterTransferOutSucceedsOrNot}" GroupName="1" HorizontalContentAlignment="Left" IsChecked="True">
+                    </RadioButton>
+                    <RadioButton x:Name="rbtnSuccessTransfer" Grid.Row="1" VerticalContentAlignment="Center" VerticalAlignment="Center" Content="{DynamicResource agentReleasesCallAfterSuccessfulTransferOut}" GroupName="1">
+                    </RadioButton>
+                    <RadioButton x:Name="rbtnCallTransfer" Grid.Row="2" VerticalContentAlignment="Center" VerticalAlignment="Center" Content="{DynamicResource discriptionOfSuccessTransfer}" HorizontalContentAlignment="Left" GroupName="1">
+                    </RadioButton>
+                    <RadioButton x:Name="rbtnTripartiteTransfer" Grid.Row="3" VerticalContentAlignment="Center" VerticalAlignment="Center" Content="{DynamicResource discriptionOfTripartiteTransfer}" GroupName="1">
+                    </RadioButton>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+
+        <Button x:Name="btnOK" Grid.Row="2" Height="26" HorizontalAlignment="Left" Margin="91,0,0,0" VerticalAlignment="Center" Width="70" Content="{DynamicResource ok}" Click="btnOK_Click" IsDefault="True"></Button>
+        <Button x:Name="btnCancel" Grid.Row="2" Height="26" HorizontalAlignment="Right" Margin="0,0,112,0" VerticalAlignment="Center" Width="70" Content="{DynamicResource cancel}" Click="btnCancel_Click" IsCancel="True"></Button>
+
+        <Grid Margin="10,0,10,5">
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left" Margin="10,0,0,0" Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+    </Grid>
+</Window>

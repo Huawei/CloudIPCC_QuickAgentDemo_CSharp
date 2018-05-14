@@ -1,0 +1,1301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8BCE29D-8283-4C7B-BA0F-62BB4613CCB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuickAgent</RootNamespace>
+    <AssemblyName>QuickAgent</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\platform\IPCC\QuickAgent\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\OpenSource\dll\json.net\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Src\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Src\Common\BarFunction.cs" />
+    <Compile Include="Src\Common\ConfigHelperV2.cs" />
+    <Compile Include="Src\Common\Interop.cs" />
+    <Compile Include="Src\UserControl\AgentInfoCtrl.xaml.cs">
+      <DependentUpon>AgentInfoCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\UserControl\AutoClosedMsgBox.cs" />
+    <Compile Include="Src\UserControl\CallInfoCtrl.xaml.cs">
+      <DependentUpon>CallInfoCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\UserControl\InputTextBoxCtrl.xaml.cs">
+      <DependentUpon>InputTextBoxCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\UserControl\VideoWinCtrl.xaml.cs">
+      <DependentUpon>VideoWinCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\UserControl\WinHeadCtrl.xaml.cs">
+      <DependentUpon>WinHeadCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\ConfShareWindow.xaml.cs">
+      <DependentUpon>ConfShareWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\GetHoldWindow.xaml.cs">
+      <DependentUpon>GetHoldWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\InstructionWindow.xaml.cs">
+      <DependentUpon>InstructionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\ModifyPwdWindow.xaml.cs">
+      <DependentUpon>ModifyPwdWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\MsgViewWindow.xaml.cs">
+      <DependentUpon>MsgViewWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\NotifyBullet.xaml.cs">
+      <DependentUpon>NotifyBullet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\Others\InstallCertification.xaml.cs">
+      <DependentUpon>InstallCertification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\Others\LanguageSelect.xaml.cs">
+      <DependentUpon>LanguageSelect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\QryCallDataWindow.xaml.cs">
+      <DependentUpon>QryCallDataWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\SendMsgWindow.xaml.cs">
+      <DependentUpon>SendMsgWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\SetCallDataWindow.xaml.cs">
+      <DependentUpon>SetCallDataWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Src\Language\EN-US.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Language\ZH-CN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\BlueStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\DialKeyButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\GreenStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\RedStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\Style.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\Style\YellowStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\UserControl\AgentInfoCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\UserControl\CallInfoCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\UserControl\InputTextBoxCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\UserControl\VideoWinCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\UserControl\WinHeadCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\AgentRegisterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\CallOutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\CallTransferWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\ConfigWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\ConfShareWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\GetHoldWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\HoldListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\InnerCall.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\InnerConsultWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\InstructionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\MessageWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\ModifyPwdWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\MsgViewWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\NotifyBullet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\Others\InstallCertification.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\Others\LanguageSelect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\PublicTooltip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Src\View\QryCallDataWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\RestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\SendMsgWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\SetCallDataWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\View\TransferOutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="MainWindowCallBack.cs" />
+    <Compile Include="Src\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Src\Common\HoldCallInfo.cs" />
+    <Compile Include="Src\View\HoldListWindow.xaml.cs">
+      <DependentUpon>HoldListWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Src\Constants\CommonText.cs" />
+    <Compile Include="Src\Common\AgentInfo.cs" />
+    <Compile Include="Src\Common\AnimationList.cs" />
+    <Compile Include="Src\Common\CharConver.cs" />
+    <Compile Include="Src\Common\CommonHelper.cs" />
+    <Compile Include="Src\Common\FileInfos.cs" />
+    <Compile Include="Src\Common\LanguageResource.cs" />
+    <Compile Include="Src\Common\Log4netHelper.cs" />
+    <Compile Include="Src\Common\ConfigHelper.cs" />
+    <Compile Include="Src\Common\SafeNativeMethods.cs" />
+    <Compile Include="Src\Common\ShowMessage.cs" />
+    <Compile Include="Src\Common\SystemConfig.cs" />
+    <Compile Include="Src\Constants\Constant.cs" />
+    <Compile Include="Src\Constants\ImageResource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Src\ViewModel\AgentRegisterVM.cs" />
+    <Compile Include="Src\ViewModel\MainWindowVM.cs" />
+    <Compile Include="Src\ViewModel\Skill.cs" />
+    <Compile Include="Src\View\AgentRegisterWindow.xaml.cs">
+      <DependentUpon>AgentRegisterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\CallOutWindow.xaml.cs">
+      <DependentUpon>CallOutWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\CallTransferWindow.xaml.cs">
+      <DependentUpon>CallTransferWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\ConfigWindow.xaml.cs">
+      <DependentUpon>ConfigWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\InnerCall.xaml.cs">
+      <DependentUpon>InnerCall.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\InnerConsultWindow.xaml.cs">
+      <DependentUpon>InnerConsultWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\MessageWindow.xaml.cs">
+      <DependentUpon>MessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\PublicTooltip.xaml.cs">
+      <DependentUpon>PublicTooltip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\RestWindow.xaml.cs">
+      <DependentUpon>RestWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Src\View\TransferOutWindow.xaml.cs">
+      <DependentUpon>TransferOutWindow.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BgShowVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnAnswer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnAnswer2.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnAnswerDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnAnswerMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnAnswerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnBelowTriangle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnBelowTrianglePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnBelowTriangMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnClose.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnCloseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnClosePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultModel.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultModelMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultModelPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnDefaultSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnFullScreen.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnHold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnHoldDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnHoldMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnHoldPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMaxSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMaxSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMaxSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMiniModel.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMiniModelMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMiniModelPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMinSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMinSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnMinSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnNoSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnNoSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnNoSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnNoSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnRelease.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnReleaseDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnReleaseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnReleasePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnShowVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnShowVideoDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnShowVideoMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnShowVideoPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSkill.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSkillDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSkillMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSkillPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSysSetBtnBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSysSetBtnMouseover.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSysSetBtnPressed.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSysSetEnBtnBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSystemConfig.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSystemConfigDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSystemConfigMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnSystemConfigPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnTripartiteCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnTripartiteCallDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnTripartiteCallMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnTripartiteCallPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnUnhold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnUnholdDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnUnholdMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\BtnUnholdPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\BorBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\BtnBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\BtnInformation.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\BtnMouseover.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\BtnPressed.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ClickBg.gif" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Down.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\EffectBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ImgAbout.jpg" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Imgconventionality.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ImgInformationContent.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ImgInformationTitle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Imgnb.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ImgUnconventionality.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Imgzy.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\InputDownBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Scroll.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\ScrollCenterBg.jpg" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\TbBg.jpg" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\TbMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Teller.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\Tellerm.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\TellerSelectBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\TextboxBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\top.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\UpClick.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Imgset\YwMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\InputBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Loading.gif" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\LoginBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\LoginHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\LoginPreeBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Logo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\LogonBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MainBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MainHeadLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MainHeadLogo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\man.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MiniDesktopMainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MiniHeaderBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MiniMainBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\MiniMainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\Person.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\QuickTeller.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\StateCalledBusy.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\StateCalledIdle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\StateCalledRest.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\StateClearUp.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\TabItemChecked.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\TabItemCheckless.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\VideoBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\VideoModelBody.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\VideoModelBottom.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Bank\VideoModelTop.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnAnswer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnAnswerDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnAnswerMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnAnswerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnBigMedia.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnBigMediaDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnBigMediaMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnBigMediaPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnDialKey.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnDialKeyDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnDialKeyMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnDialKeyPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnHold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnHoldDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnHoldMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnHoldPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnNoSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnNoSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnNoSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnNoSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnRelease.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnReleaseDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnReleaseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnReleasePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSkill.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSkillDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSkillMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSkillPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSystemConfig.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSystemConfigDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSystemConfigMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnSystemConfigPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnTripartiteCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnTripartiteCallDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnTripartiteCallMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnTripartiteCallPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnUnhold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnUnholdDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnUnholdMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\BtnUnholdPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\MainHeadBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Blue\ButtonImg\MiniHeaderBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\Annotation.cur" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\FontAnnotation.cur" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\FreePen.cur" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\Laserpoint.cur" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\OpenHand.CUR" />
+    <Resource Include="Resource\QuickTellerImage\Images\Cursor\StateHand.CUR" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BgShowVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnBelowTriangle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnBelowTrianglePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnBelowTriangMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Btnclose.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnCloseBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnCloseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnClosePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultModel.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultModelMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultModelPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnDefaultSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMaxSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMaxSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMaxSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMediaMinimized.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMediaMinimizedMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMediaMinimizedPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMiniModel.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMiniModelMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMiniModelPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMinSize.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMinSizeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\BtnMinSizePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnAsterisk.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnAsteriskMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnAsteriskPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnCallOut.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnCallOutMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnCallOutPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnDelete.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnDeleteMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnDeletePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnEight.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnEightMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnEightPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFive.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFiveMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFivePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFour.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFourMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnFourPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnJing.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnJingMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnJingPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnNine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnNineMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnNinePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnOne.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnOneMoseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnOnePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSeven.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSevenMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSevenPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSix.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSixMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnSixPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnThree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnThreeMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnThreePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnTwo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnTwoMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnTwoPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnZero.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnZeroMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\DialKey\BtnZeroPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\FounctionBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\AnnoBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\AnnoMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\AnnoMousePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BorderBrush.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BorderBrushMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnArrowLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnArrowLinePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnDoubleALinePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnDoubleArrowLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnFontAn.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnFontAnPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnFreePen.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnFreePenPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnHollowEllipse.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnHollowEllipsePr.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnHollowRect.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnHollowRectPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnLineMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnLinePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnNoArrowLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnNoArrowLinePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnPointer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnPointerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnRoundedHr.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnRoundedHrPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnRsRect.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnRsRectPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnSolidEllipse.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnSolidEllipsePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnSolidRect.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\BtnSolidRectPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\TbMouerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgAnnotation\TbMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgClose.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgCloseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgClosePree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgDefault.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\BorBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\borView.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\BtnBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\BtnInformation.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\BtnMouseover.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\BtnPressed.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\CallForwardMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\CallForwardSelectBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\centerExpBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ClickBg.gif" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ContentMenuBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\defaultBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\DefaultVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\EffectBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ExpBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ExpRiBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgAbout.jpg" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgColoseUp.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Imgconventionality.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgInformationContent.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgInformationTitle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Imgnb.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgOtherTellerDisPlay.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgOtherTellerNotDisPlay.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgUnconventionality.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\ImgUnfurl.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Imgzy.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\OneVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\OneVideoMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\PhoneNum.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Scroll.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\SysSetHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TbBg.jpg" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TbBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TbMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Teller.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TellerConstriction.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TellerLeave.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\Tellerm.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TellerRest.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TellerWork.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TextboxBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TileVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\TileVideoMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\top.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\VtmBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Imgset\YwMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\AnnotationBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnClearAnno.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnClearAnnoDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnClearAnnoMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnClearAnnoPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnCopy.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnCopyDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnCopyMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnCopyPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnDesktopRes.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnDesktopResDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnDesktopResMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnDesktopResPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFont.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontColor.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontColorDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontColorMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontColorPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnFontPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnHand.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnHandDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnHandMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnHandPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabel.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelColor.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelColorDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelColorMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelColorPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLabelPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLineDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLineMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLinePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLoad.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLoadDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLoadMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnLoadPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnNextPage.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnNextPageDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnNextPageMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnNextPagePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioAdd.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioAddDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioAddMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioAddPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioDec.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioDecDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioDecMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnRatioDecPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnReCtrllMini.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnReCtrllMiniDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnReCtrllMiniMouseover.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnReCtrllMiniPressed.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnSave.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnSaveDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnSaveMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnSavePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnScale.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnScaleDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnScaleOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnScalePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnno.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnoDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnoMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnoPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnotation.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnotationMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnnotationPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnoDs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopAnotationDs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopDesktop.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopDesktopDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopDesktopMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnStopDesktopPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnUpPage.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnUpPageDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnUppageMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtnUpPagePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopCreate.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopCreateDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopCreateMv.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopCreatePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopDs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopDsDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopDsMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\BtStopDsPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\CreateIcon.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\CreateIconDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\CreateIconMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\CreateIconPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\DelPage.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\DelPageDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\DelPageMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\DelPagePre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\DesktopDefault.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\FileTitleBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\FileTitleMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\FileTitlePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\FileTitlePresss.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\FileTitleSelected.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ImgItemBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ImgLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ImgLoading.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ImgTop.gif" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemIsEnabledCenter.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemIsEnabledLeft.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemIsEnabledRight.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemSelectedCenter.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemSelectedLeft.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\ItemSelectedRight.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\LoadIcon.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\LoadIconDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\LoadIconMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\LoadIconPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\MenuBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\MenuItem.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\MousePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\NewPageIcon.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\NewPageIconDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\NewPageIconMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\NewPageIconPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\StopRemoteCtrl.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\StopRemoteCtrlDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\StopRemoteCtrlMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\StopRemoteCtrlPree.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\TabItemCenter.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\TabItemDown.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\TabItemLeft.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\TabItemRight.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgShareFile\TileTitleMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\ImgUp.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\InputBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\laserpoint.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Loading.gif" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\LoginBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\LoginHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\LoginPreeBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Logo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\LogonBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MainBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MainHeadLine.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MainHeadLogo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\man.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniCtrolBtnBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniCtrolBtnCenter.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniCtrolBtnLeft.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniCtrolBtnRight.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniDesktopMainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniMainBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\MiniMainHead.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Person.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\PersonLeave.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\QuickTeller.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\StateCalledBusy.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\StateCalledIdle.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\StateCalledRest.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\StateClearUp.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\StateLeave.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\Answernums.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\AppBtnEnabled.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\ApplicationNotShare.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\ApplicationSharing.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnClear.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnClearMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnClearPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\Btnrefurbish.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnrefurbishDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnrefurbishMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnrefurbishPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnStopApp.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnStopAppDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnStopAppMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\BtnStopAppPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\Close.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\InternalCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\InternalCallDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\InternalCallMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\InternalCallPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NetworkBad.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NetworkCommonly.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NetworkDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NetworkGood.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NetworkVeryGood.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NotTop.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NotTopMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\NotTopPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\SetTop.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\SetTopMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\SetTopPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\StateSetMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\Talktime.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\TransferCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\TransferCallDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\TransferCallMo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\UcImg\TransferCallPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\VideoBackground.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\VideoModelBody.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\VideoModelBottom.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\VideoModelTop.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoClose.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoCloseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoClosePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoDefault.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\BtnVideoPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\ImgNone.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\OneVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\OneVideoMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\OneVideoPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\TileVideo.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\TileVideoMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Default\Video\TileVideoPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnAnswer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnAnswerDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnAnswerMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnAnswerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnBigMedia.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnBigMediaDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnBigMediaMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnBigMediaPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnDialKey.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnDialKeyDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnDialKeyMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnDialKeyPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnHold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnHoldDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnHoldMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnHoldPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnNoSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnNoSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnNoSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnNoSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnRelease.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnReleaseDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnReleaseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnReleasePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSkill.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSkillDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSkillMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSkillPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSystemConfig.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSystemConfigDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSystemConfigMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnSystemConfigPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnTripartiteCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnTripartiteCallDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnTripartiteCallMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnTripartiteCallPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnUnhold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnUnholdDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnUnholdMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\BtnUnholdPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\MainHeadBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Green\ButtonImg\MiniHeaderBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Ico\QuickTeller16.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Ico\QuickTeller32.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Ico\QuickTeller48.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Ico\QuickTellerLogout16.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Ico\UnInstall.ico" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnAnswer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnAnswerDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnAnswerMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnAnswerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnBigMedia.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnBigMediaDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnBigMediaMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnBigMediaPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnDialKey.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnDialKeyDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnDialKeyMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnDialKeyPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnHold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnHoldDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnHoldMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnHoldPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnNoSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnNoSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnNoSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnNoSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnRelease.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnReleaseDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnReleaseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnReleasePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSkill.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSkillDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSkillMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSkillPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSystemConfig.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSystemConfigDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSystemConfigMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnSystemConfigPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnTripartiteCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnTripartiteCallDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnTripartiteCallMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnTripartiteCallPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnUnhold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnUnholdDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnUnholdMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\BtnUnholdPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\MainHeadBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Red\ButtonImg\MiniHeaderBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnAnswer.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnAnswerDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnAnswerMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnAnswerPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnBigMedia.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnBigMediaDis.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnBigMediaMs.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnBigMediaPre.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnDialKey.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnDialKeyDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnDialKeyMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnDialKeyPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnHold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnHoldDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnHoldMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnHoldPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnNoSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnNoSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnNoSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnNoSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnRelease.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnReleaseDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnReleaseMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnReleasePress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSkill.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSkillDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSkillMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSkillPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSound.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSoundDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSoundMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSoundPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSystemConfig.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSystemConfigDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSystemConfigMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnSystemConfigPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnTripartiteCall.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnTripartiteCallDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnTripartiteCallMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnTripartiteCallPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnUnhold.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnUnholdDisable.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnUnholdMouseOver.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\BtnUnholdPress.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\MainHeadBg.png" />
+    <Resource Include="Resource\QuickTellerImage\Images\Yellow\ButtonImg\MiniHeaderBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HuaweiAgentGateway\HuaweiAgentGateway.csproj">
+      <Project>{6024FD11-A11C-47A1-BF01-0E18BB5B2275}</Project>
+      <Name>HuaweiAgentGateway</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resource\Docs\" />
+    <Folder Include="Src\Style\QuickTellerStyles\Style\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\Images\btn-_05.png" />
+    <Resource Include="Resource\Images\btn-_08.png" />
+    <Resource Include="Resource\Images\btn-_11.png" />
+    <Resource Include="Resource\Images\icon-_191.png" />
+    <Resource Include="Resource\Images\icon-_193.png" />
+    <Resource Include="Resource\Images\icon-_289.png" />
+    <Resource Include="Resource\Images\icon-_291.png" />
+    <Resource Include="Resource\Images\icon-_54.png" />
+    <Resource Include="Resource\Images\icon-_93.png" />
+    <Resource Include="Resource\Images\icon-_95-2.png" />
+    <Resource Include="Resource\Images\icon-_95.png" />
+    <Resource Include="Resource\Images\icon2-_07.png" />
+    <Resource Include="Resource\Images\icon2-_11.png" />
+    <Resource Include="Resource\Images\icon2-_117.png" />
+    <Resource Include="Resource\Images\icon2-_119.png" />
+    <Resource Include="Resource\Images\icon2-_121.png" />
+    <Resource Include="Resource\Images\icon2-_123.png" />
+    <Resource Include="Resource\Images\icon2-_125.png" />
+    <Resource Include="Resource\Images\icon2-_155.png" />
+    <Resource Include="Resource\Images\icon2-_201.png" />
+    <Resource Include="Resource\Images\icon2-_203.png" />
+    <Resource Include="Resource\Images\icon2-_205.png" />
+    <Resource Include="Resource\Images\icon2-_207.png" />
+    <Resource Include="Resource\Images\icon2-_209.png" />
+    <Resource Include="Resource\Images\icon2-_243.png" />
+    <Resource Include="Resource\Images\icon2-_31.png" />
+    <Resource Include="Resource\Images\Huawei.ico" />
+    <Resource Include="Resource\Images\icon2-_65.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resource\Images\icon_Huawei.png" />
+    <Resource Include="Resource\Images\icon_AnnouncementDisable.png" />
+    <Resource Include="Resource\Images\icon_AnnouncementNormal.png" />
+    <Resource Include="Resource\Images\icon_AnnouncementOver.png" />
+    <Resource Include="Resource\Images\icon_AnswerDisable.png" />
+    <Resource Include="Resource\Images\icon_AnswerNormal.png" />
+    <Resource Include="Resource\Images\icon_AnswerOver.png" />
+    <Resource Include="Resource\Images\icon_CallOutDisable.png" />
+    <Resource Include="Resource\Images\icon_CallOutNormal.png" />
+    <Resource Include="Resource\Images\icon_CallOutOver.png" />
+    <Resource Include="Resource\Images\icon_CallTransferDisable.png" />
+    <Resource Include="Resource\Images\icon_CallTransferNormal.png" />
+    <Resource Include="Resource\Images\icon_CallTransferOver.png" />
+    <Resource Include="Resource\Images\icon_CancelBusy.png" />
+    <Resource Include="Resource\Images\icon_CancelHoldDisable.png" />
+    <Resource Include="Resource\Images\icon_CancelHoldNormal.png" />
+    <Resource Include="Resource\Images\icon_CancelHoldOver.png" />
+    <Resource Include="Resource\Images\icon_CancelRest.png" />
+    <Resource Include="Resource\Images\icon_CancelWorkDisable.png" />
+    <Resource Include="Resource\Images\icon_CancelWorkNormal.png" />
+    <Resource Include="Resource\Images\icon_CancelWorkOver.png" />
+    <Resource Include="Resource\Images\icon_ConnectHoldDisable.png" />
+    <Resource Include="Resource\Images\icon_ConnectHoldNormal.png" />
+    <Resource Include="Resource\Images\icon_ConnectHoldOver.png" />
+    <Resource Include="Resource\Images\icon_EnterWorkDisable.png" />
+    <Resource Include="Resource\Images\icon_EnterWorkNormal.png" />
+    <Resource Include="Resource\Images\icon_EnterWorkOver.png" />
+    <Resource Include="Resource\Images\icon_GetDataDisable.png" />
+    <Resource Include="Resource\Images\icon_GetDataNormal.png" />
+    <Resource Include="Resource\Images\icon_GetDataOver.png" />
+    <Resource Include="Resource\Images\icon_HoldDisable.png" />
+    <Resource Include="Resource\Images\icon_HoldNormal.png" />
+    <Resource Include="Resource\Images\icon_HoldOver.png" />
+    <Resource Include="Resource\Images\icon_InnerCallDisable.png" />
+    <Resource Include="Resource\Images\icon_InnerCallNormal.png" />
+    <Resource Include="Resource\Images\icon_InnerCallOver.png" />
+    <Resource Include="Resource\Images\icon_InnerConsultDisable.png" />
+    <Resource Include="Resource\Images\icon_InnerConsultNormal.png" />
+    <Resource Include="Resource\Images\icon_InnerConsultOver.png" />
+    <Resource Include="Resource\Images\icon_MuteDisable.png" />
+    <Resource Include="Resource\Images\icon_MuteNormal.png" />
+    <Resource Include="Resource\Images\icon_MuteOver.png" />
+    <Resource Include="Resource\Images\icon_RecordDisable.png" />
+    <Resource Include="Resource\Images\icon_RecordNormal.png" />
+    <Resource Include="Resource\Images\icon_RecordOver.png" />
+    <Resource Include="Resource\Images\icon_ReleaseDisable.png" />
+    <Resource Include="Resource\Images\icon_ReleaseNormal.png" />
+    <Resource Include="Resource\Images\icon_ReleaseOver.png" />
+    <Resource Include="Resource\Images\icon_RestDisable.png" />
+    <Resource Include="Resource\Images\icon_RestNormal.png" />
+    <Resource Include="Resource\Images\icon_RestOver.png" />
+    <Resource Include="Resource\Images\icon_SendNoteDisable.png" />
+    <Resource Include="Resource\Images\icon_SendNoteNormal.png" />
+    <Resource Include="Resource\Images\icon_SendNoteOver.png" />
+    <Resource Include="Resource\Images\icon_SetBusyDisable.png" />
+    <Resource Include="Resource\Images\icon_SetBusyNormal.png" />
+    <Resource Include="Resource\Images\icon_SetBusyOver.png" />
+    <Resource Include="Resource\Images\icon_SetDataDisable.png" />
+    <Resource Include="Resource\Images\icon_SetDataNormal.png" />
+    <Resource Include="Resource\Images\icon_SetDataOver.png" />
+    <Resource Include="Resource\Images\icon_Space.png" />
+    <Resource Include="Resource\Images\icon_StartDisable.png" />
+    <Resource Include="Resource\Images\icon_StartNormal.png" />
+    <Resource Include="Resource\Images\icon_StartOver.png" />
+    <Resource Include="Resource\Images\icon_StopRecord.png" />
+    <Resource Include="Resource\Images\icon_TransferOutDisable.png" />
+    <Resource Include="Resource\Images\icon_TransferOutNormal.png" />
+    <Resource Include="Resource\Images\icon_TransferOutOver.png" />
+    <Resource Include="Resource\Images\icon_TripartiteCallDisable.png" />
+    <Resource Include="Resource\Images\icon_TripartiteCallNormal.png" />
+    <Resource Include="Resource\Images\icon_TripartiteCallOver.png" />
+    <Resource Include="Resource\Images\icon_VoiceType.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rmdir /s/q "$(ProjectDir)\obj"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

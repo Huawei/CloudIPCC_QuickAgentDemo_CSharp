@@ -1,0 +1,74 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--应答按钮-->
+    <ImageBrush x:Key="AnswerBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnAnswer.png"/>
+    <ImageBrush x:Key="AnswerMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnAnswerMouseOver.png"/>
+    <ImageBrush x:Key="AnswerPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnAnswerPress.png"/>
+    <ImageBrush x:Key="AnswerDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnAnswerDisable.png"/>
+
+    <!--释放按钮-->
+    <ImageBrush x:Key="ReleaseBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnRelease.png"/>
+    <ImageBrush x:Key="ReleaseMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnReleaseMouseOver.png"/>
+    <ImageBrush x:Key="ReleasePressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnReleasePress.png"/>
+    <ImageBrush x:Key="ReleaseDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnReleaseDisable.png"/>
+
+    <!--保持按钮-->
+    <ImageBrush x:Key="HoldBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnHold.png"/>
+    <ImageBrush x:Key="HoldMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnHoldMouseOver.png"/>
+    <ImageBrush x:Key="HoldPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnHoldPress.png"/>
+    <ImageBrush x:Key="HoldDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnHoldDisable.png"/>
+
+    <!--取保持按钮-->
+    <ImageBrush x:Key="UnholdBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnUnhold.png"/>
+    <ImageBrush x:Key="UnholdMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnUnholdMouseOver.png"/>
+    <ImageBrush x:Key="UnholdPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnUnholdPress.png"/>
+    <ImageBrush x:Key="UnholdDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnUnholdDisable.png"/>
+
+    <!--静音按钮-->
+    <ImageBrush x:Key="SoundBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSound.png"/>
+    <ImageBrush x:Key="SoundMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSoundMouseOver.png"/>
+    <ImageBrush x:Key="SoundPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSoundPress.png"/>
+    <ImageBrush x:Key="SoundDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSoundDisable.png"/>
+
+    <!--取消静音-->
+    <ImageBrush x:Key="NoSoundBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnNoSound.png"/>
+    <ImageBrush x:Key="NoSoundMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnNoSoundMouseOver.png"/>
+    <ImageBrush x:Key="NoSoundPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnNoSoundPress.png"/>
+    <ImageBrush x:Key="NoSoundDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnNoSoundDisable.png"/>
+
+    <!--三方通话按钮-->
+    <ImageBrush x:Key="TripartiteCallBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnTripartiteCall.png"/>
+    <ImageBrush x:Key="TripartiteCallMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnTripartiteCallMouseOver.png"/>
+    <ImageBrush x:Key="TripartiteCallPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnTripartiteCallPress.png"/>
+    <ImageBrush x:Key="TripartiteCallDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnTripartiteCallDisable.png"/>
+
+    <!--多媒体协作按钮-->
+    <ImageBrush x:Key="BigMedia" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnBigMedia.png"/>
+    <ImageBrush x:Key="BigMediaPre" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnBigMediaPre.png"/>
+    <ImageBrush x:Key="BigMediaMs" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnBigMediaMs.png"/>
+    <ImageBrush x:Key="BigMediaDis" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnBigMediaDis.png"/>
+
+    <!--设置按钮-->
+    <ImageBrush x:Key="SystemConfigBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSystemConfig.png"/>
+    <ImageBrush x:Key="SystemConfigMouseOverBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSystemConfigMouseOver.png"/>
+    <ImageBrush x:Key="SystemConfigPressBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSystemConfigPress.png"/>
+    <ImageBrush x:Key="SystemConfigDisableBackground" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSystemConfigDisable.png"/>
+
+    <!--获取技能列表按钮样式-->
+    <ImageBrush x:Key="SkillBtnBg" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSkill.png"/>
+    <ImageBrush x:Key="SkillBtnMouseover" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSkillMouseOver.png"/>
+    <ImageBrush x:Key="SkillBtnPressed" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSkillPress.png"/>
+    <ImageBrush x:Key="SkillBtnDisableBackground" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnSkillDisable.png"/>
+
+    <!--拨号键按钮-->
+    <ImageBrush x:Key="DialKeyBtnBg" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnDialKey.png"/>
+    <ImageBrush x:Key="DialKeyBtnDisable" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnDialKeyDisable.png"/>
+    <ImageBrush x:Key="DialKeyBtnMouseOver" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnDialKeyMouseOver.png"/>
+    <ImageBrush x:Key="DialKeyBtnPress" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/BtnDialKeyPress.png"/>
+
+    <!--QT头部图标-->
+    <ImageBrush x:Key="ImgMainHead" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/MainHeadBg.png"/>
+    <ImageBrush x:Key="MiniHeaderBg" Stretch="Fill" ImageSource="/CCCBar2;component/Resource/QuickTellerImage/Images/Green/ButtonImg/MiniHeaderBg.png"/>
+
+</ResourceDictionary>

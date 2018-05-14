@@ -1,0 +1,33 @@
+﻿<Window x:Class="QuickAgent.Src.View.TextChat.TC_CallTrans"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource textmsg_calltrans}" Height="300" Width="270" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" Topmost="True" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="{DynamicResource txtchat_transtype}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+        <ComboBox  Height="22" Name="cb_transaddrtype" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="120,0,0,0" SelectedIndex="0" Width="80">
+            <ComboBoxItem Content="{DynamicResource agentId}"/>
+            <ComboBoxItem Content="{DynamicResource skills}"/>
+        </ComboBox>
+
+        <Button Name="btn_ok" Grid.Row="3" Content="{DynamicResource ok}" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="50,0,0,0" Click="btn_ok_Click" />
+        <Button Name="btn_cancel" Grid.Row="3" Content="{DynamicResource btn_cancel}" Width="70" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,0,0,0" Click="btn_cancel_Click" />
+
+        <Label Content="{DynamicResource jobNum}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" />
+        <TextBox Name="tb_workNo" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="120,0,0,0" Width="100" />
+        <Label Name="lbl_skills" Grid.Row="2" Content="{DynamicResource choiceSkillQueue}" Margin="10,0,0,0" Width="78" HorizontalAlignment="Left"/>
+        <ListBox Name="lst_skills" Grid.Row="2" HorizontalAlignment="Left" Margin="120,0,0,10" Width="100"  SelectionMode="Single">
+            <ListBox.ItemTemplate>
+                <DataTemplate >
+                    <Label  Content="{Binding Path=name}"></Label>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

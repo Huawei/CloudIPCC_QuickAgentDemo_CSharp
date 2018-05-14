@@ -1,0 +1,12 @@
+﻿<Window x:Class="QuickAgent.Src.View.GetHoldWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+        Height="333" Width="380" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True">
+    <Grid>
+        <head:CallInfoCtrl x:Name="dgrdCallList"  Margin="10,10,10,45"/>
+
+        <Button Width="70" Height="25" VerticalAlignment="Bottom" Margin="100,0,0,10" HorizontalAlignment="Left" Name="btnConfirm" IsDefault="True" Click="btnConfirm_Click" Content="{DynamicResource ok}"></Button>
+        <Button Width="70" Height="25" VerticalAlignment="Bottom" Margin="210,0,0,10" HorizontalAlignment="Left" Name="btnCancel" IsCancel="True" Click="btnCancel_Click" Content="{DynamicResource btn_cancel}"></Button>
+    </Grid>
+</Window>

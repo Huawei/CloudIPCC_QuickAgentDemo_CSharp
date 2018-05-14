@@ -1,0 +1,27 @@
+﻿<Window x:Class="QuickAgent.Src.View.Others.OtherSettingsWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="{DynamicResource otherset_title}" Height="300" Width="300" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <GroupBox Header="{DynamicResource registerSkill}" Margin="0,0,0,30">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="25"/>
+                </Grid.RowDefinitions>
+
+                <ListView Name="lstView_Skills">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <CheckBox IsChecked="{Binding Path=IsItemSelected}" Content="{Binding Path=name}" Name="chkBoxSkill" Unchecked="chkBoxSkill_UnChecked"></CheckBox>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <CheckBox Name="chk_PhoneLink" Content="{DynamicResource otherset_phonelinkage}" Grid.Row="1" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+
+        <Button Name="btn_OK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="70" IsDefault="True" Content="{DynamicResource ok}" Margin="60,0,0,4" Click="Btn_OK_Click"/>
+        <Button Name="btn_Cancel" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="70" IsCancel="True" Content="{DynamicResource btn_cancel}" Margin="160,0,0,4" Click="Btn_Cancel_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="QuickAgent.Src.View.TextChat.TC_FileDownload"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="{DynamicResource txtchat_download}" Height="200" Width="350" ShowInTaskbar="False" Topmost="True" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition Height="28"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="{DynamicResource txtchat_filedownloadpath}" VerticalAlignment="Center" Margin="6,0,0,0"/>
+        <TextBox Name="tb_downloadfilepath" Grid.Row="1" VerticalAlignment="Center" Height="22" Margin="10,0,10,0"/>
+        <Label Content="{DynamicResource txtchat_filesavepath}" VerticalAlignment="Center" Grid.Row="2"  Margin="6,0,0,0"/>
+        <TextBox Name="tb_filesavepath" Grid.Row="3" VerticalAlignment="Center" Height="22" HorizontalAlignment="Left" Width="240" Margin="10,0,0,0"/>
+        <Button Name="btn_pathselect" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Content="{DynamicResource txtchat_select}" Width="70" Click="btn_pathselect_Click" />
+        <Button Name="btn_download" Content="{DynamicResource ok}" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="90,0,0,0" Width="70" Click="btn_download_Click" />
+        <Button Name="btn_cancel" Content="{DynamicResource btn_cancel}" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="185,0,0,0" Width="70" Click="btn_cancel_Click" />
+    </Grid>
+</Window>

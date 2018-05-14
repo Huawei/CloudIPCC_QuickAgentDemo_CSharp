@@ -1,0 +1,47 @@
+﻿<Window x:Class="QuickAgent.Src.View.Others.RecordWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+       Title="{DynamicResource recordscreen_title}" Height="300" Width="300" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" Background="WhiteSmoke" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="{DynamicResource recordscreen_setting}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal" Margin="0,0,10,0" Grid.Row="0">
+                    <Label Content="{DynamicResource recordscreen_type}" VerticalAlignment="Center"/>
+                    <TextBlock Text="   "></TextBlock>
+                    <RadioButton Height="16" Name="rb_single" Width="Auto" IsEnabled="True" Content="{DynamicResource recordscreen_single}" VerticalContentAlignment="Center" IsChecked="True"></RadioButton>
+                    <TextBlock Text="     "></TextBlock>
+                    <RadioButton Height="16" Name="rb_double" Width="Auto" IsEnabled="True" Content="{DynamicResource recordscreen_twoscreen}" VerticalContentAlignment="Center">
+                    </RadioButton>
+                </StackPanel>
+
+                <Label Content="{DynamicResource recordscreen_screenno}" VerticalAlignment="Center" Grid.Row="1" Width="70" HorizontalAlignment="Left"/>
+                <head:InputTextBoxCtrl x:Name="tb_screenNo" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" Height="22" Width="70" Margin="70,0,0,0"/>
+                <Label Content="{DynamicResource recordscreen_localip}" VerticalAlignment="Center" Grid.Row="2" Width="70" HorizontalAlignment="Left"/>
+                <TextBox x:Name="tb_localIP" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="2" Height="22" Width="150" Margin="70,0,0,0"/>
+                <Label Content="{DynamicResource recordscreen_localport}" VerticalAlignment="Center" Grid.Row="3" Width="70" HorizontalAlignment="Left"/>
+                <head:InputTextBoxCtrl x:Name="tb_localPort" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="3" Height="22" Width="100" Margin="70,0,0,0"/>
+                <Label Content="{DynamicResource recordscreen_enrtylist}" VerticalAlignment="Center" Grid.Row="4" Width="90" HorizontalAlignment="Left"/>
+                <TextBox Name="tb_vrpList" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="4" Height="22" Width="200" Margin="70,0,10,0"/>
+            </Grid>
+        </GroupBox>
+
+        <Button Name="btn_initial" Content="{DynamicResource recordscreen_initial}" Width="80" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="25,0,0,0" Grid.Row="1" Click="btn_initial_Click" />
+        <Button Name="btn_start" Content="{DynamicResource recordscreen_start}" Width="70" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="115,0,0,0" Grid.Row="1" Click="btn_start_Click"/>
+        <Button Name="btn_stop" Content="{DynamicResource recordscreen_stop}" Width="70" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="195,0,0,0" Grid.Row="1" Click="btn_stop_Click"/>
+    </Grid>
+</Window>

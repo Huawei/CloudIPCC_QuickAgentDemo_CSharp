@@ -1,0 +1,86 @@
+﻿<Window x:Class="QuickAgent.Src.View.CallOutWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+    Title="{DynamicResource outcall_title}" Height="252" Width="430" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="ToolWindow" Topmost="True" 
+        Background="WhiteSmoke" ShowInTaskbar="False">
+    
+    <!--Grid>
+        <Button Height="23" HorizontalAlignment="Left" Margin="38,0,0,22" ></Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,35,22" Name="btnCancel" VerticalAlignment="Bottom" Width="55" ></Button>
+        <Label Height="28" Margin="17,36,0,0""></Label>
+        <Label Margin="17,93,0,77"></Label>
+        <TextBox Height="23" Margin="84,37,38,0"   IsTabStop="True" />
+        <TextBox Margin="85,94,37,82"   IsTabStop="True" />
+    </Grid-->
+    <Window.Resources>
+        <Style x:Key="txtBlockStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Right"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            <Setter Property="Height" Value="19"></Setter>
+            <Setter Property="Width" Value="160"></Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Margin="10,0,10,0">
+            <head:WinHeadCtrl x:Name="ctrlHead" HorizontalAlignment="Left" Margin="10,0,0,0" Height="36"></head:WinHeadCtrl>
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="1" Foreground="Black" Background="Silver"></GridSplitter>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <!--RowDefinition Height="2*"></RowDefinition-->
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="{DynamicResource outcall_skill}" Name="txtBlockSkill" Grid.Row="0"></TextBlock>
+            <TextBlock  Name="lblCalledNumber" Text="{DynamicResource calledNumber}" Grid.Row="1"></TextBlock>
+            <TextBlock  Name="lblCallerNumber" Text="{DynamicResource callerNumber}" Grid.Row="2"></TextBlock>
+            <TextBlock Text="{DynamicResource outcall_mediaabi}" Name="txtBlockMedia" Grid.Row="3"></TextBlock>
+            <TextBlock Text="{DynamicResource outcall_mode}" Name="txtBlockCheck" Grid.Row="4" Visibility="Collapsed"></TextBlock>
+
+            <ComboBox Name="cbxSkill" Grid.Row="0" Grid.Column="1" Height="24" Width="268" ></ComboBox>
+            <head:InputTextBoxCtrl x:Name="txtCalledNumber" Grid.Row="1" Grid.Column="1" Height="26" Width="268"/>
+            <head:InputTextBoxCtrl x:Name="txtCallerNumber" Grid.Row="2" Grid.Column="1" Height="26" Width="268"/>
+            <ComboBox Name="cbxMedia" Grid.Row="3" Grid.Column="1" Height="24" Width="268"></ComboBox>
+
+            <GroupBox Name="gpbCheck" Grid.Row="4" Grid.Column="1" Width="268" Visibility="Collapsed">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Height="10"></TextBlock>
+                    <RadioButton Name="chkNoCheck" Content="{DynamicResource outcall_nocheck}"  IsChecked="True"></RadioButton>
+                    <RadioButton Name="chkNoCheckBefore" Content="{DynamicResource outcall_becheck}" ></RadioButton>
+                    <RadioButton Name="chkNoCheckAfter" Content="{DynamicResource outcall_afcheck}"></RadioButton>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button Height="26" Name="btnOk" Content="{DynamicResource ok}" Click="OK_Click" Width="70" Margin="100,0,0,0" HorizontalAlignment="Left" IsDefault="True"></Button>
+            <Button HorizontalAlignment="Right" Margin="0,0,90,0" Name="btnCancel" Width="70" Content="{DynamicResource btn_cancel}" Click="Cancel_Click" Height="26" IsCancel="True"></Button>
+        </Grid>
+    </Grid>
+    <!--Grid>
+        <Button Height="23" HorizontalAlignment="Left" Margin="38,0,0,22" Name="btnOk" VerticalAlignment="Bottom" Width="57" Content="{DynamicResource ok}" Click="OK_Click"></Button>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,35,22" Name="btnCancel" VerticalAlignment="Bottom" Width="55" Content="{DynamicResource cancel}" Click="Cancel_Click"></Button>
+        <TextBlock Height="28" Margin="17,36,0,0" Name="lblCalledNumber" VerticalAlignment="Top" HorizontalAlignment="Left" Width="59" Text="{DynamicResource calledNumber}"></TextBlock>
+        <TextBlock Margin="17,93,0,77" Name="lblCallerNumber" HorizontalAlignment="Left" Width="59" Text="{DynamicResource callerNumber}"></TextBlock>
+
+        <TextBox Height="23" Margin="84,37,38,0"  Name="txtCalledNumber" PreviewKeyDown="textBox_PreviewKeyDown" PreviewTextInput="textBox_PreviewTextInput" VerticalAlignment="Top" IsTabStop="True" />
+        <TextBox Margin="85,94,37,82" Name="txtCallerNumber"  PreviewKeyDown="textBox_PreviewKeyDown" PreviewTextInput="textBox_PreviewTextInput" IsTabStop="True" />
+    </Grid-->
+
+</Window>

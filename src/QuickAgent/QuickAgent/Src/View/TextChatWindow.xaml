@@ -1,0 +1,187 @@
+﻿<Window x:Class="QuickAgent.Src.View.TextChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:head="clr-namespace:QuickAgent.Src.UserControl"
+        Title="{DynamicResource otherfunc_title}" Height="420"  ResizeMode="NoResize" Width="550" Topmost="True"  Background="WhiteSmoke" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="550"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid>
+            <TabControl>
+                <TabItem Header="{DynamicResource main_textmessage}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Button Name="btn_endchat" Content="{DynamicResource textmsg_release}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Margin="10,0,0,0" Click="btn_endchat_Click"/>
+                        <Button Name="btn_innerCall" Content="{DynamicResource textmsg_innercall}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Margin="190,0,0,0" Click="btn_innerCall_Click" />
+                        <Button Name="btn_calltrans" Content="{DynamicResource textmsg_calltrans}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Margin="280,0,0,0" Click="btn_calltrans_Click"/>
+                        <Button Name="btn_upload" Content="{DynamicResource txtchat_upload}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Margin="370,0,0,0" Click="btn_upload_Click"/>
+                        <Button Name="btn_download" Content="{DynamicResource txtchat_download}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Margin="460,0,0,0" Click="btn_download_Click"/>
+
+                        <Label Content="{DynamicResource txtchat_answertype}" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Margin="10,0,0,0"/>
+                        <StackPanel Orientation="Horizontal" Margin="100,0,10,0" Grid.Row="1">
+                            <RadioButton Height="16" Name="chk_answerdefaulttype" Width="Auto" IsEnabled="True" Content="{DynamicResource txtchat_default}" VerticalContentAlignment="Center"  IsChecked="True"></RadioButton>
+                            <TextBlock Text="   "></TextBlock>
+                            <RadioButton Height="16" Name="chk_answervoicetype" Width="Auto" IsEnabled="True" Content="{DynamicResource txtchat_audio}" VerticalContentAlignment="Center" ></RadioButton>
+                            <TextBlock Text="   "></TextBlock>
+                            <RadioButton Height="16" Name="chk_answervideotype" Width="Auto" IsEnabled="True" Content="{DynamicResource txtchat_video}" VerticalContentAlignment="Center">
+                            </RadioButton>
+                        </StackPanel>
+
+                        <Button Content="{DynamicResource textchat_qrycallcontent}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="290,0,0,0" Width="110" Click="btn_qrycallcontent_Click"/>
+                        <Button Content="{DynamicResource textchat_qrycallsession}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="420,0,0,0" Width="110"  Click="btn_qrycallsession_Click" />
+                        <ListBox Name="lst_callid" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,0,5" Width="200" Height="280" SelectionChanged="lst_callid_SelectionChanged" SelectionMode="Single"/>
+                        <TextBox Name="tb_msgshow" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="220,5,0,5" Width="315" Height="165"  
+			                HorizontalScrollBarVisibility="Disabled" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                        <TextBox Name="tb_msgsend" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="220,180,0,5" Width="315" Height="85"
+			                 HorizontalScrollBarVisibility="Disabled" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"/>
+                        <Button Name="btn_msgsend"  Content="{DynamicResource textmsg_send}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="240,0,0,5" Width="90" Grid.Row="2" Click="btn_msgsend_Click"/>
+                        <Button  Name="btn_msgclr"  Content="{DynamicResource textmsg_clear}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="340,0,0,5" Width="90" Grid.Row="2" Click="btn_msgclr_Click"/>
+                        <Button Name="btn_sms" Content="{DynamicResource sms_title}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="450,0,0,5" Width="70" Grid.Row="2" Click="btn_sms_Click"/>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource otherfunc_pickuptitle}">
+                    <Grid>
+                        <head:AgentInfoCtrl Margin="2,2,2,95" x:Name="agentInfoCtrl"></head:AgentInfoCtrl>
+                        <Button Content="{DynamicResource qc_stopinsertlisten}" Click="QC_ButtonClick" Name="btn_qc_stopinsertlisten"  Width="140" Height="22" VerticalAlignment="Bottom" Margin="10,0,0,5" HorizontalAlignment="Left"/>
+                        <Button Content="{DynamicResource otherfunc_refresh}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="10,0,0,65" HorizontalAlignment="Left" Click="QC_UIFresh_Click"/>
+                        <Button Click="SnatchPickup_Click" Name="btn_pickup" Content="{DynamicResource otherfunc_pickup}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="96,0,0,65" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_insert" Content="{DynamicResource qc_insert}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="180,0,0,65" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_intercept" Content="{DynamicResource qc_intercept}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="96,0,0,35" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_listen" Content="{DynamicResource qc_supervise}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="10,0,0,35" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_reqwhisper" Content="{DynamicResource qc_reqwhisper}" Width="110" Height="22" VerticalAlignment="Bottom" Margin="180,0,0,35" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_stopwhisper" Content="{DynamicResource qc_stopwhisper}" Width="110" Height="22" VerticalAlignment="Bottom" Margin="180,0,0,5" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_switchlst" Content="{DynamicResource qc_supervise}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="315,0,0,5" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_switchint" Content="{DynamicResource qc_insert}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="390,0,0,5" HorizontalAlignment="Left"/>
+                        <Button Click="QC_ButtonClick" Name="btn_qc_switchwhis" Content="{DynamicResource qc_whisper}" Width="70" Height="22" VerticalAlignment="Bottom" Margin="465,0,0,5" HorizontalAlignment="Left"/>
+                        <Label Content="{DynamicResource qc_modechange}" Width="110" VerticalAlignment="Bottom" Margin="310,0,0,30" HorizontalAlignment="Left"/>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource conf_title}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="105"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <ListView Name="lst_confers" Margin="5,5,5,5" LostFocus="lst_confers_LostFocus"/>
+                            <Button Name="btn_confleave"  Grid.Column="1" Width="70" Content="{DynamicResource conf_exit}" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,115,5,5" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_confexit"  Grid.Column="1" Width="70" Content="{DynamicResource conf_terminate}" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,145,5,5" Click="ConfClickHandleCenter" />
+                        </Grid>
+
+                        <Grid Grid.Column="0" Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Label Content="{DynamicResource conf_filepat}" VerticalAlignment="Center"/>
+                            <TextBox Name="tb_sendfilepath" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="0" Width="165" Margin="90,0,0,0"/>
+                            <Button Name="btn_selectfile" Content="..." HorizontalAlignment="Right" Height="20" Margin="0,0,2,0" VerticalAlignment="Center" Click="btn_selectfile_Click" />
+                            <Label Content="{DynamicResource conf_filerecvname}" VerticalAlignment="Center" Grid.Row="1"/>
+                            <TextBox Name="tb_recvfilepath" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="1" Width="165" Margin="90,0,0,0"/>
+                            <Label Content="{DynamicResource conf_filerecvpath}" VerticalAlignment="Center" Grid.Row="2"/>
+                            <TextBox Name="tb_savefilepath" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2" Width="160" Margin="90,0,0,0"/>
+                            <Button Name="btn_filesave" Content="..." HorizontalAlignment="Right" Height="20" Margin="0,0,7,0" VerticalAlignment="Center" Grid.Row="2" Click="btn_savefileselect_Click"/>
+                            <Button Name="btn_filesend" Content="{DynamicResource conf_send}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="3" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_filerecv" Content="{DynamicResource conf_recv}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="95,0,0,0" Grid.Row="3" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_fileshare" Content="{DynamicResource conf_fileshare}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="4" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_sharesave" Content="{DynamicResource conf_filesave}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="95,0,0,0" Grid.Row="4" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_shareclose" Content="{DynamicResource conf_fileclose}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="185,0,0,0" Grid.Row="4" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_prepage" Content="{DynamicResource conf_prepage}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="5,0,0,0" Grid.Row="5" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_nextpage" Content="{DynamicResource conf_nextpage}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="95,0,0,0" Grid.Row="5" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_handmove" Content="{DynamicResource conf_handmove}" VerticalAlignment="Center" Width="75" HorizontalAlignment="Left" Margin="185,0,0,0" Grid.Row="5" Click="ConfClickHandleCenter" />
+                        </Grid>
+
+                        <Button Name="btn_openfilesharewindow" Content="{DynamicResource conf_filesharewindow}" Grid.Column="1" Height="22" Width="130" Click="btn_openfilesharewindow_Click" />
+
+                        <Grid Grid.Row="1" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Label Content="{DynamicResource conf_localapp}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                            <ComboBox Name="cb_localapps" VerticalAlignment="Center" HorizontalAlignment="Left" Width="110" Margin="80,0,0,0" />
+                            <Button Name="btn_qryapps" Height="22" Width="70" VerticalAlignment="Center" HorizontalAlignment="Right" Content="{DynamicResource conf_qry}" Margin="0,0,5,0" Click="ConfClickHandleCenter" />
+                            <Label Content="{DynamicResource conf_sharetype}" VerticalAlignment="Center" Width="70" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1"/>
+                            <ComboBox Name="cb_screensharetype" VerticalAlignment="Center" HorizontalAlignment="Left" Width="90" Margin="80,0,0,0" Grid.Row="1" SelectedIndex="0">
+                                <ComboBoxItem Content="{DynamicResource conf_sharetypescreen}"/>
+                                <ComboBoxItem Content="{DynamicResource conf_sharetypeapp}"/>
+                            </ComboBox>
+                            <Button Name="btn_startsharescreen" Content="{DynamicResource conf_startshare}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="10,0,0,0" Grid.Row="2" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_stopsharescreen" Content="{DynamicResource conf_stopshare}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="70" Height="22" Margin="100,0,0,0" Grid.Row="2" Click="ConfClickHandleCenter" />
+                            <Label Content="{DynamicResource conf_operationpri}" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" />
+                            <ComboBox Name="cb_actiontype" Margin="80,0,0,0" VerticalAlignment="Center" Width="90"  HorizontalAlignment="Left" Grid.Row="3" SelectedIndex="0">
+                                <ComboBoxItem Content="{DynamicResource conf_operapriadd}"/>
+                                <ComboBoxItem Content="{DynamicResource conf_operapridel}"/>
+                                <ComboBoxItem Content="{DynamicResource conf_operaprirej}"/>
+                            </ComboBox>
+                            <Button Name="btn_reqaction" Content="{DynamicResource conf_reqpri}" Width="110" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" Click="ConfClickHandleCenter" />
+                            <Button Name="btn_setactiontype" Content="{DynamicResource conf_setpri}" Width="110" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="130,0,0,0" Grid.Row="4" Click="ConfClickHandleCenter" />
+                        </Grid>
+
+                        <Grid Name="confGrid" Width="0" Height="0" Grid.Column="1" Visibility="Collapsed"/>
+                    </Grid>
+                </TabItem>
+
+                <TabItem Header="{DynamicResource otherfunc_title}">
+                    <Button Name="btn_phonepickup" Content="{DynamicResource textchat_other_pickup}" Width="70" Height="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="btn_phonepickup_Click" />
+                </TabItem>
+            </TabControl>
+        </Grid>
+
+        <Grid Grid.Column="1" Background="White" Visibility="Collapsed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Name="btn_clearLog" Content="{DynamicResource otherfunc_clearlog}" Width="70" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,65,0" Click="btn_clearLog_Click"/>
+            <Grid Grid.Row="1">
+                <DataGrid x:Name="dgrd_loginfo" AutoGenerateColumns="False"  GridLinesVisibility="None" CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserResizeRows="True"  
+                          RowHeaderWidth="0" SelectionMode="Single" HorizontalScrollBarVisibility="Disabled"  VerticalAlignment="Bottom" Height="300"
+                   IsReadOnly="True" AreRowDetailsFrozen="False" Margin="0,0,0,60" SelectionChanged="DataGridSelectionChanged"  VerticalScrollBarVisibility="Auto">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Path=LogTime}"  Width="130" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="Time"/>
+                        <DataGridTextColumn Binding="{Binding Path=LogType}" Width="220" IsReadOnly="True" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="Type"/>
+                        <DataGridTextColumn Binding="{Binding Path=LogInfo}" Width="100" CanUserReorder="False" CanUserResize="True" CanUserSort="False" Header="Content"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <TextBox Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="55" Margin="0,0,0,0" Name="tb_logdetail" Width="450" HorizontalScrollBarVisibility="Disabled"
+                 VerticalScrollBarVisibility="Auto"  TextWrapping="Wrap" AcceptsReturn="True"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

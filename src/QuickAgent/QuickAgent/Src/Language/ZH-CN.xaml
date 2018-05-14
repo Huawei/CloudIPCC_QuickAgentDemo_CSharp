@@ -1,0 +1,2436 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="windowBtnSet">
+        按钮设置
+    </sys:String>
+    <sys:String x:Key="main_other_ip">地址</sys:String>
+    <sys:String x:Key="requestHoldFailed">
+        保持失败
+    </sys:String>
+    <sys:String x:Key="releaseCallFailed">
+        释放失败
+    </sys:String>
+    <sys:String x:Key="enterWorkFailed">
+        进入工作状态失败
+    </sys:String>
+    <sys:String x:Key="exitWorkFailed">
+        退出工作状态失败
+    </sys:String>
+    <sys:String x:Key="answerFailed">
+        应答失败
+    </sys:String>
+    <sys:String x:Key="muteFailed">
+        静音失败
+    </sys:String>
+    <sys:String x:Key="cancelMuteFailed">
+        取消静音失败
+    </sys:String>
+    <sys:String x:Key="cancelHoldFailed">
+        取保持失败
+    </sys:String>
+    <sys:String x:Key="calloutFailed">
+        外呼失败
+    </sys:String>
+    <sys:String x:Key="setIdleFailed">
+        示闲失败
+    </sys:String>
+    <sys:String x:Key="setBusyFailed">
+        示忙失败
+    </sys:String>
+    <sys:String x:Key="cancelRestFailed">
+        取消休息失败
+    </sys:String>
+    <sys:String x:Key="logoutFailed">
+        签出失败
+    </sys:String>
+    <sys:String x:Key="alreadylogIn">
+        已签入
+    </sys:String>
+    <sys:String x:Key="resetSkillFailed">
+        重设技能失败
+    </sys:String>
+    <sys:String x:Key="loginFailed">
+        签入失败
+    </sys:String>
+    <sys:String x:Key="backupAddress">
+        备用地址:
+    </sys:String>
+    <sys:String x:Key="logIn">
+        签入
+    </sys:String>
+    <sys:String x:Key="logOut">
+        签出
+    </sys:String>
+    <sys:String x:Key="config">
+        配置
+    </sys:String>
+
+    <sys:String x:Key="popInfo">
+        正在呼叫您...
+    </sys:String>
+    <sys:String x:Key="jobNum">
+        工号:
+    </sys:String>
+    <sys:String x:Key="passwd">
+        密码:
+    </sys:String>
+    <sys:String x:Key="status">
+        状态:
+    </sys:String>
+    <sys:String x:Key="free">
+        示闲
+    </sys:String>
+    <sys:String x:Key="busy">
+        示忙
+    </sys:String>
+    <sys:String x:Key="rest">
+        休息
+    </sys:String>
+    <sys:String x:Key="clearUp">
+        整理
+    </sys:String>
+    <sys:String x:Key="leave">
+        离线
+    </sys:String>
+    <sys:String x:Key="login">
+        登录
+    </sys:String>
+    <sys:String x:Key="answer">
+        接听
+    </sys:String>
+    <sys:String x:Key="infoStat">
+        信息状态
+    </sys:String>
+    <sys:String x:Key="cardMacStat">
+        读卡器状态
+    </sys:String>
+    <sys:String x:Key="scanStat">
+        扫描仪状态
+    </sys:String>
+    <sys:String x:Key="printStat">
+        凭条打印机状态
+    </sys:String>
+    <sys:String x:Key="recyStat">
+        表单回收箱状态
+    </sys:String>
+    <sys:String x:Key="seriesNum">
+        系列号、与原号相同
+    </sys:String>
+    <sys:String x:Key="cash">
+        现金处理设备状态
+    </sys:String>
+    <sys:String x:Key="cpuPer">
+        CPU
+    </sys:String>
+    <sys:String x:Key="diskRest">
+        硬盘剩余空间
+    </sys:String>
+    <sys:String x:Key="rfidStat">
+        RFID读卡器状态
+    </sys:String>
+    <sys:String x:Key="handMacStat">
+        掌静脉仪状态
+    </sys:String>
+    <sys:String x:Key="signMacStat">
+        签字模块状态
+    </sys:String>
+    <sys:String x:Key="dvrStat">
+        DVR状态
+    </sys:String>
+    <sys:String x:Key="speakerStat">
+        扬声器状态
+    </sys:String>
+    <sys:String x:Key="checkStat">
+        支票模块状态
+    </sys:String>
+    <sys:String x:Key="idCardStat">
+        身份证读卡器状态
+    </sys:String>
+    <sys:String x:Key="strPrintStat">
+        流水打印机状态
+    </sys:String>
+    <sys:String x:Key="a4PrintStat">
+        A4打印机状态
+    </sys:String>
+    <sys:String x:Key="vtmId">
+        终端号
+    </sys:String>
+    <sys:String x:Key="timeStamp">
+        时间戳
+    </sys:String>
+    <sys:String x:Key="respCode">
+        响应码
+    </sys:String>
+    <sys:String x:Key="ramUsed">
+        内存使用量（M为单位）
+    </sys:String>
+    <sys:String x:Key="icCardStat">
+        IC卡读卡器状态
+    </sys:String>
+    <sys:String x:Key="fingerMacStat">
+        指纹仪状态
+    </sys:String>
+    <sys:String x:Key="pinPadStat">
+        密码键盘状态
+    </sys:String>
+    <sys:String x:Key="cameraStat">
+        视频摄像头状态
+    </sys:String>
+    <sys:String x:Key="upsStat">
+        UPS状态
+    </sys:String>
+    <sys:String x:Key="microphoneStat">
+        麦克风状态
+    </sys:String>
+    <sys:String x:Key="skillList">
+        业务类型
+    </sys:String>
+    <sys:String x:Key="show">
+        显示
+    </sys:String>
+    <sys:String x:Key="set">
+        设置
+    </sys:String>
+    <sys:String x:Key="disSet">
+        显示设置
+    </sys:String>
+    <sys:String x:Key="ansSet">
+        应答设置
+    </sys:String>
+    <sys:String x:Key="systemSet">
+        系统设置
+    </sys:String>
+    <sys:String x:Key="douScr">
+        智能双屏
+    </sys:String>
+    <sys:String x:Key="singScr">
+        单屏模式
+    </sys:String>
+    <sys:String x:Key="nonDouMsg">
+        没有发现双屏设备,设置无效。
+    </sys:String>
+    <sys:String x:Key="autoAns">
+        自动应答
+    </sys:String>
+    <sys:String x:Key="manAns">
+        手动应答
+    </sys:String>
+    <sys:String x:Key="ipSet">
+        Ip设置
+    </sys:String>
+    <sys:String x:Key="confirm">
+        确 定
+    </sys:String>
+    <sys:String x:Key="ok">
+        确 定
+    </sys:String>
+    <sys:String x:Key="cancel">
+        取 消
+    </sys:String>
+    <sys:String x:Key="apply">
+        应 用
+    </sys:String>
+    <sys:String x:Key="lanSet">
+        语言设置
+    </sys:String>
+    <sys:String x:Key="Chinese">
+        中文
+    </sys:String>
+    <sys:String x:Key="English">
+        英文
+    </sys:String>
+    <sys:String x:Key="languages">
+        语言:
+    </sys:String>
+    <sys:String x:Key="YesLocalPIP">
+        是
+    </sys:String>
+    <sys:String x:Key="NoLocalPIP">
+        否
+    </sys:String>
+    <sys:String x:Key="exit">
+        退出
+    </sys:String>
+    <sys:String x:Key="vtmVideo">
+        视频
+    </sys:String>
+    <sys:String x:Key="desktopShare">
+        桌面共享
+    </sys:String>
+    <sys:String x:Key="remoteCtrl">
+        远程控制
+    </sys:String>
+    <sys:String x:Key="close">
+        关闭
+    </sys:String>
+    <sys:String x:Key="mize">
+        最小化
+    </sys:String>
+    <sys:String x:Key="release">
+        释放
+    </sys:String>
+    <sys:String x:Key="hold">
+        保持
+    </sys:String>
+    <sys:String x:Key="unhold">
+        取保持
+    </sys:String>
+    <sys:String x:Key="mute">
+        静音
+    </sys:String>
+    <sys:String x:Key="unmute">
+        取消静音
+    </sys:String>
+    <sys:String x:Key="threeCall">
+        三方通话
+    </sys:String>
+    <sys:String x:Key="callTransfer">
+        呼叫转移
+    </sys:String>
+    <sys:String x:Key="internalCall">
+        内部呼叫
+    </sys:String>
+    <sys:String x:Key="tellerIsNotEmpty">
+        工号不能为空
+    </sys:String>
+    <sys:String x:Key="tellerNotRight">
+        输入工号不正确
+    </sys:String>
+    <sys:String x:Key="logonFail">
+        登录失败
+    </sys:String>
+    <sys:String x:Key="messageLocalVedioFailure">
+        视频连接失败。
+    </sys:String>
+    <sys:String x:Key="messageLocalDesktopFailure">
+        桌面共享连接失败。
+    </sys:String>
+    <sys:String x:Key="messageTellerStateBusy">
+        该柜员不处于空闲状态。
+    </sys:String>
+    <sys:String x:Key="messageAutocallFailure">
+        呼叫转移失败。
+    </sys:String>
+    <sys:String x:Key="messageAtalkingToTellerFailure">
+        内部呼叫失败。
+    </sys:String>
+    <sys:String x:Key="messageTellerNoAnswer">
+        柜员无应答。
+    </sys:String>
+    <sys:String x:Key="messageNoTellerOnline">
+        没有发现办理此业务的在线柜员。
+    </sys:String>
+    <sys:String x:Key="messageFailure">
+        操作失败。
+    </sys:String>
+    <sys:String x:Key="messageSystemError">
+        系统错误。
+    </sys:String>
+    <sys:String x:Key="messageQuicktellerClosed">
+        网络异常，系统即将关闭。
+    </sys:String>
+    <sys:String x:Key="messageTalkingIsNotClosed">
+        您正处于通话中，系统暂无法关闭。
+    </sys:String>
+    <sys:String x:Key="messageTalkingIsNotLogout">
+        您正处于通话中，系统暂无法注销。
+    </sys:String>
+    <sys:String x:Key="about">
+        关于
+    </sys:String>
+    <sys:String x:Key="logout">
+        注销
+    </sys:String>
+    <sys:String x:Key="upgrade">
+        升级
+    </sys:String>
+    <sys:String x:Key="tip">
+        提示
+    </sys:String>
+    <sys:String x:Key="aboutEdition">
+        版本: v
+    </sys:String>
+    <sys:String x:Key="aboutCopyright">
+        版权所属: Copyright Huawei Technologies Co., Ltd. 2011-2014. All rights reserved.
+    </sys:String>
+    <sys:String x:Key="aboutWarning">
+        警告：本程序受版权法和架构保护法的保护，凡未经授权擅自复制本软件的部分或全部内容，将要承担严厉的民事或刑事责任！
+    </sys:String>
+    <sys:String x:Key="videoDeviceRecodeError">
+        没有视频设备。
+    </sys:String>
+    <sys:String x:Key="callingState">
+        呼叫中...
+    </sys:String>
+    <sys:String x:Key="forwardCalling">
+        呼叫转移中...
+    </sys:String>
+    <sys:String x:Key="espaceLoginLater">
+        账户已经更改，通话结束后将自动重新登录。
+    </sys:String>
+    <sys:String x:Key="espaceLoginNow">
+        账户已经更改，将自动重新登录。
+    </sys:String>
+    <sys:String x:Key="espaceLoginOutLater">
+        账户已经退出，通话结束后将自动关闭。
+    </sys:String>
+    <sys:String x:Key="espaceLoginOutNow">
+        账户已经退出，将自动关闭。
+    </sys:String>
+    <sys:String x:Key="lanSetInvalid">
+        语言设置无效。
+    </sys:String>
+    <sys:String x:Key="help">
+        帮助
+    </sys:String>
+    <sys:String x:Key="toMini">
+        迷你模式
+    </sys:String>
+    <sys:String x:Key="toDefault">
+        普通模式
+    </sys:String>
+    <sys:String x:Key="reInfo">
+        已释放
+    </sys:String>
+    <sys:String x:Key="withCustomer">
+        与客户
+    </sys:String>
+    <sys:String x:Key="withTeller">
+        与柜员
+    </sys:String>
+    <sys:String x:Key="callsOver">
+        通话结束
+    </sys:String>
+    <sys:String x:Key="maxSize">
+        最大化
+    </sys:String>
+    <sys:String x:Key="defaultSize">
+        还原
+    </sys:String>
+    <sys:String x:Key="loading">
+        加载中...
+    </sys:String>
+    <sys:String x:Key="askLoading">
+        程序无响应,结束还是继续等待？
+    </sys:String>
+    <sys:String x:Key="loadingClose">
+        否，退出程序
+    </sys:String>
+    <sys:String x:Key="desktop">
+        桌面
+    </sys:String>
+    <sys:String x:Key="openCameraFailed">
+        打开摄像头失败
+    </sys:String>
+    <sys:String x:Key="noConfigFile">
+        没有配置文件
+    </sys:String>
+    <sys:String x:Key="configParamError">
+        配置文件参数错误
+    </sys:String>
+    <sys:String x:Key="NegotiateVideoFailed">
+        视频协商失败，转语音模式
+    </sys:String>
+    <sys:String x:Key="changToAudioTalking">
+        客户释放，内部呼叫转语音模式
+    </sys:String>
+    <!--C02-->
+    <sys:String x:Key="save">
+        保存
+    </sys:String>
+    <sys:String x:Key="copy">
+        复制
+    </sys:String>
+    <sys:String x:Key="upPage">
+        上一页
+    </sys:String>
+    <sys:String x:Key="nextPage">
+        下一页
+    </sys:String>
+    <sys:String x:Key="zoomIn">
+        放大
+    </sys:String>
+    <sys:String x:Key="zoomOut">
+        缩小
+    </sys:String>
+    <sys:String x:Key="hand">
+        抓手
+    </sys:String>
+    <sys:String x:Key="fontColor">
+        字体颜色
+    </sys:String>
+    <sys:String x:Key="fontSet">
+        字体设置
+    </sys:String>
+    <sys:String x:Key="fontSize">
+        字体大小
+    </sys:String>
+    <sys:String x:Key="labelFull">
+        标注填充
+    </sys:String>
+    <sys:String x:Key="noArrowLine">
+        无箭头线条
+    </sys:String>
+    <sys:String x:Key="arrowLine">
+        单向箭头线条
+    </sys:String>
+    <sys:String x:Key="doubleArrowLine">
+        双向箭头线条
+    </sys:String>
+    <sys:String x:Key="hollowEllipse">
+        空心椭圆
+    </sys:String>
+    <sys:String x:Key="hollowRect">
+        空心矩形
+    </sys:String>
+    <sys:String x:Key="roundedHollowRect">
+        空心圆角矩形
+    </sys:String>
+    <sys:String x:Key="rsRect">
+        实心圆角矩形
+    </sys:String>
+    <sys:String x:Key="solidEllipse">
+        实心椭圆
+    </sys:String>
+    <sys:String x:Key="solidRect">
+        实心矩形
+    </sys:String>
+    <sys:String x:Key="freePen">
+        自由画笔
+    </sys:String>
+    <sys:String x:Key="fontAn">
+        文字标注
+    </sys:String>
+    <sys:String x:Key="laserPointer">
+        激光笔
+    </sys:String>
+    <!--标注文案修改-->
+    <sys:String x:Key="stopAnno">
+        选择
+    </sys:String>
+    <sys:String x:Key="fontAnno">
+        文本标注
+    </sys:String>
+    <sys:String x:Key="clearLabel">
+        擦除标注
+    </sys:String>
+    <sys:String x:Key="labelShape">
+        标注选择
+    </sys:String>
+    <sys:String x:Key="scal">
+        等比例缩放
+    </sys:String>
+    <sys:String x:Key="beginLabel">
+        开始标注
+    </sys:String>
+    <!--end-->
+    <sys:String x:Key="beginStopLabel">
+        开始/停止标注
+    </sys:String>
+    <sys:String x:Key="pauseLabel">
+        暂停标注
+    </sys:String>
+    <sys:String x:Key="lineSize">
+        线宽:
+    </sys:String>
+    <sys:String x:Key="fullWindow">
+        全屏
+    </sys:String>
+    <sys:String x:Key="revert">
+        还原
+    </sys:String>
+    <sys:String x:Key="upPagefail">
+        跳转上一页失败！
+    </sys:String>
+    <sys:String x:Key="nextPagefail">
+        跳转下一页失败！
+    </sys:String>
+    <sys:String x:Key="scalFail">
+        缩放失败！
+    </sys:String>
+    <sys:String x:Key="saveShareFail">
+        文档共享保存失败！
+    </sys:String>
+    <sys:String x:Key="jumpPageFail">
+        跳转页失败！
+    </sys:String>
+    <sys:String x:Key="setFail">
+        设置失败！
+    </sys:String>
+    <sys:String x:Key="saveWhiteBoardFail">
+        电子白板保存失败！
+    </sys:String>
+    <sys:String x:Key="openLabelFail">
+        远程控制时不能开启标注！
+    </sys:String>
+    <sys:String x:Key="toOtherService">
+        呼叫转移成功！
+    </sys:String>
+    <sys:String x:Key="setColorFail">
+        颜色设置失败！
+    </sys:String>
+    <sys:String x:Key="waitCustomer">
+        等待客户
+    </sys:String>
+    <sys:String x:Key="unLock">
+        解锁
+    </sys:String>
+    <sys:String x:Key="serveCount">
+        服务次数
+    </sys:String>
+    <sys:String x:Key="serveTime">
+        服务时间
+    </sys:String>
+    <sys:String x:Key="mediaCooperate">
+        多媒体协作
+    </sys:String>
+    <sys:String x:Key="shareFile">
+        文档共享
+    </sys:String>
+    <sys:String x:Key="loadShareFile">
+        加载
+    </sys:String>
+    <sys:String x:Key="whiteBoard">
+        电子白板
+    </sys:String>
+    <sys:String x:Key="createWhiteBoard">
+        新建
+    </sys:String>
+    <sys:String x:Key="newPage">
+        新建页
+    </sys:String>
+    <sys:String x:Key="deletePage">
+        删除页
+    </sys:String>
+    <sys:String x:Key="delWbFail">
+        删除电子白板失败！
+    </sys:String>
+    <sys:String x:Key="shareFileSwitchFail">
+        共享文档切换失败！
+    </sys:String>
+    <sys:String x:Key="shareFileCloseFail">
+        关闭共享文档失败！
+    </sys:String>
+    <sys:String x:Key="wbSetDisplaySizeFail">
+        设置电子白板显示区大小失败！
+    </sys:String>
+    <sys:String x:Key="whiteBoardNewFail">
+        新建电子白板失败！
+    </sys:String>
+    <sys:String x:Key="wbNewPageFail">
+        新建电子白板页失败！
+    </sys:String>
+    <sys:String x:Key="wbDelPageFail">
+        删除电子白板页失败！
+    </sys:String>
+    <sys:String x:Key="basicSet">
+        基本设置
+    </sys:String>
+    <sys:String x:Key="videoSet">
+        视频设置
+    </sys:String>
+    <sys:String x:Key="stateSet">
+        状态设置
+    </sys:String>
+    <sys:String x:Key="lockSet">
+        锁屏设置
+    </sys:String>
+    <sys:String x:Key="callSet">
+        呼叫设置
+    </sys:String>
+    <sys:String x:Key="upgradeService">
+        自动升级
+    </sys:String>
+    <sys:String x:Key="isTwinScree">
+        是否双屏显示:
+    </sys:String>
+    <sys:String x:Key="isLocalPIP">
+        是否画中画:
+    </sys:String>
+    <sys:String x:Key="answerMode">
+        应答模式:
+    </sys:String>
+    <sys:String x:Key="frameSet">
+        帧率设置:
+    </sys:String>
+    <sys:String x:Key="frameUnit">
+        帧/秒
+    </sys:String>
+    <sys:String x:Key="percentageSet">
+        分辨率设置:
+    </sys:String>
+    <sys:String x:Key="explain">
+        高 清
+    </sys:String>
+    <sys:String x:Key="loginState">
+        登录后状态:
+    </sys:String>
+    <sys:String x:Key="reseleaseState">
+        释放后状态:
+    </sys:String>
+    <sys:String x:Key="serviceIp">
+        服务器IP：
+    </sys:String>
+    <sys:String x:Key="serverPort">
+        端 口 号 ：
+    </sys:String>
+    <sys:String x:Key="serverIpErrorMsg">
+        输入Ip地址不合法
+    </sys:String>
+    <sys:String x:Key="serverPortErrorMsg">
+        输入的端口号不合法
+    </sys:String>
+    <sys:String x:Key="setLockTime">
+        设置锁屏时间:
+    </sys:String>
+    <sys:String x:Key="screenlock">
+        是否锁屏:
+    </sys:String>
+    <sys:String x:Key="lockTime">
+        分钟
+    </sys:String>
+    <sys:String x:Key="lockErrorMsg">
+        输入不合法
+    </sys:String>
+    <sys:String x:Key="internalCallSet">
+        内部呼叫设置:
+    </sys:String>
+    <sys:String x:Key="videoCall">
+        视频呼叫
+    </sys:String>
+    <sys:String x:Key="pronunciationCall">
+        语音呼叫
+    </sys:String>
+    <sys:String x:Key="loadFileFail">
+        加载文档失败！
+    </sys:String>
+    <sys:String x:Key="changing">
+        请选择...
+    </sys:String>
+    <sys:String x:Key="wbFile">
+        电子白板文件
+    </sys:String>
+    <sys:String x:Key="loadWbFail">
+        加载电子白板页失败！
+    </sys:String>
+    <sys:String x:Key="delAnnotationFail">
+        删除标注失败！
+    </sys:String>
+    <sys:String x:Key="updateAnnotationFail">
+        更新标注失败！
+    </sys:String>
+    <sys:String x:Key="selectAnnotationFail">
+        选中标注失败！
+    </sys:String>
+    <sys:String x:Key="createTextAnnotationFail">
+        创建文字标注失败！
+    </sys:String>
+    <sys:String x:Key="updateInfoException">
+        升级配置错误或服务器异常！
+    </sys:String>
+    <sys:String x:Key="notFindNew">
+        没有符合的最新版本更新！
+    </sys:String>
+    <sys:String x:Key="errorCode">
+        错误码:
+    </sys:String>
+    <sys:String x:Key="otherLine">
+        其他线条：
+    </sys:String>
+    <!--服务器升级-->
+    <sys:String x:Key="qtUpdateServerClueOn">
+        QuickTeller升级提醒
+    </sys:String>
+    <sys:String x:Key="notClueOn">
+        不再提醒
+    </sys:String>
+    <sys:String x:Key="findNewEdition">
+        发现新的版本
+    </sys:String>
+    <sys:String x:Key="isUpdateNow">
+        是否现在更新?
+    </sys:String>
+    <sys:String x:Key="severceUpdating">
+        开始更新程序...
+    </sys:String>
+    <sys:String x:Key="downLoaded">
+        下载完成!
+    </sys:String>
+    <sys:String x:Key="isUpdateWhenDownLaod">
+        下载完成,是否现在升级软件?
+    </sys:String>
+    <sys:String x:Key="updateFile">
+        更新内容如下:
+    </sys:String>
+    <sys:String x:Key="updateNow">
+        现在更新
+    </sys:String>
+    <sys:String x:Key="notUpdate">
+        暂不更新
+    </sys:String>
+    <sys:String x:Key="updateServerClueOn">
+        软件更新提醒
+    </sys:String>
+    <sys:String x:Key="updateServerNew">
+        现在升级
+    </sys:String>
+    <sys:String x:Key="notUpdateServer">
+        暂不升级
+    </sys:String>
+    <sys:String x:Key="isCancelUpdateServer">
+        是否取消本次升级？
+    </sys:String>
+    <sys:String x:Key="agentOrPhoneComponentError">
+        语音模块异常
+    </sys:String>
+    <sys:String x:Key="videoComponenError">
+        视频模块异常
+    </sys:String>
+    <sys:String x:Key="desktopComponenError">
+        多媒体协作模块异常
+    </sys:String>
+    <sys:String x:Key="fileIoOrMsgIoComponenError">
+        文件消息模块异常
+    </sys:String>
+    <sys:String x:Key="colors">
+        黑色,红色,绿色,深灰色,黄色,深红色,玫瑰色,橙色,青色 ,深青,紫色,白色,浅灰色,褐色,金色,浅黄色,酸橙色,淡青绿色 ,蓝灰色 ,淡紫色,粉红色
+    </sys:String>
+    <sys:String x:Key="recordFail">
+        录屏失败
+    </sys:String>
+    <sys:String x:Key="recordFailRemind">
+        录屏失败，无法办理业务，点击确定后释放通话。
+    </sys:String>
+
+    <!--错误码-->
+    <sys:String x:Key="5">
+        请求操作被拒绝。
+    </sys:String>
+    <sys:String x:Key="21">
+        该文件不存在。
+    </sys:String>
+    <sys:String x:Key="27">
+        不支持该文件格式。
+    </sys:String>
+    <sys:String x:Key="29">
+        已在当前页。
+    </sys:String>
+    <sys:String x:Key="30">
+        指定的页面不存在。
+    </sys:String>
+    <sys:String x:Key="32">
+        文档未打开。
+    </sys:String>
+    <sys:String x:Key="33">
+        未设置显示区大小。
+    </sys:String>
+    <sys:String x:Key="34">
+        超过最大支持页数。
+    </sys:String>
+    <sys:String x:Key="35">
+        文档大小为0。
+    </sys:String>
+    <sys:String x:Key="36">
+        该文档已打开。
+    </sys:String>
+    <sys:String x:Key="38">
+        该文档正在打印中。
+    </sys:String>
+    <sys:String x:Key="45">
+        打印机未安装。
+    </sys:String>
+    <sys:String x:Key="48">
+        移动超出范围。
+    </sys:String>
+    <sys:String x:Key="52">
+        处理超时。
+    </sys:String>
+    <sys:String x:Key="54">
+        操作失败! 其他柜员正在和客户进行远程控制。
+    </sys:String>
+    <sys:String x:Key="55">
+        操作失败! 其他柜员已经向客户发送了远程控制请求。
+    </sys:String>
+    <sys:String x:Key="2999">
+        未知错误。
+    </sys:String>
+    <sys:String x:Key="cannoTransferred">
+        静音状态下不能呼叫转移。
+    </sys:String>
+    <sys:String x:Key="3">
+        请求无响应
+    </sys:String>
+    <sys:String x:Key="8">
+        账号已登录
+    </sys:String>
+    <sys:String x:Key="mintuateLaterUnlock">
+        ，{0}分钟后解锁
+    </sys:String>
+    <sys:String x:Key="clear">
+        清空
+    </sys:String>
+    <sys:String x:Key="tellerSearch">
+        按工号、用户名搜索
+    </sys:String>
+    <sys:String x:Key="notFindTeller">
+        没有找到相关柜员
+    </sys:String>
+    <sys:String x:Key="defult">
+        初始化
+    </sys:String>
+    <sys:String x:Key="defultSet">
+        初始设置
+    </sys:String>
+    <sys:String x:Key="defultInfo">
+        重置【基本设置】中的配置项，恢复到初始状态。
+    </sys:String>
+    <sys:String x:Key="clearAnnotation">
+        确定要清空当前所有标注？
+    </sys:String>
+    <sys:String x:Key="deleteFile">
+        确定要删除当前文档？
+    </sys:String>
+    <sys:String x:Key="isDefult">
+        确定要初始化操作？
+    </sys:String>
+    <sys:String x:Key="networkMonitor">
+        网络信号
+    </sys:String>
+    <sys:String x:Key="setAnno">
+        标注属性设置
+    </sys:String>
+    <sys:String x:Key="labelCheck">
+        线框
+    </sys:String>
+    <sys:String x:Key="stopLabel">
+        停止标注
+    </sys:String>
+    <sys:String x:Key="withCall">
+        与{0}通话中
+    </sys:String>
+    <sys:String x:Key="setTopmost">
+        置顶
+    </sys:String>
+    <sys:String x:Key="setUnTopmost">
+        取消置顶
+    </sys:String>
+    <sys:String x:Key="downLoadUpgradeError">
+        下载升级包出现异常
+    </sys:String>
+    <sys:String x:Key="otherTellerVisible">
+        会议模式
+    </sys:String>
+    <sys:String x:Key="otherTellerNotVisible">
+        审核模式
+    </sys:String>
+    <sys:String x:Key="requestDesktop">
+        请求桌面共享
+    </sys:String>
+    <sys:String x:Key="requestRemoteControl">
+        请求远程控制
+    </sys:String>
+    <sys:String x:Key="stopRequestDesktop">
+        取消桌面共享请求
+    </sys:String>
+    <sys:String x:Key="stopRsRemoteControl">
+        取消远程控制请求
+    </sys:String>
+    <sys:String x:Key="stopDesktop">
+        停止桌面共享
+    </sys:String>
+    <sys:String x:Key="stopRemoteControl">
+        停止远程控制
+    </sys:String>
+    <sys:String x:Key="getLogOnModeFail">
+        连接服务器失败，请重新打开软件。
+    </sys:String>
+    <sys:String x:Key="dialKey">
+        拨号盘
+    </sys:String>
+    <sys:String x:Key="callInCallOutSet">
+        呼叫设置
+    </sys:String>
+    <sys:String x:Key="styleSet">
+        主题设置
+    </sys:String>
+    <sys:String x:Key="styleSelecte">
+        主题选择:
+    </sys:String>
+    <sys:String x:Key="blueStyle">
+        蓝色主题
+    </sys:String>
+    <sys:String x:Key="redStyle">
+        红色主题
+    </sys:String>
+    <sys:String x:Key="greenStyle">
+        绿色主题
+    </sys:String>
+    <sys:String x:Key="saffronYellowStyle">
+        黄色主题
+    </sys:String>
+    <sys:String x:Key="messageCallOutFailure">
+        呼叫失败。
+    </sys:String>
+    <sys:String x:Key="OcxInitFail">
+        QuickTeller初始化失败，请检查配置后，重新打开。
+    </sys:String>
+    <sys:String x:Key="OcxInitFailActive">
+        QuickTeller初始化失败，请重新选择MCC中心。
+    </sys:String>
+    <sys:String x:Key="shareApplication">
+        应用共享
+    </sys:String>
+    <sys:String x:Key="startShareApp">
+        开 始
+    </sys:String>
+    <sys:String x:Key="stopShareApp">
+        停 止
+    </sys:String>
+    <sys:String x:Key="stopAllShareApp">
+        保持失败,当前正在应用共享中，请先停止正在共享的应用项。
+    </sys:String>
+    <sys:String x:Key="updateAppList">
+        刷新列表
+    </sys:String>
+    <sys:String x:Key="stopAll">
+        停止所有共享
+    </sys:String>
+    <sys:String x:Key="58">
+        该程序没有在共享中
+    </sys:String>
+    <sys:String x:Key="59">
+        该程序正在共享中
+    </sys:String>
+    <sys:String x:Key="57">
+        窗口不存在
+    </sys:String>
+    <sys:String x:Key="logoinCen">
+        登录中心
+    </sys:String>
+    <sys:String x:Key="configNoExistMessage">
+        QuickTeller.config配置文件不存在，程序无法运行。
+    </sys:String>
+
+    <sys:String x:Key="openExtendVideoFial">
+        打开扩展摄像头失败。
+    </sys:String>
+    <sys:String x:Key="closeExtendVideoFial">
+        关闭扩展摄像头失败。
+    </sys:String>
+    <sys:String x:Key="openExtendVideo">
+        打开扩展摄像头
+    </sys:String>
+    <sys:String x:Key="closeExtendVideo">
+        关闭扩展摄像头
+    </sys:String>
+    <sys:String x:Key="tileModel">
+        平铺模式
+    </sys:String>
+    <sys:String x:Key="aloneModel">
+        独立模式
+    </sys:String>
+    <sys:String x:Key="Localcamera">
+        本地
+    </sys:String>
+    <sys:String x:Key="AnonymousUser">
+        匿名用户
+    </sys:String>
+    <sys:String x:Key="none">
+        无
+    </sys:String>
+    <sys:String x:Key="67">
+        另一柜员正在标注中，请求远程控制失败。
+    </sys:String>
+    <sys:String x:Key="publicTooltip">
+        提示
+    </sys:String>
+    <sys:String x:Key="holdCall">
+        确定要保持这个来话吗？
+    </sys:String>
+    <sys:String x:Key="callOut">
+        呼出
+    </sys:String>
+    <sys:String x:Key="callerNumber">
+        主叫号码
+    </sys:String>
+    <sys:String x:Key="calledNumber">
+        被叫号码
+    </sys:String>
+    <sys:String x:Key="innerCall">
+        内部呼叫
+    </sys:String>
+    <sys:String x:Key="100">
+        未知
+    </sys:String>
+    <sys:String x:Key="101">
+        签入
+    </sys:String>
+    <sys:String x:Key="102">
+        签出
+    </sys:String>
+    <sys:String x:Key="107">
+        通话中
+    </sys:String>
+    <sys:String x:Key="notChooseAgent">
+        未选择呼叫座席
+    </sys:String>
+    <sys:String x:Key="isNotIdleAgent">
+        不能呼叫非示闲态座席
+    </sys:String>
+    <sys:String x:Key="transferToAgent">
+        转工号
+    </sys:String>
+    <sys:String x:Key="infoByBusinessAgent">
+        业务代表信息
+    </sys:String>
+    <sys:String x:Key="transferToNumebrOfBusinessAgent">
+        转至业务代表工号
+    </sys:String>
+    <sys:String x:Key="transferWay">
+        转移方式
+    </sys:String>
+    <sys:String x:Key="releaseTransfer">
+        释放转
+    </sys:String>
+    <sys:String x:Key="successTransfer">
+        成功转
+    </sys:String>
+    <sys:String x:Key="assignTransfer">
+        指定转
+    </sys:String>
+    <sys:String x:Key="mergeTransfer">
+        合并转
+    </sys:String>
+    <sys:String x:Key="transerToIVR">
+        转自动
+    </sys:String>
+    <sys:String x:Key="allIVRDevice">
+        所有IVR设备
+    </sys:String>
+    <sys:String x:Key="transferToIVRAccessCode">
+        转至IVR接入码
+    </sys:String>
+    <sys:String x:Key="hungUp">
+        挂起
+    </sys:String>
+    <sys:String x:Key="transferQueue">
+        转队列
+    </sys:String>
+    <sys:String x:Key="configOfSkillsQueue">
+        技能队列配置
+    </sys:String>
+    <sys:String x:Key="transferToQueue">
+        转至队列
+    </sys:String>
+    <sys:String x:Key="success">
+        成功
+    </sys:String>
+    <sys:String x:Key="transferToAccessCode">
+        转接入码
+    </sys:String>
+    <sys:String x:Key="transferToSystemAccessCode">
+        转至系统接入码
+    </sys:String>
+    <sys:String x:Key="nullTransferObject">
+        转移对象不能为空
+    </sys:String>
+    <sys:String x:Key="normalVoiceCall">
+        普通语音呼叫
+    </sys:String>
+    <sys:String x:Key="start">
+        开始
+    </sys:String>
+    <sys:String x:Key="innerConsult">
+        内部求助
+    </sys:String>
+    <sys:String x:Key="consultToQueue">
+        求助到队列
+    </sys:String>
+    <sys:String x:Key="inputBusinessAgentId">
+        请输入业务代表工号
+    </sys:String>
+    <sys:String x:Key="twoPartiesConsult">
+        两方求助
+    </sys:String>
+    <sys:String x:Key="tripartiteConsult">
+        三方求助
+    </sys:String>
+    <sys:String x:Key="choiceConsultWay">
+        请选择求助方式
+    </sys:String>
+    <sys:String x:Key="choiceSkillQueue">
+        请选择技能队列
+    </sys:String>
+    <sys:String x:Key="transferOut">
+        转出
+    </sys:String>
+    <sys:String x:Key="transferOutCallerNumber">
+        转出主叫号码
+    </sys:String>
+    <sys:String x:Key="transferOutCalledNumber">
+        转出被叫号码
+    </sys:String>
+    <sys:String x:Key="callTransferOutNumber">
+        呼叫转出号码
+    </sys:String>
+    <sys:String x:Key="transferOutWay">
+        转出方式
+    </sys:String>
+    <sys:String x:Key="agentReleaseCallNoMatterTransferOutSucceedsOrNot">
+        不管成功与否，座席都释放该呼叫
+    </sys:String>
+    <sys:String x:Key="agentReleasesCallAfterSuccessfulTransferOut">
+        监视转出过程，转出成功则座席释放该呼叫
+    </sys:String>
+    <sys:String x:Key="discriptionOfSuccessTransfer">
+        监视转出过程，成功后与座席通话，座席释放时连接主叫
+    </sys:String>
+    <sys:String x:Key="discriptionOfTripartiteTransfer">
+        监视转出过程，成功后三方通话，座席释放时连接主叫
+    </sys:String>
+    <sys:String x:Key="number">
+        序号
+    </sys:String>
+    <sys:String x:Key="mediaType">
+        媒体类型
+    </sys:String>
+    <sys:String x:Key="connectHold">
+        连接保持
+    </sys:String>
+    <sys:String x:Key="chooseOneCalling">
+        请选择一路通话
+    </sys:String>
+    <sys:String x:Key="twoCall">
+        两方通话
+    </sys:String>
+    <sys:String x:Key="currentState">
+        当前状态
+    </sys:String>
+    <sys:String x:Key="agentId">
+        座席工号
+    </sys:String>
+    <sys:String x:Key="agentRest">
+        座席休息
+    </sys:String>
+    <sys:String x:Key="restTimeOut">
+        您的休息时间已超过{0}分钟，请赶快取消休息!
+    </sys:String>
+    <sys:String x:Key="agentStartRest">
+        座席在{0}开始休息。
+    </sys:String>
+    <sys:String x:Key="requestRest">
+        请求休息
+    </sys:String>
+    <sys:String x:Key="inputRestTime">
+        请输入休息时长（1~59）：
+    </sys:String>
+    <sys:String x:Key="minutes">
+        分钟
+    </sys:String>
+    <sys:String x:Key="contentUnLegal">
+        输入的内容不合法
+    </sys:String>
+    <sys:String x:Key="calledNumberNotIsNull">
+        被叫号码不能为空
+    </sys:String>
+    <sys:String x:Key="phoneNumber">
+        电话号码
+    </sys:String>
+    <sys:String x:Key="address">
+        地址
+    </sys:String>
+    <sys:String x:Key="setWork">
+        进入工作态
+    </sys:String>
+    <sys:String x:Key="cancelWork">
+        退出工作态
+    </sys:String>
+    <sys:String x:Key="setData">
+        设置数据
+    </sys:String>
+    <sys:String x:Key="getData">
+        查询数据
+    </sys:String>
+    <sys:String x:Key="announcement">
+        发布公告
+    </sys:String>
+    <sys:String x:Key="sendNote">
+        发送便签
+    </sys:String>
+    <sys:String x:Key="canNotGetHoldInfo">
+        无法取得保持信息
+    </sys:String>
+    <sys:String x:Key="record">
+        录音
+    </sys:String>
+
+    <sys:String x:Key="ipView">
+        发起IP视频呼叫
+    </sys:String>
+    <sys:String x:Key="stopTxtChat">
+        停止文字交谈
+    </sys:String>
+    <sys:String x:Key="txtChat">
+        发起文字交谈
+    </sys:String>
+    <sys:String x:Key="stopProView">
+        停止护航浏览
+    </sys:String>
+    <sys:String x:Key="pushWeb">
+        推送网页
+    </sys:String>
+    <sys:String x:Key="setProView">
+        设置护航浏览参数
+    </sys:String>
+    <sys:String x:Key="proView">
+        发起护航浏览
+    </sys:String>
+    <sys:String x:Key="broadcast">
+        报音
+    </sys:String>
+    <sys:String x:Key="transFront">
+        前转
+    </sys:String>
+    <sys:String x:Key="transOut">
+        转出
+    </sys:String>
+
+    <sys:String x:Key="sendAnnouncementByWorkGroup">
+        按工作组发公告
+    </sys:String>
+    <sys:String x:Key="sendAnnouncementBySkills">
+        按技能发公告
+    </sys:String>
+    <sys:String x:Key="workGroup">
+        工作组
+    </sys:String>
+    <sys:String x:Key="skills">
+        技能
+    </sys:String>
+    <sys:String x:Key="announce">
+        公告
+    </sys:String>
+    <sys:String x:Key="targetWorkNo">
+        接受通知的座席工号
+    </sys:String>
+    <sys:String x:Key="NotesContent">
+        通知内容 [最多1018个字节]
+    </sys:String>
+
+    <sys:String x:Key="registerSkill">
+        技能重设
+    </sys:String>
+    <sys:String x:Key="registerType">
+        签入方式
+    </sys:String>
+    <sys:String x:Key="autosign">
+        自动签入
+    </sys:String>
+    <sys:String x:Key="manualsign">
+        手动签入
+    </sys:String>
+    <sys:String x:Key="selectSkills">
+        请选择技能
+    </sys:String>
+    <sys:String x:Key="inputMsg">
+        请输入数据
+    </sys:String>
+    <sys:String x:Key="indexNo">
+        序号
+    </sys:String>
+    <sys:String x:Key="qryResult">
+        查询结果
+    </sys:String>
+    <sys:String x:Key="othersItem">
+        其他
+    </sys:String>
+
+
+
+    <sys:String x:Key="pleaseSelectSkills">
+        请选择技能
+    </sys:String>
+    <sys:String x:Key="internalHelp">
+        内部求助
+    </sys:String>
+    <sys:String x:Key="setDataTitle">
+        接续控制条 - 设置数据
+    </sys:String>
+    <sys:String x:Key="callingNumber">
+        主叫
+    </sys:String>
+    <sys:String x:Key="setDataSucc">
+        设置数据成功
+    </sys:String>
+    <sys:String x:Key="qryDataTitle">
+        接续控制条 - 查询数据
+    </sys:String>
+    <sys:String x:Key="callTransTitle">
+        接续控制条 - 呼叫转移
+    </sys:String>
+    <sys:String x:Key="transQue">
+        转队列
+    </sys:String>
+    <sys:String x:Key="transferOutTitle">
+        继续控制条 - 外呼
+    </sys:String>
+
+    <sys:String x:Key="agentIdle">
+        座席空闲
+    </sys:String>
+    <sys:String x:Key="agentBusy">
+        座席示忙
+    </sys:String>
+    <sys:String x:Key="agentForceBusy">
+        强制示忙
+    </sys:String>
+    <sys:String x:Key="agentSignOut">
+        等待签入
+    </sys:String>
+    <sys:String x:Key="phoneAlerting">
+        正在振铃
+    </sys:String>
+    <sys:String x:Key="agentRecord">
+        正在录制
+    </sys:String>
+    <sys:String x:Key="agentWaitAnswer">
+        等待应答
+    </sys:String>
+    <sys:String x:Key="agentConver">
+        正在通话
+    </sys:String>
+    <sys:String x:Key="agentWork">
+        座席工作态
+    </sys:String>
+    <sys:String x:Key="agentWaitRest">
+        等待休息
+    </sys:String>
+    <sys:String x:Key="agentCancelBusy">
+        取消示忙
+    </sys:String>
+    <sys:String x:Key="agentEndRest">
+        结束休息
+    </sys:String>
+    <sys:String x:Key="restMin">
+        分钟
+    </sys:String>
+    <sys:String x:Key="restString">
+        休息时长 (1~59)
+    </sys:String>
+
+    <sys:String x:Key="config_Title">
+        接续控制条 - 参数设置
+    </sys:String>
+    <sys:String x:Key="config_Basic">
+        基本参数
+    </sys:String>
+    <sys:String x:Key="config_Advanced">
+        高级参数
+    </sys:String>
+    <sys:String x:Key="config_Automatic">
+        自动
+    </sys:String>
+    <sys:String x:Key="config_Server">
+        服务器
+    </sys:String>
+    <sys:String x:Key="config_Other">
+        其他
+    </sys:String>
+    <sys:String x:Key="config_Timeout">
+        超时时间 (5~60) s :
+    </sys:String>
+    <sys:String x:Key="config_autoanswer">
+        自动应答
+    </sys:String>
+    <sys:String x:Key="config_autowork">
+        自动进入工作态
+    </sys:String>
+    <sys:String x:Key="config_userVoice">
+        使用内置话机
+    </sys:String>
+    <sys:String x:Key="config_sipIP">
+        SIP服务器1 IP
+    </sys:String>
+    <sys:String x:Key="config_sipPort">
+        SIP服务器1 端口号
+    </sys:String>
+    <sys:String x:Key="config_sipIP1">
+        SIP服务器2 IP
+    </sys:String>
+    <sys:String x:Key="config_sipPort1">
+        SIP服务器2 端口号
+    </sys:String>
+    <sys:String x:Key="config_account">
+        注册账号
+    </sys:String>
+    <sys:String x:Key="config_password">
+        注册密码
+    </sys:String>
+    <sys:String x:Key="config_head">
+        请设置系统参数
+    </sys:String>
+    <sys:String x:Key="config_egIP">
+        示例 IP
+    </sys:String>
+    <sys:String x:Key="login_head">
+        请选择签入方式和技能
+    </sys:String>
+    <sys:String x:Key="bulletin_head">
+        发布公告
+    </sys:String>
+    <sys:String x:Key="btn_cancel">
+        取消
+    </sys:String>
+    <sys:String x:Key="sendnote_fail">
+        发送失败
+    </sys:String>
+    <sys:String x:Key="msgview_fail">
+        发送失败
+    </sys:String>
+    <sys:String x:Key="msgview_answer">
+        回复
+    </sys:String>
+    <sys:String x:Key="msgview_del">
+        删除
+    </sys:String>
+    <sys:String x:Key="msgview_time">
+        时间
+    </sys:String>
+    <sys:String x:Key="msgview_sender">
+        发送人
+    </sys:String>
+    <sys:String x:Key="msgview_type">
+        类别
+    </sys:String>
+    <sys:String x:Key="msgview_note">
+        便签
+    </sys:String>
+    <sys:String x:Key="msgview_bullet">
+        公告
+    </sys:String>
+    <sys:String x:Key="msgview_title">
+        接续控制条 - 消息浏览
+    </sys:String>
+    <sys:String x:Key="msgview_head">
+        请浏览消息
+    </sys:String>
+    <sys:String x:Key="internalcall_head">
+        请选择目标座席
+    </sys:String>
+    <sys:String x:Key="agentinfo_id">
+        工号 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_agentid">
+        工号 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_name">
+        姓名 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_account">
+        账号 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_group">
+        所属班组 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_action">
+        当前动作 :
+    </sys:String>
+    <sys:String x:Key="agentinfo_nolog">
+        未签入
+    </sys:String>
+    <sys:String x:Key="agentinfo_nogroup">
+        未分组业务代表
+    </sys:String>
+    <sys:String x:Key="setdata_head">
+        请输入参数
+    </sys:String>
+    <sys:String x:Key="transcall_head">
+        请设置呼叫转移参数
+    </sys:String>
+    <sys:String x:Key="transout_head">
+        请设置呼叫转出参数
+    </sys:String>
+    <sys:String x:Key="outcall_title">
+        接续控制条 - 呼出
+    </sys:String>
+    <sys:String x:Key="outcall_head">
+        请输入呼出参数
+    </sys:String>
+    <sys:String x:Key="outcall_skill">
+        技能
+    </sys:String>
+    <sys:String x:Key="outcall_mediaabi">
+        媒体能力
+    </sys:String>
+    <sys:String x:Key="outcall_mode">
+        呼出检测模式
+    </sys:String>
+    <sys:String x:Key="outcall_nocheck">
+        不启动检测
+    </sys:String>
+    <sys:String x:Key="outcall_becheck">
+        接通前启动检测
+    </sys:String>
+    <sys:String x:Key="outcall_afcheck">
+        接通后启动检测
+    </sys:String>
+    <sys:String x:Key="outcall_default">
+        默认
+    </sys:String>
+    <sys:String x:Key="internalcall_fail">
+        内部呼叫失败
+    </sys:String>
+    <sys:String x:Key="internalhelp_head">
+        请设置内部求助参数
+    </sys:String>
+    <sys:String x:Key="internalhelp_fail">
+        内部求助失败
+    </sys:String>
+    <sys:String x:Key="internalhelp_succ">
+        内部求助成功
+    </sys:String>
+    <sys:String x:Key="sendnote_head">
+        请输入座席工号与通知内容
+    </sys:String>
+    <sys:String x:Key="sendnote_tooltip">
+        发送便签
+    </sys:String>
+    <sys:String x:Key="releaseBull_tooltip">
+        发布公告
+    </sys:String>
+    <sys:String x:Key="config_serverType">
+        服务器类型
+    </sys:String>
+    <sys:String x:Key="innercall_choseselef">
+        您不能选择自己,请重新选择!
+    </sys:String>
+    <sys:String x:Key="setdata_selecttalk">
+        请选择一个呼叫.
+    </sys:String>
+    <sys:String x:Key="login_input">
+        请输入座席工号和电话！
+    </sys:String>
+    <sys:String x:Key="login_title">
+        接续控制条 - 座席登录
+    </sys:String>
+    <sys:String x:Key="main_instruc">
+        说明
+    </sys:String>
+    <sys:String x:Key="mainwindow_noanswer">
+        久不应答
+    </sys:String>
+    <sys:String x:Key="mainwindow_innercallsuc">
+        内部呼叫成功
+    </sys:String>
+    <sys:String x:Key="mainwindow_innercallfal">
+        内部呼叫失败
+    </sys:String>
+    <sys:String x:Key="mainwindow_voiceinifail">
+        Voice 初始化失败
+    </sys:String>
+    <sys:String x:Key="mainwindow_instruction">
+        接续控制条 - 说明
+    </sys:String>
+    <sys:String x:Key="instruction_cti">
+        1, MCP模式支持的最低CTI版本为 ICD V300R006C60SPC006
+    </sys:String>
+    <sys:String x:Key="notifybullet_nogroup">
+        当前工作组下没有座席!
+    </sys:String>
+    <sys:String x:Key="voice_setsipfail">
+        Voice设置SIP服务器信息失败!
+    </sys:String>
+    <sys:String x:Key="voice_setlocalfail">
+        Voice设置本地信息失败!
+    </sys:String>
+    <sys:String x:Key="voice_registerfail">
+        Voice电话注册失败!
+    </sys:String>
+    <sys:String x:Key="voice_initialsuc">
+        Voice加载成功
+    </sys:String>
+
+    <sys:String x:Key="000-001">
+        获取Agent事件的方法错误
+    </sys:String>
+    <sys:String x:Key="000-002">
+        座席通过URL传递的参数或者地址错误或接口参数不合法,不符合定义
+    </sys:String>
+    <sys:String x:Key="000-003">
+        没有权限调用接口
+    </sys:String>
+    <sys:String x:Key="000-004">
+        座席正在倒换中
+    </sys:String>
+    <sys:String x:Key="100-001">
+        签入参数为空或者不合法
+    </sys:String>
+    <sys:String x:Key="100-002">
+        座席已经登录
+    </sys:String>
+    <sys:String x:Key="100-003">
+        座席登录的时候抛ResourceUnavailableException或ProviderUnavailableException异常
+    </sys:String>
+    <sys:String x:Key="100-004">
+        登录过程中,用户名或者密码错误
+    </sys:String>
+    <sys:String x:Key="100-005">
+        登出参数不合法
+    </sys:String>
+    <sys:String x:Key="100-006">
+        座席没有登录
+    </sys:String>
+    <sys:String x:Key="100-007">
+        座席操作时发生异常,可能是WAS资源错误无法访问或者内部错误产生
+    </sys:String>
+    <sys:String x:Key="100-008">
+        座席已经登出
+    </sys:String>
+    <sys:String x:Key="100-009">
+        设置座席状态错误
+    </sys:String>
+    <sys:String x:Key="100-010">
+        签出时状态错误
+    </sys:String>
+    <sys:String x:Key="100-011">
+        签入时参数不合法错误
+    </sys:String>
+    <sys:String x:Key="100-012">
+        签入时座席类型错误
+    </sys:String>
+    <sys:String x:Key="100-013">
+        绑定座席电话时电话无效
+    </sys:String>
+    <sys:String x:Key="100-014">
+        座席签入的电话号码不在配置范围内
+    </sys:String>
+    <sys:String x:Key="100-015">
+        座席已经登录,并且不能被强制踢出
+    </sys:String>
+    <sys:String x:Key="100-016">
+        座席签入时,IP地址无效
+    </sys:String>
+    <sys:String x:Key="110-016">
+        账号正处于锁定状态
+    </sys:String>
+    <sys:String x:Key="101-001">
+        座席没有电话会议
+    </sys:String>
+    <sys:String x:Key="101-002">
+        座席不是当前电话会议的主席
+    </sys:String>
+    <sys:String x:Key="200-001">
+        外呼号码错误
+    </sys:String>
+    <sys:String x:Key="200-002">
+        应答时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-003">
+        静音时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-004">
+        静音时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-005">
+        连接保持时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-006">
+        连接保持时没有保持呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-007">
+        取消静音时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-008">
+        取消静音时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-009">
+        报音时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-010">
+        三方通话时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-011">
+        三方通话时没有保持呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-012">
+        呼叫转移时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-013">
+        保持时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-014">
+        保持时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-015">
+        取保持时没有保持呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-016">
+        取保持时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-017">
+        挂断时无呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-018">
+        内部咨询时无呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-019">
+        静像时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-020">
+        静像时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-021">
+        取静像时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-022">
+        取静像时呼叫状态错误
+    </sys:String>
+    <sys:String x:Key="200-023">
+        释放指定电话号码时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-024">
+        释放指定电话号码时不存在此号码呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-025">
+        拆除呼叫时没有呼叫错误
+    </sys:String>
+    <sys:String x:Key="200-026">
+        呼叫不存在
+    </sys:String>
+    <sys:String x:Key="210-001">
+        URL信息查询不到
+    </sys:String>
+    <sys:String x:Key="300-001">
+        查询座席信息无权限错误
+    </sys:String>
+    <sys:String x:Key="300-002">
+        查询座席信息无座席信息错误
+    </sys:String>
+    <sys:String x:Key="300-003">
+        查询座席班组信息无此座席信息错误
+    </sys:String>
+    <sys:String x:Key="300-004">
+        查询座席班组信息无此座席班组信息错误
+    </sys:String>
+    <sys:String x:Key="400-001">
+        设置随路数据时无呼叫信息错误
+    </sys:String>
+    <sys:String x:Key="400-003">
+        获取保持队列信息时无话务信息
+    </sys:String>
+    <sys:String x:Key="500-001">
+        快退时状态错误
+    </sys:String>
+    <sys:String x:Key="500-002">
+        快进时状态错误
+    </sys:String>
+    <sys:String x:Key="500-003">
+        暂停放音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-004">
+        暂停录音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-005">
+        继续放音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-006">
+        继续录音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-007">
+        开始放音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-008">
+        开始录音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-009">
+        停止放音时状态错误
+    </sys:String>
+    <sys:String x:Key="500-010">
+        停止录音时状态错误
+    </sys:String>
+    <sys:String x:Key="600-001">
+        查询座席技能队列信息无此座席信息或座席无配置技能错误
+    </sys:String>
+    <sys:String x:Key="600-002">
+        查询指定VDN的技能队列信息无队列配置信息
+    </sys:String>
+    <sys:String x:Key="600-003">
+        查询座席所在VDN的接入码信息时无配置信息
+    </sys:String>
+    <sys:String x:Key="600-004">
+        查询座席所在VDN的IVR信息时无配置信息
+    </sys:String>
+    <sys:String x:Key="600-005">
+        查询座席所在VDN的技能队列信息无队列配置信息
+    </sys:String>
+    <sys:String x:Key="700-001">
+        会话不存在
+    </sys:String>
+    <sys:String x:Key="700-002">
+        调用平台异常
+    </sys:String>
+    <sys:String x:Key="700-003">
+        消息发送失败
+    </sys:String>
+    <sys:String x:Key="701-001">
+        多媒体会议成员为空
+    </sys:String>
+    <sys:String x:Key="701-002">
+        查询多媒体会议状态返回空值
+    </sys:String>
+    <sys:String x:Key="701-003">
+        创建会议时,创建者或者参与者已经在其他会议中
+    </sys:String>
+    <sys:String x:Key="701-004">
+        邀请与会者时,当前操作者不在会议中
+    </sys:String>
+    <sys:String x:Key="701-005">
+        停止会议时,会议不存在或者没有权限操作该会议
+    </sys:String>
+    <sys:String x:Key="701-006">
+        创建会议时,配置台MS IP未配置
+    </sys:String>
+    <sys:String x:Key="800-001">
+        配置代理服务为空
+    </sys:String>
+    <sys:String x:Key="800-002">
+        配置信息查询异常
+    </sys:String>
+    <sys:String x:Key="800-003">
+        默认媒体网关信息不存在
+    </sys:String>
+    <sys:String x:Key="900-001">
+        质检操作时发生NOPROVIDER异常
+    </sys:String>
+    <sys:String x:Key="900-002">
+        质检操作时发生没有权限异常
+    </sys:String>
+    <sys:String x:Key="900-003">
+        质检操作时发生ResourceUnavailableException异常
+    </sys:String>
+    <sys:String x:Key="900-004">
+        质检监视时发生没有座席信息
+    </sys:String>
+    <sys:String x:Key="900-005">
+        质检操作时发生状态异常
+    </sys:String>
+    <sys:String x:Key="900-006">
+        质检操作时发生录屏的时间参数错异常
+    </sys:String>
+    <sys:String x:Key="900-007">
+        质检操作时发生录屏的未加载支持录屏的许可异常
+    </sys:String>
+    <sys:String x:Key="900-008">
+        质检操作时发生录屏的平台未知异常
+    </sys:String>
+    <sys:String x:Key="900-009">
+        删除质检任务时，未找到任务异常
+    </sys:String>
+    <sys:String x:Key="999-001">
+        服务端的配置文件中配置的WAS URL不正确
+    </sys:String>
+    <sys:String x:Key="config_voicedomain">
+        域名
+    </sys:String>
+    <sys:String x:Key="other_installCertification">
+        安装证书
+    </sys:String>
+    <sys:String x:Key="config_port">
+        端口
+    </sys:String>
+    <sys:String x:Key="config_sslpath">
+        证书路径
+    </sys:String>
+    <sys:String x:Key="config_sslpwd">
+        证书密码
+    </sys:String>
+    <sys:String x:Key="config_browse">
+        浏览
+    </sys:String>
+    <sys:String x:Key="config_usessl">
+        使用 SSL
+    </sys:String>
+    <sys:String x:Key="modifypwd_inputcheck">
+        请输入旧密码和新密码
+    </sys:String>
+    <sys:String x:Key="main_forcelogout">
+        被强制签出
+    </sys:String>
+    <sys:String x:Key="main_changepwd">
+        首次登陆必须修改密码，请在一分钟内修改密码
+    </sys:String>
+    <sys:String x:Key="main_cancelchangepwd">
+        取消修改密码
+    </sys:String>
+    <sys:String x:Key="main_changepwdfail">
+        修改密码失败
+    </sys:String>
+    <sys:String x:Key="main_changepwdsucc">
+        修改密码成功，请重新登陆
+    </sys:String>
+    <sys:String x:Key="main_textmessage">
+        文字交谈
+    </sys:String>
+    <sys:String x:Key="main_actiondisable">
+        动作不允许
+    </sys:String>
+    <sys:String x:Key="set_agenttype">
+        座席类型
+    </sys:String>
+    <sys:String x:Key="set_longcall">
+        长通
+    </sys:String>
+    <sys:String x:Key="set_pcphonevideo">
+        PC+PHONE 视频
+    </sys:String>
+    <sys:String x:Key="textmsg_calllist">
+        呼叫列表
+    </sys:String>
+    <sys:String x:Key="textmsg_message">
+        消息
+    </sys:String>
+    <sys:String x:Key="textmsg_release">
+        释放
+    </sys:String>
+    <sys:String x:Key="textmsg_innercall">
+        内部呼叫
+    </sys:String>
+    <sys:String x:Key="textmsg_calltrans">
+        呼叫转移
+    </sys:String>
+    <sys:String x:Key="textmsg_send">
+        发送
+    </sys:String>
+    <sys:String x:Key="textmsg_clear">
+        清除
+    </sys:String>
+    <sys:String x:Key="main_syserror">
+        无法与服务器连接，请检查配置
+    </sys:String>
+    <sys:String x:Key="main_cancelrest">
+        取消休息
+    </sys:String>
+    <sys:String x:Key="main_localvideowindow">
+        本地视频窗口
+    </sys:String>
+    <sys:String x:Key="main_remotevideowindow">
+        远端视频窗口
+    </sys:String>
+    <sys:String x:Key="txtchat_upload">
+        上传
+    </sys:String>
+    <sys:String x:Key="txtchat_download">
+        下载
+    </sys:String>
+    <sys:String x:Key="txtchat_transtype">
+        转移地址类型
+    </sys:String>
+    <sys:String x:Key="txtchat_filedownloadpath">
+        文件下载路径
+    </sys:String>
+    <sys:String x:Key="txtchat_filesavepath">
+        保存路径
+    </sys:String>
+    <sys:String x:Key="txtchat_select">
+        选择
+    </sys:String>
+    <sys:String x:Key="txtchat_answertype">
+        应答类型
+    </sys:String>
+    <sys:String x:Key="txtchat_default">
+        默认
+    </sys:String>
+    <sys:String x:Key="txtchat_video">
+        视频
+    </sys:String>
+    <sys:String x:Key="txtchat_audio">
+        音频
+    </sys:String>
+    <sys:String x:Key="innerhelp_succ">
+        内部求助成功
+    </sys:String>
+    <sys:String x:Key="innerhelp_failed">
+        内部求助失败
+    </sys:String>
+    <sys:String x:Key="innerhelp_refused">
+        内部求助被拒
+    </sys:String>
+    <sys:String x:Key="innerhelp_arrive">
+        内部求助到达
+    </sys:String>
+    <sys:String x:Key="msgsend_succ">
+        发送消息成功
+    </sys:String>
+    <sys:String x:Key="msgsend_failed">
+        发送消息失败
+    </sys:String>
+    <sys:String x:Key="modifypwd_title">
+        修改密码
+    </sys:String>
+    <sys:String x:Key="modifypwd_oldpwd">
+        旧密码
+    </sys:String>
+    <sys:String x:Key="modifypwd_newpwd">
+        新密码
+    </sys:String>
+    <sys:String x:Key="modifypwd_confirmpwd">
+        确认密码
+    </sys:String>
+    <sys:String x:Key="modifypwd_pwdnotsame">
+        两次输入的密码不同
+    </sys:String>
+    <sys:String x:Key="otherfunc_title">
+        其他功能
+    </sys:String>
+    <sys:String x:Key="otherfunc_clearlog">
+        清空
+    </sys:String>
+    <sys:String x:Key="otherfunc_logtime">
+        时间
+    </sys:String>
+    <sys:String x:Key="otherfunc_logtype">
+        类型
+    </sys:String>
+    <sys:String x:Key="otherfunc_logcontent">
+        内容
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickuptitle">
+        代答
+    </sys:String>
+    <sys:String x:Key="otherfunc_refresh">
+        刷新
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup">
+        代答
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_nosamegroup">
+        不在同一班组
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_noright">
+        没有代答权限
+    </sys:String>
+    <sys:String x:Key="otherfunc_pickup_fail">
+        代答失败
+    </sys:String>
+    <sys:String x:Key="otherset_title">
+        其他设置
+    </sys:String>
+    <sys:String x:Key="otherset_phonelinkage">
+        话机联动
+    </sys:String>
+    <sys:String x:Key="otherset_resetskillsucc">
+        设置成功
+    </sys:String>
+    <sys:String x:Key="conf_title">
+        会议
+    </sys:String>
+    <sys:String x:Key="conf_invite">
+        邀请
+    </sys:String>
+    <sys:String x:Key="conf_create">
+        创建
+    </sys:String>
+    <sys:String x:Key="conf_exit">
+        离开
+    </sys:String>
+    <sys:String x:Key="conf_terminate">
+        终止
+    </sys:String>
+    <sys:String x:Key="conf_filepat">
+        文件路径
+    </sys:String>
+    <sys:String x:Key="conf_filerecvname">
+        接收名称
+    </sys:String>
+    <sys:String x:Key="conf_filerecvpath">
+        接收路径
+    </sys:String>
+    <sys:String x:Key="conf_send">
+        发送
+    </sys:String>
+    <sys:String x:Key="conf_recv">
+        接收
+    </sys:String>
+    <sys:String x:Key="conf_fileshare">
+        文档共享
+    </sys:String>
+    <sys:String x:Key="conf_filesave">
+        文档保存
+    </sys:String>
+    <sys:String x:Key="conf_fileclose">
+        文档关闭
+    </sys:String>
+    <sys:String x:Key="conf_prepage">
+        上一页
+    </sys:String>
+    <sys:String x:Key="conf_nextpage">
+        下一页
+    </sys:String>
+    <sys:String x:Key="conf_handmove">
+        抓手移动
+    </sys:String>
+    <sys:String x:Key="conf_localapp">
+        本地应用
+    </sys:String>
+    <sys:String x:Key="conf_qry">
+        查询
+    </sys:String>
+    <sys:String x:Key="conf_sharetype">
+        共享类型
+    </sys:String>
+    <sys:String x:Key="conf_sharetypescreen">
+        屏幕
+    </sys:String>
+    <sys:String x:Key="conf_sharetypeapp">
+        应用
+    </sys:String>
+    <sys:String x:Key="conf_startshare">
+        开始共享
+    </sys:String>
+    <sys:String x:Key="conf_stopshare">
+        停止共享
+    </sys:String>
+    <sys:String x:Key="conf_operationpri">
+        操作权限
+    </sys:String>
+    <sys:String x:Key="conf_operapriadd">
+        赋予权限
+    </sys:String>
+    <sys:String x:Key="conf_operapridel">
+        收回权限
+    </sys:String>
+    <sys:String x:Key="conf_operaprirej">
+        拒绝请求
+    </sys:String>
+    <sys:String x:Key="conf_reqpri">
+        申请远程操作
+    </sys:String>
+    <sys:String x:Key="conf_setpri">
+        设置权限
+    </sys:String>
+    <sys:String x:Key="conf_filesharewindow">
+        屏幕共享窗口
+    </sys:String>
+
+    <sys:String x:Key="main_previewcallout">
+        是否进行预览外呼?
+    </sys:String>
+    <sys:String x:Key="textchat_qry">
+        查询
+    </sys:String>
+    <sys:String x:Key="textchat_qrycallsession">
+        查询呼叫记录
+    </sys:String>
+    <sys:String x:Key="textchat_qrycallcontent">
+        查询会话内容
+    </sys:String>
+    <sys:String x:Key="textchat_pageno">
+        页码
+    </sys:String>
+    <sys:String x:Key="textchat_pagesize">
+        每页记录数
+    </sys:String>
+    <sys:String x:Key="textchat_callID">
+        呼叫标识
+    </sys:String>
+    <sys:String x:Key="textchat_id">
+        标识
+    </sys:String>
+    <sys:String x:Key="textchat_subMediaType">
+        子媒体类型
+    </sys:String>
+    <sys:String x:Key="textchat_sender">
+        发送者
+    </sys:String>
+    <sys:String x:Key="textchat_receiver">
+        接收者
+    </sys:String>
+    <sys:String x:Key="textchat_contenttype">
+        内容类型
+    </sys:String>
+    <sys:String x:Key="textchat_content">
+        内容
+    </sys:String>
+    <sys:String x:Key="textchat_totalcount">
+        总记录数
+    </sys:String>
+    <sys:String x:Key="textchat_totalpage">
+        总页码
+    </sys:String>
+    <sys:String x:Key="textchat_starttime">
+        开始时间
+    </sys:String>
+    <sys:String x:Key="textchat_endtime">
+        结束时间
+    </sys:String>
+    <sys:String x:Key="textchat_calltype">
+        呼叫类型
+    </sys:String>
+    <sys:String x:Key="textchat_caller">
+        主叫
+    </sys:String>
+    <sys:String x:Key="textchat_called">
+        被叫
+    </sys:String>
+    <sys:String x:Key="textchat_isInnerCall">
+        内部呼叫
+    </sys:String>
+    <sys:String x:Key="textchat_realcaller">
+        实际主叫
+    </sys:String>
+    <sys:String x:Key="textchat_callerName">
+        主叫名称
+    </sys:String>
+    <sys:String x:Key="textchat_releasecause">
+        释放原因
+    </sys:String>
+    <sys:String x:Key="textchat_qryfailed">
+        查询失败
+    </sys:String>
+    <sys:String x:Key="textchat_direction">
+        方向
+    </sys:String>
+
+    <sys:String x:Key="recordscreen_title">
+        录屏
+    </sys:String>
+    <sys:String x:Key="recordscreen_setting">
+        设置
+    </sys:String>
+    <sys:String x:Key="recordscreen_type">
+        录制类型
+    </sys:String>
+    <sys:String x:Key="recordscreen_single">
+        单屏
+    </sys:String>
+    <sys:String x:Key="recordscreen_twoscreen">
+        双屏
+    </sys:String>
+    <sys:String x:Key="recordscreen_screenno">
+        屏幕编号
+    </sys:String>
+    <sys:String x:Key="recordscreen_localip">
+        本地IP
+    </sys:String>
+    <sys:String x:Key="recordscreen_localport">
+        本地端口
+    </sys:String>
+    <sys:String x:Key="recordscreen_start">
+        开始
+    </sys:String>
+    <sys:String x:Key="recordscreen_stop">
+        停止
+    </sys:String>
+    <sys:String x:Key="recordscreen_initial">
+        初始化
+    </sys:String>
+    <sys:String x:Key="textchat_other_pickup">
+        摘机
+    </sys:String>
+    <sys:String x:Key="setting_vrpip">
+        VRP 地址
+    </sys:String>
+    <sys:String x:Key="setting_vrpport">
+        VRP 端口
+    </sys:String>
+    <sys:String x:Key="main_usernumber">
+        客户号码
+    </sys:String>
+    <sys:String x:Key="sms_title">
+        短信
+    </sys:String>
+    <sys:String x:Key="sms_skill">
+        技能
+    </sys:String>
+    <sys:String x:Key="sms_id">
+        编号
+    </sys:String>
+    <sys:String x:Key="sms_receiver">
+        接收人
+    </sys:String>
+    <sys:String x:Key="sms_content">
+        内容
+    </sys:String>
+    <sys:String x:Key="sms_jauip">
+        JAU服务器地址
+    </sys:String>
+    <sys:String x:Key="sms_jauport">
+        JAU服务器端口
+    </sys:String>
+    <sys:String x:Key="sms_send">
+        发送
+    </sys:String>
+    <sys:String x:Key="sms_cancel">
+        取消
+    </sys:String>
+    <sys:String x:Key="qc_stopwhisper">
+        停止耳语
+    </sys:String>
+    <sys:String x:Key="qc_stopinsertlisten">
+        停止插入/侦听
+    </sys:String>
+    <sys:String x:Key="qc_insert">
+        插入
+    </sys:String>
+    <sys:String x:Key="qc_supervise">
+        侦听
+    </sys:String>
+    <sys:String x:Key="qc_intercept">
+        拦截
+    </sys:String>
+    <sys:String x:Key="qc_reqwhisper">
+        请求耳语
+    </sys:String>
+    <sys:String x:Key="qc_whisper">
+        耳语
+    </sys:String>
+    <sys:String x:Key="qc_modechange">
+        模式切换
+    </sys:String>
+
+    <sys:String x:Key="snapshot_title">
+        拍照
+    </sys:String>
+    <sys:String x:Key="snapshot_device">
+        设备
+    </sys:String>
+    <sys:String x:Key="snapshot_qry">
+        查询
+    </sys:String>
+    <sys:String x:Key="snapshot_length">
+        长度
+    </sys:String>
+    <sys:String x:Key="snapshot_width">
+        宽度
+    </sys:String>
+    <sys:String x:Key="snapshot_select">
+        选择
+    </sys:String>
+    <sys:String x:Key="snapshot_path">
+        路径
+    </sys:String>
+    <sys:String x:Key="snapshot_cancel">
+        取消
+    </sys:String>
+    <sys:String x:Key="snapshot_ok">
+        确定
+    </sys:String>
+
+    <sys:String x:Key="main_abandoncall">
+        收到呼叫早释事件，座席将外呼。
+    </sys:String>
+    <sys:String x:Key="main_phoneoffhook">
+        话机摘机
+    </sys:String>
+    <sys:String x:Key="recordscreen_enrtylist">
+        入口列表
+    </sys:String>
+
+    <sys:String x:Key="languagesel_title">请选择客户端使用的语言</sys:String>
+    <sys:String x:Key="languagesel_chinesss">中文</sys:String>
+
+    <sys:String x:Key="main_other_certificaterr">访问的HTTPS服务的证书存在安全风险，是否继续？</sys:String>
+    <sys:String x:Key="main_set_checkCertii">检查证书</sys:String>
+</ResourceDictionary>
